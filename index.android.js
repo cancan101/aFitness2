@@ -1,51 +1,65 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- */
 'use strict';
 import React, {
   AppRegistry,
-  Component,
+  BackAndroid,
   StyleSheet,
-  Text,
-  View
+  View,
 } from 'react-native';
+import ExNavigator from '@exponent/react-native-navigator';
 
-class aFitness2 extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Shake or press menu button for dev menu
-        </Text>
-      </View>
-    );
-  }
-}
+import { MainRouter } from './routers';
+
+import Toolbar from './components/Toolbar';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
   },
 });
 
-AppRegistry.registerComponent('aFitness2', () => aFitness2);
+
+class AFitness extends React.Component {
+  _onHardwareBackPress = () => {
+    if(this.refs.navigator.getCurrentRoutes().length > 1) {
+      this.refs.navigator.pop();
+      return true;
+    }else{
+      return false;
+    }
+  };
+  componentDidMount() {
+    BackAndroid.addEventListener('hardwareBackPress', this._onHardwareBackPress);
+  }
+  componentWillUnmount() {
+    BackAndroid.removeEventListener('hardwareBackPress', this._onHardwareBackPress);
+  }
+  augmentScene = (scene, route, navigator) => {
+    return (
+      <View style={styles.container}>
+        <Toolbar
+          navigator={navigator}
+          route={route}
+        />
+        <View style={{ paddingTop: 56, flex:1 }}>
+          { scene }
+        </View>
+      </View>
+    );
+  };
+  setRoute = (route) => {
+    this.setState({route});
+  };
+  render() {
+    return (
+      <ExNavigator
+        ref="navigator"
+        initialRoute={ MainRouter.getHomeRoute(this.setRoute) }
+        style={styles.container}
+        augmentScene={this.augmentScene}
+        showNavigationBar={false}
+      />
+    );
+  }
+}
+
+AppRegistry.registerComponent('aFitness2', () => AFitness);
