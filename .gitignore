@@ -28,6 +28,9 @@ project.xcworkspace
 .gradle
 local.properties
 
+# Intellij
+*.iml
+
 # node.js
 #
 node_modules/
