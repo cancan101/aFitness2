@@ -59,7 +59,7 @@ export default class Exercise extends Component {
           dataSource={this._ds.cloneWithRows(sets)}
           renderRow={this._renderRow}
         />
-        <Image source={require('../../img/ab_crunch_on_a_ball_t.jpg')} style={{width: 80, height: 80}} />
+        <Image source={this.props.exercise.image} style={{width: 80, height: 80}} />
       </View>
     );
   }

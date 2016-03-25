@@ -1,4 +1,4 @@
-export default EXERCISES = [
+const EXERCISES = [
   {
     "muscle_groups": [
       {
@@ -7243,3 +7243,5 @@ export default EXERCISES = [
     ]
   }
 ];
+
+export default EXERCISES;
