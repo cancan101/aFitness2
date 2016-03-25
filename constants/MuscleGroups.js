@@ -1,4 +1,4 @@
-export default MUSCLE_GROUPS = [
+const MUSCLE_GROUPS = [
   {id: 1, name: 'Chest'},
   {id: 2, name: 'Arms'},
   {id: 3, name: 'Back'},
@@ -6,3 +6,5 @@ export default MUSCLE_GROUPS = [
   {id: 5, name: 'Legs'},
   {id: 6, name: 'Shoulders'}
 ];
+
+export default MUSCLE_GROUPS;

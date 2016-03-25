@@ -14,8 +14,8 @@ export const MainRouter = {
       getTitle() {
         return exercise.name;
       },
-      getSceneClass() {
-        return Exercise;
+      renderScene(navigator) {
+        return <Exercise navigator={navigator} exercise={exercise} />;
       },
     };
   },

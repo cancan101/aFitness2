@@ -1,4 +1,4 @@
-export default MUSCLES = [
+const MUSCLES = [
   {id: 1, name: 'Pectoralis', muscleGroup: 1},
   {id: 2, name: 'Biceps brachii', muscleGroup: 2},
   {id: 3, name: 'Brachialis', muscleGroup: 2},
@@ -19,3 +19,5 @@ export default MUSCLES = [
   {id: 18, name: 'Infraspinatus', muscleGroup: 6},
   {id: 19, name: 'Rotator Cuff', muscleGroup: 6}
 ];
+
+export default MUSCLES;
