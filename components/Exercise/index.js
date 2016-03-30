@@ -7,27 +7,53 @@ import React, {
   TextInput,
   View,
 } from 'react-native';
-import Listitem from 'react-native-listitem';
 
+import Listitem from 'react-native-listitem';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import Realm from 'realm';
 
 import IMAGES from '../../constants/Images';
 
 
-const sets = [
-  {reps: 8, weight: {value: 10, units: 'lbs'}},
-];
+const realm = new Realm({
+  schemaVersion: 3,
+  schema: [
+   {
+    name: 'Foo',
+    properties: {
+      recordDate: 'date',
+      reps: 'int',
+      weightValue: 'int',
+      weightUnits: 'string',
+    }
+   }
+  ]
+});
 
 
-export default class Exercise extends Component {
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
+
+class ExerciseInner extends Component {
   static extraActions = [{title: 'History', show: 'always', iconName: 'history',}];
   constructor(props) {
     super(props);
     this._ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {};
   }
-  _renderRow = setItem => {
-    return <Listitem text={`${setItem.reps} x ${setItem.weight.value}${setItem.weight.units}`} />
+  onSetItemPress(setItem) {
+    this.setState({reps: String(setItem.reps), weightValue: String(setItem.weightValue)});
+  }
+  _renderRow = (setItem, sectionID, rowID) => {
+    const setNum = this.props.item.length - rowID;
+    return (
+      <Listitem
+        onPress={() => this.onSetItemPress(setItem)}
+        text={`Set ${setNum}: ${setItem.reps} x ${setItem.weightValue}${setItem.weightUnits}`} />
+    );
   };
   _canRecord() {
     return this.state.weightValue && this.state.reps;
@@ -38,23 +64,29 @@ export default class Exercise extends Component {
   _onChangeTextWeightValue = (value) => {
     this.setState({weightValue: value});
   };
+  _recordBtnOnPress = () => {
+    realm.write(() => {
+     realm.create('Foo', {
+       recordDate: new Date(),
+       reps: this.state.reps, weightValue: this.state.weightValue, weightUnits: 'lbs'
+     });
+    });
+  };
   render(){
-    let recordBtn;
-    if (this._canRecord()) {
-      recordBtn = (
-        <Icon.Button name="queue">
-          Record
-        </Icon.Button>
-      );
-    } else {
-      recordBtn = (
-        <Icon.Button name="queue" disabled={true} backgroundColor={'grey'}>
-          Record
-        </Icon.Button>
-      );
+    const recordBtnExtras = {};
+    if (!this._canRecord()) {
+      recordBtnExtras['disabled'] = true;
+      recordBtnExtras['backgroundColor'] = 'grey';
     }
+
+    const recordBtn = (
+      <Icon.Button name="queue" onPress={this._recordBtnOnPress} {...recordBtnExtras} >
+        Record
+      </Icon.Button>
+    );
+
     return (
-      <View style={{flex: 1}}>
+      <View style={styles.container}>
         <View style={{flexDirection: 'row'}}>
           <View style={{flex: 1, flexDirection: 'row'}}>
             <TextInput
@@ -62,6 +94,7 @@ export default class Exercise extends Component {
               placeholder='weight'
               style={{flex: 1, height: 40, borderColor: 'gray', borderWidth: 1}}
               onChangeText={this._onChangeTextWeightValue}
+              value={this.state.weightValue}
             />
             <Text style={{alignSelf: 'center'}}>lbs</Text>
           </View>
@@ -70,6 +103,7 @@ export default class Exercise extends Component {
             placeholder='repetitions'
             style={{flex: 1, height: 40, borderColor: 'gray', borderWidth: 1}}
             onChangeText={this._onChangeTextReps}
+            value={this.state.reps}
           />
         </View>
         <View style={{flexDirection: 'row'}}>
@@ -85,11 +119,30 @@ export default class Exercise extends Component {
         <ListView
           //keyboardShouldPersistTaps={true}
           keyboardDismissMode={'interactive'}
-          dataSource={this._ds.cloneWithRows(sets)}
+          dataSource={this._ds.cloneWithRows(this.props.item)}
           renderRow={this._renderRow}
         />
         <Image source={IMAGES[this.props.exercise.image]} style={{width: 80, height: 80}} />
       </View>
     );
+  }
+}
+
+export default class Exercise extends Component {
+  constructor(props){
+    super(props);
+    this.state = {item: realm.objects('Foo').sorted('recordDate', true)};
+  }
+  render() {
+    return <ExerciseInner {...this.props} item={this.state.item} />
+  }
+  onChange = () => {
+    this.setState({item: this.state.item});
+  };
+  componentDidMount() {
+    realm.addListener('change', this.onChange);
+  }
+  componentWillUnmount() {
+    realm.removeListener('change', this.onChange);
   }
 }
