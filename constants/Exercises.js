@@ -345,10 +345,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 2
       }
     ],
@@ -369,10 +365,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 2
       }
     ],
@@ -390,10 +382,6 @@ const EXERCISES = [
       {
         "is_primary": 1,
         "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": -1
       },
       {
         "is_primary": 0,
@@ -435,10 +423,6 @@ const EXERCISES = [
     ],
     "image": "assisted_pull_up",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 7
@@ -537,10 +521,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 4
       }
     ],
@@ -609,10 +589,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 7
       },
       {
@@ -641,10 +617,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 4
       }
     ],
@@ -659,10 +631,6 @@ const EXERCISES = [
     ],
     "image": "barbell_bent_over_row",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 7
@@ -952,10 +920,6 @@ const EXERCISES = [
     "image": "bench_dip",
     "muscles": [
       {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
         "is_primary": 0,
         "muscle_id": 12
       },
@@ -1014,10 +978,6 @@ const EXERCISES = [
       {
         "is_primary": 1,
         "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": -1
       },
       {
         "is_primary": 0,
@@ -1129,10 +1089,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 2
       }
     ],
@@ -1190,10 +1146,6 @@ const EXERCISES = [
       {
         "is_primary": 1,
         "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": -1
       },
       {
         "is_primary": 0,
@@ -1309,10 +1261,6 @@ const EXERCISES = [
     "muscles": [
       {
         "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 1,
         "muscle_id": 2
       }
     ],
@@ -1337,10 +1285,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 8
       }
     ],
@@ -1358,10 +1302,6 @@ const EXERCISES = [
       {
         "is_primary": 1,
         "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": -1
       },
       {
         "is_primary": 0,
@@ -1383,10 +1323,6 @@ const EXERCISES = [
     ],
     "image": "cable_close_grip_pulldown",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 3
@@ -1414,10 +1350,6 @@ const EXERCISES = [
       {
         "is_primary": 1,
         "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": -1
       },
       {
         "is_primary": 0,
@@ -1573,10 +1505,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 8
       }
     ],
@@ -1591,10 +1519,6 @@ const EXERCISES = [
     ],
     "image": "cable_seated_high_row",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 7
@@ -1622,10 +1546,6 @@ const EXERCISES = [
       {
         "is_primary": 1,
         "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": -1
       },
       {
         "is_primary": 0,
@@ -1681,10 +1601,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 8
       }
     ],
@@ -1715,10 +1631,6 @@ const EXERCISES = [
     ],
     "image": "cable_straight_arm_pull_down",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 1
@@ -1765,10 +1677,6 @@ const EXERCISES = [
     "muscles": [
       {
         "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 1,
         "muscle_id": 4
       }
     ],
@@ -1783,10 +1691,6 @@ const EXERCISES = [
     ],
     "image": "cable_triceps_pushdown",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 1,
         "muscle_id": 4
@@ -1849,10 +1753,6 @@ const EXERCISES = [
     "muscles": [
       {
         "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 1,
         "muscle_id": 4
       }
     ],
@@ -1867,10 +1767,6 @@ const EXERCISES = [
     ],
     "image": "chinup",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 1,
         "muscle_id": 8
@@ -1903,10 +1799,6 @@ const EXERCISES = [
     ],
     "image": "concentration_dumbbell_curl",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 1,
         "muscle_id": 2
@@ -2013,10 +1905,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 4
       }
     ],
@@ -2041,10 +1929,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 4
       }
     ],
@@ -2066,10 +1950,6 @@ const EXERCISES = [
       {
         "is_primary": 0,
         "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": -1
       },
       {
         "is_primary": 0,
@@ -2144,10 +2024,6 @@ const EXERCISES = [
     "image": "diamond_pushup",
     "muscles": [
       {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
         "is_primary": 0,
         "muscle_id": 12
       },
@@ -2167,10 +2043,6 @@ const EXERCISES = [
     ],
     "image": "dip",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 1
@@ -2205,10 +2077,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 4
       }
     ],
@@ -2223,10 +2091,6 @@ const EXERCISES = [
     ],
     "image": "drag_curl",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 3
@@ -2258,10 +2122,6 @@ const EXERCISES = [
       {
         "is_primary": 0,
         "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": -1
       },
       {
         "is_primary": 0,
@@ -2305,10 +2165,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 12
       },
       {
@@ -2327,10 +2183,6 @@ const EXERCISES = [
     ],
     "image": "dumbbell_biceps_curl",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 3
@@ -2377,10 +2229,6 @@ const EXERCISES = [
     "muscles": [
       {
         "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 1,
         "muscle_id": 13
       },
       {
@@ -2410,10 +2258,6 @@ const EXERCISES = [
       {
         "is_primary": 0,
         "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": -1
       },
       {
         "is_primary": 0,
@@ -2486,10 +2330,6 @@ const EXERCISES = [
       {
         "is_primary": 0,
         "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": -1
       },
       {
         "is_primary": 0,
@@ -2573,10 +2413,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 8
       },
       {
@@ -2605,10 +2441,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 4
       }
     ],
@@ -2623,10 +2455,6 @@ const EXERCISES = [
     ],
     "image": "dumbbell_reverse_curl",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 6
@@ -2695,10 +2523,6 @@ const EXERCISES = [
     ],
     "image": "row_kickback",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 7
@@ -2913,10 +2737,6 @@ const EXERCISES = [
     "muscles": [
       {
         "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 1,
         "muscle_id": 4
       }
     ],
@@ -3049,10 +2869,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 2
       }
     ],
@@ -3149,10 +2965,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 12
       },
       {
@@ -3171,10 +2983,6 @@ const EXERCISES = [
     ],
     "image": "incline_dumbbell_curl",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 3
@@ -3205,10 +3013,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 2
       }
     ],
@@ -3223,10 +3027,6 @@ const EXERCISES = [
     ],
     "image": "incline_hammer_curl",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 1,
         "muscle_id": 2
@@ -3283,10 +3083,6 @@ const EXERCISES = [
     ],
     "image": "incline_reverse_curl",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 6
@@ -3377,10 +3173,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 13
       }
     ],
@@ -3413,10 +3205,6 @@ const EXERCISES = [
     "muscles": [
       {
         "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 1,
         "muscle_id": 2
       }
     ],
@@ -3431,10 +3219,6 @@ const EXERCISES = [
     ],
     "image": "kettlebell_french_press",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 1,
         "muscle_id": 4
@@ -3461,10 +3245,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 13
       }
     ],
@@ -3479,10 +3259,6 @@ const EXERCISES = [
     ],
     "image": "kettlebell_kickback",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 1,
         "muscle_id": 4
@@ -3501,10 +3277,6 @@ const EXERCISES = [
     "muscles": [
       {
         "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 1,
         "muscle_id": 4
       }
     ],
@@ -3519,10 +3291,6 @@ const EXERCISES = [
     ],
     "image": "kettlebell_pullover",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 1,
         "muscle_id": 4
@@ -3546,10 +3314,6 @@ const EXERCISES = [
       {
         "is_primary": 0,
         "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": -1
       },
       {
         "is_primary": 0,
@@ -3583,10 +3347,6 @@ const EXERCISES = [
     ],
     "image": "kettlebell_renegade_row",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 1,
         "muscle_id": 8
@@ -3669,10 +3429,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 2
       }
     ],
@@ -3687,10 +3443,6 @@ const EXERCISES = [
     ],
     "image": "kettlebells_bent_over_row",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 7
@@ -3776,10 +3528,6 @@ const EXERCISES = [
     "image": "lat_pulldown",
     "muscles": [
       {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
         "is_primary": 0,
         "muscle_id": 7
       },
@@ -3849,10 +3597,6 @@ const EXERCISES = [
     "muscles": [
       {
         "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 1,
         "muscle_id": 4
       }
     ],
@@ -3867,10 +3611,6 @@ const EXERCISES = [
     ],
     "image": "lying_pullover",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 1,
         "muscle_id": 4
@@ -3889,10 +3629,6 @@ const EXERCISES = [
     "muscles": [
       {
         "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 1,
         "muscle_id": 4
       }
     ],
@@ -3907,10 +3643,6 @@ const EXERCISES = [
     ],
     "image": "machine_biceps_curl",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 1,
         "muscle_id": 2
@@ -3960,10 +3692,6 @@ const EXERCISES = [
     "image": "machine_lateral_pull_down",
     "muscles": [
       {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
         "is_primary": 0,
         "muscle_id": 7
       },
@@ -3990,10 +3718,6 @@ const EXERCISES = [
       {
         "is_primary": 1,
         "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": -1
       },
       {
         "is_primary": 0,
@@ -4113,10 +3837,6 @@ const EXERCISES = [
     "muscles": [
       {
         "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 1,
         "muscle_id": 4
       }
     ],
@@ -4188,10 +3908,6 @@ const EXERCISES = [
     "image": "neutral_grip_pullup",
     "muscles": [
       {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
         "is_primary": 0,
         "muscle_id": 7
       },
@@ -4256,10 +3972,6 @@ const EXERCISES = [
     "image": "one_arm_row",
     "muscles": [
       {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
         "is_primary": 0,
         "muscle_id": 7
       },
@@ -4285,10 +3997,6 @@ const EXERCISES = [
     "muscles": [
       {
         "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 1,
         "muscle_id": 4
       }
     ],
@@ -4303,10 +4011,6 @@ const EXERCISES = [
     ],
     "image": "overhead_triceps_extension",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 12
@@ -4327,10 +4031,6 @@ const EXERCISES = [
     ],
     "image": "prallel_bar_dip",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 1
@@ -4425,10 +4125,6 @@ const EXERCISES = [
     "muscles": [
       {
         "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 1,
         "muscle_id": 2
       }
     ],
@@ -4443,10 +4139,6 @@ const EXERCISES = [
     ],
     "image": "prone_hammer_curl",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 6
@@ -4471,10 +4163,6 @@ const EXERCISES = [
     ],
     "image": "prone_reverse_curl",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 1,
         "muscle_id": 2
@@ -4577,10 +4265,6 @@ const EXERCISES = [
     "muscles": [
       {
         "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 1,
         "muscle_id": 2
       }
     ],
@@ -4598,10 +4282,6 @@ const EXERCISES = [
       {
         "is_primary": 1,
         "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": -1
       },
       {
         "is_primary": 0,
@@ -4643,10 +4323,6 @@ const EXERCISES = [
     ],
     "image": "resistance_band_curl",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 1,
         "muscle_id": 2
@@ -4739,10 +4415,6 @@ const EXERCISES = [
     ],
     "image": "resistance_band_overhead_triceps_extension",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 1,
         "muscle_id": 4
@@ -4925,10 +4597,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 4
       }
     ],
@@ -5021,10 +4689,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 8
       }
     ],
@@ -5108,10 +4772,6 @@ const EXERCISES = [
     "image": "seated_preacher_curl",
     "muscles": [
       {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
         "is_primary": 0,
         "muscle_id": 3
       },
@@ -5155,10 +4815,6 @@ const EXERCISES = [
     ],
     "image": "seated_triceps_extension",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 12
@@ -5272,10 +4928,6 @@ const EXERCISES = [
     "image": "single_arm_external_rotation",
     "muscles": [
       {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
         "is_primary": 0,
         "muscle_id": 12
       },
@@ -5295,10 +4947,6 @@ const EXERCISES = [
     ],
     "image": "single_arm_pulldown",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 12
@@ -5453,10 +5101,6 @@ const EXERCISES = [
     "muscles": [
       {
         "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 1,
         "muscle_id": 2
       }
     ],
@@ -5471,10 +5115,6 @@ const EXERCISES = [
     ],
     "image": "standing_biceps_curl",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 3
@@ -5498,10 +5138,6 @@ const EXERCISES = [
       {
         "is_primary": 1,
         "muscle_id": 3
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": -1
       },
       {
         "is_primary": 0,
@@ -5593,10 +5229,6 @@ const EXERCISES = [
     "muscles": [
       {
         "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 1,
         "muscle_id": 4
       }
     ],
@@ -5673,10 +5305,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 13
       },
       {
@@ -5698,10 +5326,6 @@ const EXERCISES = [
       {
         "is_primary": 1,
         "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": -1
       },
       {
         "is_primary": 0,
@@ -5743,10 +5367,6 @@ const EXERCISES = [
     ],
     "image": "swiss_ball_french_press",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 1,
         "muscle_id": 4
@@ -5801,10 +5421,6 @@ const EXERCISES = [
     "muscles": [
       {
         "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 1,
         "muscle_id": 4
       }
     ],
@@ -5839,10 +5455,6 @@ const EXERCISES = [
     ],
     "image": "swiss_ball_oblique_back_extension",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 1,
         "muscle_id": 13
@@ -5909,10 +5521,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 2
       }
     ],
@@ -5943,10 +5551,6 @@ const EXERCISES = [
     ],
     "image": "swiss_ball_pullover",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 1,
         "muscle_id": 1
@@ -6008,10 +5612,6 @@ const EXERCISES = [
     "image": "swiss_ball_seated_curl",
     "muscles": [
       {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
         "is_primary": 0,
         "muscle_id": 3
       },
@@ -6037,10 +5637,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 4
       }
     ],
@@ -6057,10 +5653,6 @@ const EXERCISES = [
     "muscles": [
       {
         "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 1,
         "muscle_id": 12
       }
     ],
@@ -6075,10 +5667,6 @@ const EXERCISES = [
     ],
     "image": "swiss_ball_split_squat",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 10
@@ -6160,10 +5748,6 @@ const EXERCISES = [
     "image": "t_bar_bent_over_row",
     "muscles": [
       {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
         "is_primary": 0,
         "muscle_id": 7
       },
@@ -6233,10 +5817,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 2
       }
     ],
@@ -6272,10 +5852,6 @@ const EXERCISES = [
     "image": "triceps_assisted_dip",
     "muscles": [
       {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
-      {
         "is_primary": 0,
         "muscle_id": 12
       },
@@ -6299,10 +5875,6 @@ const EXERCISES = [
     ],
     "image": "triceps_kickback",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 1,
         "muscle_id": 4
@@ -6361,10 +5933,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 9
       },
       {
@@ -6402,10 +5970,6 @@ const EXERCISES = [
       {
         "is_primary": 1,
         "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": -1
       },
       {
         "is_primary": 0,
@@ -6453,10 +6017,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 2
       }
     ],
@@ -6474,10 +6034,6 @@ const EXERCISES = [
       {
         "is_primary": 1,
         "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": -1
       },
       {
         "is_primary": 0,
@@ -6502,10 +6058,6 @@ const EXERCISES = [
       {
         "is_primary": 1,
         "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": -1
       },
       {
         "is_primary": 0,
@@ -6573,10 +6125,6 @@ const EXERCISES = [
       },
       {
         "is_primary": 0,
-        "muscle_id": -1
-      },
-      {
-        "is_primary": 0,
         "muscle_id": 13
       }
     ],
@@ -6591,10 +6139,6 @@ const EXERCISES = [
     ],
     "image": "weighted_crunch",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 9
@@ -6622,10 +6166,6 @@ const EXERCISES = [
       {
         "is_primary": 0,
         "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": -1
       },
       {
         "is_primary": 0,
@@ -6723,10 +6263,6 @@ const EXERCISES = [
     ],
     "image": "zottman_curl",
     "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": -1
-      },
       {
         "is_primary": 0,
         "muscle_id": 5
