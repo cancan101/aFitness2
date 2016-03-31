@@ -5,7 +5,7 @@ import React, {
 import Exercise from '../components/Exercise';
 import Log from '../components/Log';
 import Main from '../components/Main';
-
+import { getDateString } from '../utils';
 
 export const MainRouter = {
   getExerciseRoute(exercise) {
@@ -22,7 +22,7 @@ export const MainRouter = {
   getLogRoute(logEntry) {
     return {
       getTitle(){
-        return logEntry.workoutDate.toLocaleDateString();
+        return getDateString(logEntry.workoutDate);
       },
       getSceneClass() {
         return Log;

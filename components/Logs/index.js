@@ -12,6 +12,8 @@ import map from 'lodash/map';
 
 import { MainRouter } from '../../routers';
 import realm from '../../realm';
+import { getDateString } from '../../utils';
+
 
 
 export default class Logs extends Component {
@@ -22,16 +24,8 @@ export default class Logs extends Component {
 
   _renderRow = (logEntry) => {
     const route = MainRouter.getLogRoute(logEntry);
-    const { workoutDate, setCount, exerciseCount}= logEntry;
-    const workoutDateLocal = new Date(
-      workoutDate.getUTCFullYear(), workoutDate.getUTCMonth(), workoutDate.getUTCDate());
-    let workoutDateLocalStr = workoutDateLocal.toLocaleDateString();
-
-    const now = new Date();
-    const today = new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
-    if(today.getTime() == workoutDate.getTime()) {
-      workoutDateLocalStr += 'today';
-    }
+    const { workoutDate, setCount, exerciseCount} = logEntry;
+    const workoutDateLocalStr = getDateString(workoutDate);
 
     return (
       <Listitem
