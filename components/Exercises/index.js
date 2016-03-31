@@ -16,6 +16,7 @@ import { MainRouter } from '../../routers';
 import MUSCLE_GROUPS from '../../constants/MuscleGroups';
 import MUSCLES from '../../constants/Muscles';
 import EXERCISES from '../../constants/Exercises';
+import IMAGES from '../../constants/Images';
 
 
 const FILTER_ALL = 'all';
@@ -40,7 +41,7 @@ export default class Exercises extends Component {
     let image;
     if (exercise.image) {
       image = (
-        <Image source={exercise.image}
+        <Image source={IMAGES[exercise.image]}
                style={{width: 40, height: 40, marginBottom: -15, marginTop: -15,}} />
       );
     } else {
