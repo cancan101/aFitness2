@@ -10,25 +10,9 @@ import React, {
 
 import Listitem from 'react-native-listitem';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import Realm from 'realm';
 
+import realm from '../../realm';
 import IMAGES from '../../constants/Images';
-
-
-const realm = new Realm({
-  schemaVersion: 3,
-  schema: [
-   {
-    name: 'Foo',
-    properties: {
-      recordDate: 'date',
-      reps: 'int',
-      weightValue: 'int',
-      weightUnits: 'string',
-    }
-   }
-  ]
-});
 
 
 const styles = StyleSheet.create({
@@ -65,9 +49,14 @@ class ExerciseInner extends Component {
     this.setState({weightValue: value});
   };
   _recordBtnOnPress = () => {
+    const recordDate = new Date();
+    const workoutDate = new Date(Date.UTC(recordDate.getFullYear(), recordDate.getMonth(), recordDate.getDate()));
+
     realm.write(() => {
      realm.create('Foo', {
-       recordDate: new Date(),
+       recordDate,
+       workoutDate,
+       exerciseId: this.props.exercise.id,
        reps: this.state.reps, weightValue: this.state.weightValue, weightUnits: 'lbs'
      });
     });
@@ -119,7 +108,7 @@ class ExerciseInner extends Component {
         <ListView
           //keyboardShouldPersistTaps={true}
           keyboardDismissMode={'interactive'}
-          dataSource={this._ds.cloneWithRows(this.props.item)}
+          dataSource={this._ds.cloneWithRows(this.props.item.sorted('recordDate', true))}
           renderRow={this._renderRow}
         />
         <Image source={IMAGES[this.props.exercise.image]} style={{width: 80, height: 80}} />
@@ -131,7 +120,7 @@ class ExerciseInner extends Component {
 export default class Exercise extends Component {
   constructor(props){
     super(props);
-    this.state = {item: realm.objects('Foo').sorted('recordDate', true)};
+    this.state = {item: realm.objects('Foo').filtered(`exerciseId = ${this.props.exercise.id}`)};
   }
   render() {
     return <ExerciseInner {...this.props} item={this.state.item} />

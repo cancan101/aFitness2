@@ -22,7 +22,7 @@ export const MainRouter = {
   getLogRoute(logEntry) {
     return {
       getTitle(){
-        return logEntry.date;
+        return logEntry.workoutDate.toLocaleDateString();
       },
       getSceneClass() {
         return Log;
