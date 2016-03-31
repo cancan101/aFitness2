@@ -11,6 +11,8 @@ import Listitem from 'react-native-listitem';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
+import IMAGES from '../../constants/Images';
+
 
 const sets = [
   {reps: 8, weight: {value: 10, units: 'lbs'}},
@@ -86,7 +88,7 @@ export default class Exercise extends Component {
           dataSource={this._ds.cloneWithRows(sets)}
           renderRow={this._renderRow}
         />
-        <Image source={this.props.exercise.image} style={{width: 80, height: 80}} />
+        <Image source={IMAGES[this.props.exercise.image]} style={{width: 80, height: 80}} />
       </View>
     );
   }

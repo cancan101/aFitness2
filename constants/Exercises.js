@@ -241,7 +241,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/ab_machine_t.jpg'),
+    "image": "ab_machine",
     "muscles": [
       {
         "is_primary": 1,
@@ -257,7 +257,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/ab_crunch_on_a_ball_t.jpg'),
+    "image": "ab_crunch_on_a_ball",
     "muscles": [
       {
         "is_primary": 1,
@@ -281,7 +281,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/abdominal_reverse_curl_t.jpg'),
+    "image": "abdominal_reverse_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -301,7 +301,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/abdominal_twist_t.jpg'),
+    "image": "abdominal_twist",
     "muscles": [
       {
         "is_primary": 1,
@@ -317,7 +317,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/alternating_seated_calf_raise_t.jpg'),
+    "image": "alternating_seated_calf_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -337,7 +337,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/angled_prone_curl_t.jpg'),
+    "image": "angled_prone_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -361,7 +361,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/angled_prone_reverse_curl_t.jpg'),
+    "image": "angled_prone_reverse_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -385,7 +385,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/arnold_press_t.jpg'),
+    "image": "arnold_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -409,7 +409,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/assisted_dumbbell_lunge_t.jpg'),
+    "image": "assisted_dumbbell_lunge",
     "muscles": [
       {
         "is_primary": 1,
@@ -433,7 +433,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/assisted_pull_up_t.jpg'),
+    "image": "assisted_pull_up",
     "muscles": [
       {
         "is_primary": 1,
@@ -461,7 +461,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/back_raise_t.jpg'),
+    "image": "back_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -485,7 +485,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/back_squat_t.jpg'),
+    "image": "back_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -509,7 +509,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/bar_crunch_t.jpg'),
+    "image": "bar_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -525,7 +525,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/bar_military_press_t.jpg'),
+    "image": "bar_military_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -553,7 +553,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/bar_squat_t.jpg'),
+    "image": "bar_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -577,7 +577,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/bar_upright_row_t.jpg'),
+    "image": "bar_upright_row",
     "muscles": [
       {
         "is_primary": 1,
@@ -601,7 +601,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/barbell_behind_neck_press_t.jpg'),
+    "image": "barbell_behind_neck_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -629,7 +629,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/barbell_bench_press_t.jpg'),
+    "image": "barbell_bench_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -657,7 +657,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/barbell_bent_over_row_t.jpg'),
+    "image": "barbell_bent_over_row",
     "muscles": [
       {
         "is_primary": 1,
@@ -685,7 +685,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/barbell_cable_rollout_t.jpg'),
+    "image": "barbell_cable_rollout",
     "muscles": [
       {
         "is_primary": 1,
@@ -709,7 +709,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/barbell_crossover_lunge_t.jpg'),
+    "image": "barbell_crossover_lunge",
     "muscles": [
       {
         "is_primary": 1,
@@ -729,7 +729,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/barbell_front_raise_t.jpg'),
+    "image": "barbell_front_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -753,7 +753,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/barbell_hack_squat_t.jpg'),
+    "image": "barbell_hack_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -777,7 +777,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/barbell_lunge_t.jpg'),
+    "image": "barbell_lunge",
     "muscles": [
       {
         "is_primary": 1,
@@ -801,7 +801,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/barbell_overhead_squat_t.jpg'),
+    "image": "barbell_overhead_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -825,7 +825,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/barbell_rollout_t.jpg'),
+    "image": "barbell_rollout",
     "muscles": [
       {
         "is_primary": 1,
@@ -841,7 +841,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/barbell_side_bend_t.jpg'),
+    "image": "barbell_side_bend",
     "muscles": [
       {
         "is_primary": 1,
@@ -861,7 +861,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/barbell_squat_t.jpg'),
+    "image": "barbell_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -881,7 +881,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/barbell_standing_calf_raise_t.jpg'),
+    "image": "barbell_standing_calf_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -901,7 +901,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/barbell_sumo_deadlift_t.jpg'),
+    "image": "barbell_sumo_deadlift",
     "muscles": [
       {
         "is_primary": 1,
@@ -925,7 +925,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/beginner_squat_t.jpg'),
+    "image": "beginner_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -949,7 +949,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/bench_dip_t.jpg'),
+    "image": "bench_dip",
     "muscles": [
       {
         "is_primary": 1,
@@ -977,7 +977,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/bench_leg_raise_t.jpg'),
+    "image": "bench_leg_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -993,7 +993,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/bench_side_bridge_t.jpg'),
+    "image": "bench_side_bridge",
     "muscles": [
       {
         "is_primary": 1,
@@ -1009,7 +1009,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/bent_over_row_no_weight_t.jpg'),
+    "image": "bent_over_row_no_weight",
     "muscles": [
       {
         "is_primary": 1,
@@ -1037,7 +1037,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/bicycle_kick_t.jpg'),
+    "image": "bicycle_kick",
     "muscles": [
       {
         "is_primary": 1,
@@ -1057,7 +1057,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/bosu_crossover_lunge_t.jpg'),
+    "image": "bosu_crossover_lunge",
     "muscles": [
       {
         "is_primary": 1,
@@ -1081,7 +1081,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/bosu_crunch_t.jpg'),
+    "image": "bosu_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -1097,7 +1097,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/bosu_jump_squat_t.jpg'),
+    "image": "bosu_jump_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -1121,7 +1121,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/kneeling_pushup_t.jpg'),
+    "image": "kneeling_pushup",
     "muscles": [
       {
         "is_primary": 1,
@@ -1145,7 +1145,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/bosu_lunge_t.jpg'),
+    "image": "bosu_lunge",
     "muscles": [
       {
         "is_primary": 1,
@@ -1169,7 +1169,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/bosu_pushup_t.jpg'),
+    "image": "bosu_pushup",
     "muscles": [
       {
         "is_primary": 1,
@@ -1185,7 +1185,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/bosu_russian_twist_t.jpg'),
+    "image": "bosu_russian_twist",
     "muscles": [
       {
         "is_primary": 1,
@@ -1209,7 +1209,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/bosu_side_bridge_t.jpg'),
+    "image": "bosu_side_bridge",
     "muscles": [
       {
         "is_primary": 1,
@@ -1225,7 +1225,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/bosu_sit_up_t.jpg'),
+    "image": "bosu_sit_up",
     "muscles": [
       {
         "is_primary": 1,
@@ -1241,7 +1241,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/bridge_crunch_t.jpg'),
+    "image": "bridge_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -1257,7 +1257,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/bulgarian_split_squat_t.jpg'),
+    "image": "bulgarian_split_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -1281,7 +1281,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/bulgarian_split_squat_no_weight_t.jpg'),
+    "image": "bulgarian_split_squat_no_weight",
     "muscles": [
       {
         "is_primary": 1,
@@ -1305,7 +1305,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/cable_biceps_curl_t.jpg'),
+    "image": "cable_biceps_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -1325,7 +1325,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/cable_chest_flye_t.jpg'),
+    "image": "cable_chest_flye",
     "muscles": [
       {
         "is_primary": 1,
@@ -1353,7 +1353,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/cable_chest_press_t.jpg'),
+    "image": "cable_chest_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -1381,7 +1381,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/cable_close_grip_pulldown_t.jpg'),
+    "image": "cable_close_grip_pulldown",
     "muscles": [
       {
         "is_primary": 1,
@@ -1409,7 +1409,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/cable_crossover_t.jpg'),
+    "image": "cable_crossover",
     "muscles": [
       {
         "is_primary": 1,
@@ -1437,7 +1437,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/cable_front_raise_t.jpg'),
+    "image": "cable_front_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -1461,7 +1461,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/cable_front_squat_t.jpg'),
+    "image": "cable_front_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -1481,7 +1481,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/cable_hamstring_curl_t.jpg'),
+    "image": "cable_hamstring_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -1501,7 +1501,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/cable_kneeling_twisting_crunch_t.jpg'),
+    "image": "cable_kneeling_twisting_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -1521,7 +1521,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/cable_leg_extension_t.jpg'),
+    "image": "cable_leg_extension",
     "muscles": [
       {
         "is_primary": 1,
@@ -1541,7 +1541,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/cable_rear_lateral_raise_t.jpg'),
+    "image": "cable_rear_lateral_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -1561,7 +1561,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/cable_seated_close_row_t.jpg'),
+    "image": "cable_seated_close_row",
     "muscles": [
       {
         "is_primary": 1,
@@ -1589,7 +1589,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/cable_seated_high_row_t.jpg'),
+    "image": "cable_seated_high_row",
     "muscles": [
       {
         "is_primary": 1,
@@ -1617,7 +1617,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/cable_seated_low_row_t.jpg'),
+    "image": "cable_seated_low_row",
     "muscles": [
       {
         "is_primary": 1,
@@ -1645,7 +1645,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/cable_side_lateral_raise_t.jpg'),
+    "image": "cable_side_lateral_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -1669,7 +1669,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/cable_standing_close_row_t.jpg'),
+    "image": "cable_standing_close_row",
     "muscles": [
       {
         "is_primary": 1,
@@ -1697,7 +1697,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/cable_standing_crunch_t.jpg'),
+    "image": "cable_standing_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -1713,7 +1713,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/cable_straight_arm_pull_down_t.jpg'),
+    "image": "cable_straight_arm_pull_down",
     "muscles": [
       {
         "is_primary": 1,
@@ -1741,7 +1741,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/cable_torso_rotation_t.jpg'),
+    "image": "cable_torso_rotation",
     "muscles": [
       {
         "is_primary": 1,
@@ -1761,7 +1761,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/cable_triceps_overhead_extension_t.jpg'),
+    "image": "cable_triceps_overhead_extension",
     "muscles": [
       {
         "is_primary": 1,
@@ -1781,7 +1781,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/cable_triceps_pushdown_t.jpg'),
+    "image": "cable_triceps_pushdown",
     "muscles": [
       {
         "is_primary": 1,
@@ -1801,7 +1801,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/cable_woodchopper_t.jpg'),
+    "image": "cable_woodchopper",
     "muscles": [
       {
         "is_primary": 1,
@@ -1825,7 +1825,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/calf_raise_t.jpg'),
+    "image": "calf_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -1845,7 +1845,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/chair_dip_no_weight_t.jpg'),
+    "image": "chair_dip_no_weight",
     "muscles": [
       {
         "is_primary": 1,
@@ -1865,7 +1865,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/chinup_t.jpg'),
+    "image": "chinup",
     "muscles": [
       {
         "is_primary": 1,
@@ -1885,7 +1885,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/clam_t.jpg'),
+    "image": "clam",
     "muscles": [
       {
         "is_primary": 1,
@@ -1901,7 +1901,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/concentration_dumbbell_curl_t.jpg'),
+    "image": "concentration_dumbbell_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -1921,7 +1921,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/corkscrew_t.jpg'),
+    "image": "corkscrew",
     "muscles": [
       {
         "is_primary": 1,
@@ -1937,7 +1937,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/crunch_twist_t.jpg'),
+    "image": "crunch_twist",
     "muscles": [
       {
         "is_primary": 1,
@@ -1957,7 +1957,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/cycle_crunch_t.jpg'),
+    "image": "cycle_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -1977,7 +1977,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/dead_lift_t.jpg'),
+    "image": "dead_lift",
     "muscles": [
       {
         "is_primary": 1,
@@ -2001,7 +2001,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/decline_close_grip_bench_press_t.jpg'),
+    "image": "decline_close_grip_bench_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -2029,7 +2029,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/decline_dumbbell_bench_press_t.jpg'),
+    "image": "decline_dumbbell_bench_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -2057,7 +2057,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/decline_dumbbell_fly_t.jpg'),
+    "image": "decline_dumbbell_fly",
     "muscles": [
       {
         "is_primary": 1,
@@ -2085,7 +2085,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/decline_leg_curl_t.jpg'),
+    "image": "decline_leg_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -2101,7 +2101,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/decline_pushup_t.jpg'),
+    "image": "decline_pushup",
     "muscles": [
       {
         "is_primary": 1,
@@ -2121,7 +2121,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/decline_twisting_ab_crunch_t.jpg'),
+    "image": "decline_twisting_ab_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -2141,7 +2141,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/diamond_pushup_t.jpg'),
+    "image": "diamond_pushup",
     "muscles": [
       {
         "is_primary": 1,
@@ -2165,7 +2165,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/dip_t.jpg'),
+    "image": "dip",
     "muscles": [
       {
         "is_primary": 1,
@@ -2193,7 +2193,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/dive_bomber_pushup_t.jpg'),
+    "image": "dive_bomber_pushup",
     "muscles": [
       {
         "is_primary": 1,
@@ -2221,7 +2221,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/drag_curl_t.jpg'),
+    "image": "drag_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -2249,7 +2249,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/dumbbell_bench_press_t.jpg'),
+    "image": "dumbbell_bench_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -2277,7 +2277,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/dumbbell_bench_twist_t.jpg'),
+    "image": "dumbbell_bench_twist",
     "muscles": [
       {
         "is_primary": 1,
@@ -2297,7 +2297,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/dumbbell_one_arm_bent_over_row_t.jpg'),
+    "image": "dumbbell_one_arm_bent_over_row",
     "muscles": [
       {
         "is_primary": 1,
@@ -2325,7 +2325,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/dumbbell_biceps_curl_t.jpg'),
+    "image": "dumbbell_biceps_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -2349,7 +2349,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/dumbbell_calf_jump_t.jpg'),
+    "image": "dumbbell_calf_jump",
     "muscles": [
       {
         "is_primary": 1,
@@ -2373,7 +2373,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/dumbbell_deadlift_t.jpg'),
+    "image": "dumbbell_deadlift",
     "muscles": [
       {
         "is_primary": 1,
@@ -2401,7 +2401,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/dumbbell_flye_t.jpg'),
+    "image": "dumbbell_flye",
     "muscles": [
       {
         "is_primary": 1,
@@ -2429,7 +2429,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/dumbbell_front_raise_t.jpg'),
+    "image": "dumbbell_front_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -2453,7 +2453,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/dumbbell_front_squat_t.jpg'),
+    "image": "dumbbell_front_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -2477,7 +2477,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/dumbbell_incline_bench_press_t.jpg'),
+    "image": "dumbbell_incline_bench_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -2505,7 +2505,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/dumbbell_lateral_raise_t.jpg'),
+    "image": "dumbbell_lateral_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -2529,7 +2529,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/dumbbell_leg_lift_t.jpg'),
+    "image": "dumbbell_leg_lift",
     "muscles": [
       {
         "is_primary": 1,
@@ -2545,7 +2545,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/dumbbell_barbell_lunge_t.jpg'),
+    "image": "dumbbell_barbell_lunge",
     "muscles": [
       {
         "is_primary": 1,
@@ -2565,7 +2565,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/dumbbell_pull_over_t.jpg'),
+    "image": "dumbbell_pull_over",
     "muscles": [
       {
         "is_primary": 1,
@@ -2593,7 +2593,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/dumbbell_pushup_t.jpg'),
+    "image": "dumbbell_pushup",
     "muscles": [
       {
         "is_primary": 1,
@@ -2621,7 +2621,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/dumbbell_reverse_curl_t.jpg'),
+    "image": "dumbbell_reverse_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -2645,7 +2645,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/dumbbell_lunge_t.jpg'),
+    "image": "dumbbell_lunge",
     "muscles": [
       {
         "is_primary": 1,
@@ -2669,7 +2669,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/dumbbell_romanian_deadlift_t.jpg'),
+    "image": "dumbbell_romanian_deadlift",
     "muscles": [
       {
         "is_primary": 1,
@@ -2693,7 +2693,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/row_kickback_t.jpg'),
+    "image": "row_kickback",
     "muscles": [
       {
         "is_primary": 1,
@@ -2721,7 +2721,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/dumbbell_shoulder_press_t.jpg'),
+    "image": "dumbbell_shoulder_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -2745,7 +2745,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/side_bend_t.jpg'),
+    "image": "side_bend",
     "muscles": [
       {
         "is_primary": 1,
@@ -2761,7 +2761,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/dumbbell_single_leg_deadlift_t.jpg'),
+    "image": "dumbbell_single_leg_deadlift",
     "muscles": [
       {
         "is_primary": 1,
@@ -2785,7 +2785,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/dumbbell_snatch_t.jpg'),
+    "image": "dumbbell_snatch",
     "muscles": [
       {
         "is_primary": 1,
@@ -2809,7 +2809,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/dumbbell_toe_touch_t.jpg'),
+    "image": "dumbbell_toe_touch",
     "muscles": [
       {
         "is_primary": 1,
@@ -2825,7 +2825,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/dumbbell_torso_twist_t.jpg'),
+    "image": "dumbbell_torso_twist",
     "muscles": [
       {
         "is_primary": 1,
@@ -2841,7 +2841,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/dumbbell_upright_row_t.jpg'),
+    "image": "dumbbell_upright_row",
     "muscles": [
       {
         "is_primary": 1,
@@ -2861,7 +2861,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/wrist_twist_t.jpg'),
+    "image": "wrist_twist",
     "muscles": [
       {
         "is_primary": 1,
@@ -2877,7 +2877,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/external_rotation_no_weight_t.jpg'),
+    "image": "external_rotation_no_weight",
     "muscles": [
       {
         "is_primary": 1,
@@ -2893,7 +2893,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/figure_8_crunch_t.jpg'),
+    "image": "figure_8_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -2909,7 +2909,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/french_press_t.jpg'),
+    "image": "french_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -2929,7 +2929,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/front_plate_raise_t.jpg'),
+    "image": "front_plate_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -2945,7 +2945,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/front_squat_t.jpg'),
+    "image": "front_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -2965,7 +2965,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/goblet_squat_t.jpg'),
+    "image": "goblet_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -2985,7 +2985,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/golf_squat_t.jpg'),
+    "image": "golf_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -3005,7 +3005,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/good_morning_t.jpg'),
+    "image": "good_morning",
     "muscles": [
       {
         "is_primary": 1,
@@ -3025,7 +3025,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/hack_squat_t.jpg'),
+    "image": "hack_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -3041,7 +3041,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/hammer_curl_t.jpg'),
+    "image": "hammer_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -3065,7 +3065,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/hanging_knee_raise_t.jpg'),
+    "image": "hanging_knee_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -3085,7 +3085,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/hanging_leg_raise_t.jpg'),
+    "image": "hanging_leg_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -3105,7 +3105,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/high_pull_t.jpg'),
+    "image": "high_pull",
     "muscles": [
       {
         "is_primary": 1,
@@ -3121,7 +3121,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/high_woodchopper_t.jpg'),
+    "image": "high_woodchopper",
     "muscles": [
       {
         "is_primary": 1,
@@ -3141,7 +3141,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/incline_barbell_bench_press_t.jpg'),
+    "image": "incline_barbell_bench_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -3169,7 +3169,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/incline_dumbbell_curl_t.jpg'),
+    "image": "incline_dumbbell_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -3193,7 +3193,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/incline_dumbbell_fly_t.jpg'),
+    "image": "incline_dumbbell_fly",
     "muscles": [
       {
         "is_primary": 1,
@@ -3221,7 +3221,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/incline_hammer_curl_t.jpg'),
+    "image": "incline_hammer_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -3241,7 +3241,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/incline_pushup_t.jpg'),
+    "image": "incline_pushup",
     "muscles": [
       {
         "is_primary": 1,
@@ -3261,7 +3261,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/inclined_reverse_crunch_t.jpg'),
+    "image": "inclined_reverse_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -3281,7 +3281,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/incline_reverse_curl_t.jpg'),
+    "image": "incline_reverse_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -3305,7 +3305,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/incline_shoulder_rotation_t.jpg'),
+    "image": "incline_shoulder_rotation",
     "muscles": [
       {
         "is_primary": 1,
@@ -3321,7 +3321,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/incline_y_raise_t.jpg'),
+    "image": "incline_y_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -3341,7 +3341,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/jackknife_t.jpg'),
+    "image": "jackknife",
     "muscles": [
       {
         "is_primary": 1,
@@ -3365,7 +3365,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/kettlebell_clean_t.jpg'),
+    "image": "kettlebell_clean",
     "muscles": [
       {
         "is_primary": 1,
@@ -3393,7 +3393,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/kettlebell_crunch_t.jpg'),
+    "image": "kettlebell_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -3409,7 +3409,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/kettlebell_curl_t.jpg'),
+    "image": "kettlebell_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -3429,7 +3429,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/kettlebell_french_press_t.jpg'),
+    "image": "kettlebell_french_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -3449,7 +3449,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/kettlebell_high_pull_t.jpg'),
+    "image": "kettlebell_high_pull",
     "muscles": [
       {
         "is_primary": 1,
@@ -3477,7 +3477,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/kettlebell_kickback_t.jpg'),
+    "image": "kettlebell_kickback",
     "muscles": [
       {
         "is_primary": 1,
@@ -3497,7 +3497,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/kettlebell_overhead_press_t.jpg'),
+    "image": "kettlebell_overhead_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -3517,7 +3517,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/kettlebell_pullover_t.jpg'),
+    "image": "kettlebell_pullover",
     "muscles": [
       {
         "is_primary": 1,
@@ -3537,7 +3537,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/kettlebell_pushup_t.jpg'),
+    "image": "kettlebell_pushup",
     "muscles": [
       {
         "is_primary": 1,
@@ -3565,7 +3565,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/kettlebell_rear_delt_row_t.jpg'),
+    "image": "kettlebell_rear_delt_row",
     "muscles": [
       {
         "is_primary": 1,
@@ -3581,7 +3581,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/kettlebell_renegade_row_t.jpg'),
+    "image": "kettlebell_renegade_row",
     "muscles": [
       {
         "is_primary": 1,
@@ -3609,7 +3609,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/kettlebell_russian_twist_t.jpg'),
+    "image": "kettlebell_russian_twist",
     "muscles": [
       {
         "is_primary": 1,
@@ -3625,7 +3625,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/kettlebell_side_bend_t.jpg'),
+    "image": "kettlebell_side_bend",
     "muscles": [
       {
         "is_primary": 1,
@@ -3641,7 +3641,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/kettlebell_straight_leg_deadlift_t.jpg'),
+    "image": "kettlebell_straight_leg_deadlift",
     "muscles": [
       {
         "is_primary": 1,
@@ -3661,7 +3661,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/kettlebell_upright_row_t.jpg'),
+    "image": "kettlebell_upright_row",
     "muscles": [
       {
         "is_primary": 1,
@@ -3685,7 +3685,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/kettlebells_bent_over_row_t.jpg'),
+    "image": "kettlebells_bent_over_row",
     "muscles": [
       {
         "is_primary": 1,
@@ -3713,7 +3713,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/kettlebells_side_lunge_t.jpg'),
+    "image": "kettlebells_side_lunge",
     "muscles": [
       {
         "is_primary": 1,
@@ -3733,7 +3733,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/kettlebells_squat_t.jpg'),
+    "image": "kettlebells_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -3753,7 +3753,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/kneeling_cable_crunch_t.jpg'),
+    "image": "kneeling_cable_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -3773,7 +3773,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/lat_pulldown_t.jpg'),
+    "image": "lat_pulldown",
     "muscles": [
       {
         "is_primary": 1,
@@ -3801,7 +3801,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/lunging_step_up_t.jpg'),
+    "image": "lunging_step_up",
     "muscles": [
       {
         "is_primary": 1,
@@ -3825,7 +3825,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/lying_hip_extension_no_weight_t.jpg'),
+    "image": "lying_hip_extension_no_weight",
     "muscles": [
       {
         "is_primary": 1,
@@ -3845,7 +3845,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/lying_one_arm_extension_t.jpg'),
+    "image": "lying_one_arm_extension",
     "muscles": [
       {
         "is_primary": 1,
@@ -3865,7 +3865,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/lying_pullover_t.jpg'),
+    "image": "lying_pullover",
     "muscles": [
       {
         "is_primary": 1,
@@ -3885,7 +3885,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/lying_triceps_extension_t.jpg'),
+    "image": "lying_triceps_extension",
     "muscles": [
       {
         "is_primary": 1,
@@ -3905,7 +3905,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/machine_biceps_curl_t.jpg'),
+    "image": "machine_biceps_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -3925,7 +3925,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/machine_chest_flye_t.jpg'),
+    "image": "machine_chest_flye",
     "muscles": [
       {
         "is_primary": 1,
@@ -3941,7 +3941,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/machine_chest_press_t.jpg'),
+    "image": "machine_chest_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -3957,7 +3957,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/machine_lateral_pull_down_t.jpg'),
+    "image": "machine_lateral_pull_down",
     "muscles": [
       {
         "is_primary": 1,
@@ -3985,7 +3985,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/machine_lateral_raise_t.jpg'),
+    "image": "machine_lateral_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -4009,7 +4009,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/machine_leg_curl_t.jpg'),
+    "image": "machine_leg_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -4029,7 +4029,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/machine_leg_extension_t.jpg'),
+    "image": "machine_leg_extension",
     "muscles": [
       {
         "is_primary": 1,
@@ -4045,7 +4045,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/machine_leg_press_t.jpg'),
+    "image": "machine_leg_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -4069,7 +4069,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/machine_rear_raise_t.jpg'),
+    "image": "machine_rear_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -4089,7 +4089,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/machine_shoulder_press_t.jpg'),
+    "image": "machine_shoulder_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -4109,7 +4109,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/machine_triceps_extension_t.jpg'),
+    "image": "machine_triceps_extension",
     "muscles": [
       {
         "is_primary": 1,
@@ -4129,7 +4129,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/medicine_ball_toe_touch_t.jpg'),
+    "image": "medicine_ball_toe_touch",
     "muscles": [
       {
         "is_primary": 1,
@@ -4145,7 +4145,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/modified_pushup_t.jpg'),
+    "image": "modified_pushup",
     "muscles": [
       {
         "is_primary": 1,
@@ -4165,7 +4165,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/modified_v_sit_t.jpg'),
+    "image": "modified_v_sit",
     "muscles": [
       {
         "is_primary": 1,
@@ -4185,7 +4185,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/neutral_grip_pullup_t.jpg'),
+    "image": "neutral_grip_pullup",
     "muscles": [
       {
         "is_primary": 1,
@@ -4213,7 +4213,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/oblique_vup_t.jpg'),
+    "image": "oblique_vup",
     "muscles": [
       {
         "is_primary": 1,
@@ -4233,7 +4233,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/offset_squat_t.jpg'),
+    "image": "offset_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -4253,7 +4253,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/one_arm_row_t.jpg'),
+    "image": "one_arm_row",
     "muscles": [
       {
         "is_primary": 1,
@@ -4281,7 +4281,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/overhead_bar_press_t.jpg'),
+    "image": "overhead_bar_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -4301,7 +4301,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/overhead_triceps_extension_t.jpg'),
+    "image": "overhead_triceps_extension",
     "muscles": [
       {
         "is_primary": 1,
@@ -4325,7 +4325,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/prallel_bar_dip_t.jpg'),
+    "image": "prallel_bar_dip",
     "muscles": [
       {
         "is_primary": 1,
@@ -4353,7 +4353,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/power_clean_t.jpg'),
+    "image": "power_clean",
     "muscles": [
       {
         "is_primary": 1,
@@ -4377,7 +4377,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/prisoner_squat_t.jpg'),
+    "image": "prisoner_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -4401,7 +4401,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/prone_cobra_t.jpg'),
+    "image": "prone_cobra",
     "muscles": [
       {
         "is_primary": 1,
@@ -4421,7 +4421,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/prone_curl_t.jpg'),
+    "image": "prone_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -4441,7 +4441,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/prone_hammer_curl_t.jpg'),
+    "image": "prone_hammer_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -4469,7 +4469,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/prone_reverse_curl_t.jpg'),
+    "image": "prone_reverse_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -4489,7 +4489,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/pulse_up_t.jpg'),
+    "image": "pulse_up",
     "muscles": [
       {
         "is_primary": 1,
@@ -4509,7 +4509,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/push_press_t.jpg'),
+    "image": "push_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -4533,7 +4533,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/pushup_t.jpg'),
+    "image": "pushup",
     "muscles": [
       {
         "is_primary": 1,
@@ -4549,7 +4549,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/rear_lateral_raise_t.jpg'),
+    "image": "rear_lateral_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -4573,7 +4573,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/resistance_band_biceps_curl_t.jpg'),
+    "image": "resistance_band_biceps_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -4593,7 +4593,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/resistance_band_close_row_t.jpg'),
+    "image": "resistance_band_close_row",
     "muscles": [
       {
         "is_primary": 1,
@@ -4621,7 +4621,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/resistance_band_crunch_t.jpg'),
+    "image": "resistance_band_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -4641,7 +4641,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/resistance_band_curl_t.jpg'),
+    "image": "resistance_band_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -4661,7 +4661,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/resistance_band_hip_raise_t.jpg'),
+    "image": "resistance_band_hip_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -4677,7 +4677,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/resistance_band_kneeling_crunch_t.jpg'),
+    "image": "resistance_band_kneeling_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -4697,7 +4697,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/resistance_band_lunge_t.jpg'),
+    "image": "resistance_band_lunge",
     "muscles": [
       {
         "is_primary": 1,
@@ -4721,7 +4721,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/resistance_band_overhead_press_t.jpg'),
+    "image": "resistance_band_overhead_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -4737,7 +4737,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/resistance_band_overhead_triceps_extension_t.jpg'),
+    "image": "resistance_band_overhead_triceps_extension",
     "muscles": [
       {
         "is_primary": 1,
@@ -4757,7 +4757,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/resistance_band_push_up_t.jpg'),
+    "image": "resistance_band_push_up",
     "muscles": [
       {
         "is_primary": 1,
@@ -4777,7 +4777,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/resistance_band_shrug_t.jpg'),
+    "image": "resistance_band_shrug",
     "muscles": [
       {
         "is_primary": 1,
@@ -4793,7 +4793,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/reverse_crunch_t.jpg'),
+    "image": "reverse_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -4813,7 +4813,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/reverse_hyperextension_t.jpg'),
+    "image": "reverse_hyperextension",
     "muscles": [
       {
         "is_primary": 1,
@@ -4833,7 +4833,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/reverse_wrist_curl_t.jpg'),
+    "image": "reverse_wrist_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -4849,7 +4849,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/rollback_t.jpg'),
+    "image": "rollback",
     "muscles": [
       {
         "is_primary": 1,
@@ -4865,7 +4865,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/romanian_barbell_deadlift_t.jpg'),
+    "image": "romanian_barbell_deadlift",
     "muscles": [
       {
         "is_primary": 1,
@@ -4889,7 +4889,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/romanian_deadlift_t.jpg'),
+    "image": "romanian_deadlift",
     "muscles": [
       {
         "is_primary": 1,
@@ -4913,7 +4913,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/rotational_pushup_t.jpg'),
+    "image": "rotational_pushup",
     "muscles": [
       {
         "is_primary": 1,
@@ -4941,7 +4941,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/rotator_cuff_external_t.jpg'),
+    "image": "rotator_cuff_external",
     "muscles": [
       {
         "is_primary": 1,
@@ -4957,7 +4957,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/rotator_cuff_internal_t.jpg'),
+    "image": "rotator_cuff_internal",
     "muscles": [
       {
         "is_primary": 1,
@@ -4973,7 +4973,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/saxon_side_bend_t.jpg'),
+    "image": "saxon_side_bend",
     "muscles": [
       {
         "is_primary": 1,
@@ -4993,7 +4993,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/scaption_t.jpg'),
+    "image": "scaption",
     "muscles": [
       {
         "is_primary": 1,
@@ -5013,7 +5013,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/seated_bent_over_row_t.jpg'),
+    "image": "seated_bent_over_row",
     "muscles": [
       {
         "is_primary": 1,
@@ -5037,7 +5037,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/seated_dumbbell_shoulder_press_t.jpg'),
+    "image": "seated_dumbbell_shoulder_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -5061,7 +5061,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/seated_front_raise_t.jpg'),
+    "image": "seated_front_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -5085,7 +5085,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/seated_jacknife_t.jpg'),
+    "image": "seated_jacknife",
     "muscles": [
       {
         "is_primary": 1,
@@ -5105,7 +5105,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/seated_preacher_curl_t.jpg'),
+    "image": "seated_preacher_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -5129,7 +5129,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/seated_reverse_fly_t.jpg'),
+    "image": "seated_reverse_fly",
     "muscles": [
       {
         "is_primary": 1,
@@ -5153,7 +5153,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/seated_triceps_extension_t.jpg'),
+    "image": "seated_triceps_extension",
     "muscles": [
       {
         "is_primary": 1,
@@ -5177,7 +5177,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/seated_twist_t.jpg'),
+    "image": "seated_twist",
     "muscles": [
       {
         "is_primary": 1,
@@ -5197,7 +5197,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/shrug_t.jpg'),
+    "image": "shrug",
     "muscles": [
       {
         "is_primary": 1,
@@ -5213,7 +5213,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/side_bridge_t.jpg'),
+    "image": "side_bridge",
     "muscles": [
       {
         "is_primary": 1,
@@ -5229,7 +5229,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/side_crunch_t.jpg'),
+    "image": "side_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -5249,7 +5249,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/side_lunge_t.jpg'),
+    "image": "side_lunge",
     "muscles": [
       {
         "is_primary": 1,
@@ -5269,7 +5269,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/single_arm_external_rotation_t.jpg'),
+    "image": "single_arm_external_rotation",
     "muscles": [
       {
         "is_primary": 1,
@@ -5293,7 +5293,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/single_arm_pulldown_t.jpg'),
+    "image": "single_arm_pulldown",
     "muscles": [
       {
         "is_primary": 1,
@@ -5321,7 +5321,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/single_leg_decline_pushup_t.jpg'),
+    "image": "single_leg_decline_pushup",
     "muscles": [
       {
         "is_primary": 1,
@@ -5341,7 +5341,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/single_leg_squat_t.jpg'),
+    "image": "single_leg_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -5365,7 +5365,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/single_leg_standing_calf_raise_t.jpg'),
+    "image": "single_leg_standing_calf_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -5385,7 +5385,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/situp_t.jpg'),
+    "image": "situp",
     "muscles": [
       {
         "is_primary": 1,
@@ -5409,7 +5409,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/ski_squat_no_weight_t.jpg'),
+    "image": "ski_squat_no_weight",
     "muscles": [
       {
         "is_primary": 1,
@@ -5429,7 +5429,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/sprinter_t.jpg'),
+    "image": "sprinter",
     "muscles": [
       {
         "is_primary": 1,
@@ -5449,7 +5449,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/stabilizing_pushup_t.jpg'),
+    "image": "stabilizing_pushup",
     "muscles": [
       {
         "is_primary": 1,
@@ -5469,7 +5469,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/standing_biceps_curl_t.jpg'),
+    "image": "standing_biceps_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -5493,7 +5493,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/standing_concentration_curl_t.jpg'),
+    "image": "standing_concentration_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -5517,7 +5517,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/standing_calf_raise_t.jpg'),
+    "image": "standing_calf_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -5537,7 +5537,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/standing_scarecrow_t.jpg'),
+    "image": "standing_scarecrow",
     "muscles": [
       {
         "is_primary": 1,
@@ -5553,7 +5553,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/standing_oblique_crunch_t.jpg'),
+    "image": "standing_oblique_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -5569,7 +5569,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/standing_torso_twist_t.jpg'),
+    "image": "standing_torso_twist",
     "muscles": [
       {
         "is_primary": 1,
@@ -5589,7 +5589,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/standing_triceps_extension_t.jpg'),
+    "image": "standing_triceps_extension",
     "muscles": [
       {
         "is_primary": 1,
@@ -5609,7 +5609,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/standing_wrist_curl_t.jpg'),
+    "image": "standing_wrist_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -5625,7 +5625,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/steam_engine_t.jpg'),
+    "image": "steam_engine",
     "muscles": [
       {
         "is_primary": 1,
@@ -5645,7 +5645,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/sumo_squat_t.jpg'),
+    "image": "sumo_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -5665,7 +5665,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/superman_t.jpg'),
+    "image": "superman",
     "muscles": [
       {
         "is_primary": 1,
@@ -5693,7 +5693,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/swiss_ball_close_row_t.jpg'),
+    "image": "swiss_ball_close_row",
     "muscles": [
       {
         "is_primary": 1,
@@ -5721,7 +5721,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/swiss_ball_crunch_t.jpg'),
+    "image": "swiss_ball_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -5741,7 +5741,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/swiss_ball_french_press_t.jpg'),
+    "image": "swiss_ball_french_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -5761,7 +5761,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/swiss_ball_front_raise_t.jpg'),
+    "image": "swiss_ball_front_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -5777,7 +5777,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/swiss_ball_glute_bridge_t.jpg'),
+    "image": "swiss_ball_glute_bridge",
     "muscles": [
       {
         "is_primary": 1,
@@ -5797,7 +5797,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/swiss_ball_kickback_t.jpg'),
+    "image": "swiss_ball_kickback",
     "muscles": [
       {
         "is_primary": 1,
@@ -5817,7 +5817,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/swiss_ball_leg_curl_t.jpg'),
+    "image": "swiss_ball_leg_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -5837,7 +5837,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/swiss_ball_oblique_back_extension_t.jpg'),
+    "image": "swiss_ball_oblique_back_extension",
     "muscles": [
       {
         "is_primary": 1,
@@ -5861,7 +5861,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/swiss_ball_oblique_crunch_t.jpg'),
+    "image": "swiss_ball_oblique_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -5881,7 +5881,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/swiss_ball_pike_pushup_t.jpg'),
+    "image": "swiss_ball_pike_pushup",
     "muscles": [
       {
         "is_primary": 1,
@@ -5901,7 +5901,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/swiss_ball_preacher_curl_t.jpg'),
+    "image": "swiss_ball_preacher_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -5925,7 +5925,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/swiss_ball_press_t.jpg'),
+    "image": "swiss_ball_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -5941,7 +5941,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/swiss_ball_pullover_t.jpg'),
+    "image": "swiss_ball_pullover",
     "muscles": [
       {
         "is_primary": 1,
@@ -5969,7 +5969,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/swiss_ball_pushup_t.jpg'),
+    "image": "swiss_ball_pushup",
     "muscles": [
       {
         "is_primary": 1,
@@ -5985,7 +5985,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/swiss_ball_reverse_crunch_t.jpg'),
+    "image": "swiss_ball_reverse_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -6005,7 +6005,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/swiss_ball_seated_curl_t.jpg'),
+    "image": "swiss_ball_seated_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -6029,7 +6029,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/swiss_ball_shoulder_press_t.jpg'),
+    "image": "swiss_ball_shoulder_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -6053,7 +6053,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/swiss_ball_shrug_t.jpg'),
+    "image": "swiss_ball_shrug",
     "muscles": [
       {
         "is_primary": 1,
@@ -6073,7 +6073,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/swiss_ball_split_squat_t.jpg'),
+    "image": "swiss_ball_split_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -6101,7 +6101,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/swiss_ball_torso_twist_t.jpg'),
+    "image": "swiss_ball_torso_twist",
     "muscles": [
       {
         "is_primary": 1,
@@ -6117,7 +6117,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/swiss_ball_trunk_rotation_t.jpg'),
+    "image": "swiss_ball_trunk_rotation",
     "muscles": [
       {
         "is_primary": 1,
@@ -6137,7 +6137,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/swiss_ball_wall_squat_t.jpg'),
+    "image": "swiss_ball_wall_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -6157,7 +6157,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/t_bar_bent_over_row_t.jpg'),
+    "image": "t_bar_bent_over_row",
     "muscles": [
       {
         "is_primary": 1,
@@ -6185,7 +6185,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/t_pushup_t.jpg'),
+    "image": "t_pushup",
     "muscles": [
       {
         "is_primary": 1,
@@ -6205,7 +6205,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/toe_touch_t.jpg'),
+    "image": "toe_touch",
     "muscles": [
       {
         "is_primary": 1,
@@ -6221,7 +6221,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/towel_fly_no_weight_t.jpg'),
+    "image": "towel_fly_no_weight",
     "muscles": [
       {
         "is_primary": 1,
@@ -6249,7 +6249,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/traditional_crunch_t.jpg'),
+    "image": "traditional_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -6269,7 +6269,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/triceps_assisted_dip_t.jpg'),
+    "image": "triceps_assisted_dip",
     "muscles": [
       {
         "is_primary": 1,
@@ -6297,7 +6297,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/triceps_kickback_t.jpg'),
+    "image": "triceps_kickback",
     "muscles": [
       {
         "is_primary": 1,
@@ -6317,7 +6317,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/twisting_crunch_t.jpg'),
+    "image": "twisting_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -6333,7 +6333,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/twisting_hip_raise_t.jpg'),
+    "image": "twisting_hip_raise",
     "muscles": [
       {
         "is_primary": 1,
@@ -6353,7 +6353,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/twisting_shoulder_press_t.jpg'),
+    "image": "twisting_shoulder_press",
     "muscles": [
       {
         "is_primary": 1,
@@ -6381,7 +6381,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/twisting_windmill_t.jpg'),
+    "image": "twisting_windmill",
     "muscles": [
       {
         "is_primary": 1,
@@ -6397,7 +6397,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/two_point_bridge_t.jpg'),
+    "image": "two_point_bridge",
     "muscles": [
       {
         "is_primary": 1,
@@ -6425,7 +6425,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/unilateral_high_cable_fly_t.jpg'),
+    "image": "unilateral_high_cable_fly",
     "muscles": [
       {
         "is_primary": 1,
@@ -6445,7 +6445,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/unilateral_low_cable_fly_t.jpg'),
+    "image": "unilateral_low_cable_fly",
     "muscles": [
       {
         "is_primary": 1,
@@ -6469,7 +6469,7 @@ const EXERCISES = [
         "musclegroup_id": 6
       }
     ],
-    "image": require('../img/upright_row_t.jpg'),
+    "image": "upright_row",
     "muscles": [
       {
         "is_primary": 1,
@@ -6497,7 +6497,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/v_up_t.jpg'),
+    "image": "v_up",
     "muscles": [
       {
         "is_primary": 1,
@@ -6521,7 +6521,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/walking_lunge_t.jpg'),
+    "image": "walking_lunge",
     "muscles": [
       {
         "is_primary": 1,
@@ -6541,7 +6541,7 @@ const EXERCISES = [
         "musclegroup_id": 5
       }
     ],
-    "image": require('../img/walking_lunge_twist_t.jpg'),
+    "image": "walking_lunge_twist",
     "muscles": [
       {
         "is_primary": 1,
@@ -6565,7 +6565,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/weighted_chop_t.jpg'),
+    "image": "weighted_chop",
     "muscles": [
       {
         "is_primary": 1,
@@ -6589,7 +6589,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/weighted_crunch_t.jpg'),
+    "image": "weighted_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -6613,7 +6613,7 @@ const EXERCISES = [
         "musclegroup_id": 1
       }
     ],
-    "image": require('../img/weighted_pushup_t.jpg'),
+    "image": "weighted_pushup",
     "muscles": [
       {
         "is_primary": 1,
@@ -6641,7 +6641,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/weighted_swiss_ball_crunch_t.jpg'),
+    "image": "weighted_swiss_ball_crunch",
     "muscles": [
       {
         "is_primary": 1,
@@ -6661,7 +6661,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/wheel_rollout_t.jpg'),
+    "image": "wheel_rollout",
     "muscles": [
       {
         "is_primary": 1,
@@ -6681,7 +6681,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/wrist_curl_t.jpg'),
+    "image": "wrist_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -6697,7 +6697,7 @@ const EXERCISES = [
         "musclegroup_id": 3
       }
     ],
-    "image": require('../img/zercher_squat_t.jpg'),
+    "image": "zercher_squat",
     "muscles": [
       {
         "is_primary": 1,
@@ -6721,7 +6721,7 @@ const EXERCISES = [
         "musclegroup_id": 2
       }
     ],
-    "image": require('../img/zottman_curl_t.jpg'),
+    "image": "zottman_curl",
     "muscles": [
       {
         "is_primary": 1,
@@ -6745,63 +6745,63 @@ const EXERCISES = [
   },
   {
     "muscle_groups": [],
-    "image": require('../img/cycling_t.jpg'),
+    "image": "cycling",
     "muscles": [],
     "id": 318,
     "name": "cycling"
   },
   {
     "muscle_groups": [],
-    "image": require('../img/elliptical_t.jpg'),
+    "image": "elliptical",
     "muscles": [],
     "id": 319,
     "name": "elliptical"
   },
   {
     "muscle_groups": [],
-    "image": require('../img/jogging_t.jpg'),
+    "image": "jogging",
     "muscles": [],
     "id": 320,
     "name": "jogging"
   },
   {
     "muscle_groups": [],
-    "image": require('../img/jump_rope_t.jpg'),
+    "image": "jump_rope",
     "muscles": [],
     "id": 321,
     "name": "jump rope"
   },
   {
     "muscle_groups": [],
-    "image": require('../img/rowing_t.jpg'),
+    "image": "rowing",
     "muscles": [],
     "id": 322,
     "name": "rowing"
   },
   {
     "muscle_groups": [],
-    "image": require('../img/step_machine_t.jpg'),
+    "image": "step_machine",
     "muscles": [],
     "id": 323,
     "name": "step machine"
   },
   {
     "muscle_groups": [],
-    "image": require('../img/swimming_t.jpg'),
+    "image": "swimming",
     "muscles": [],
     "id": 324,
     "name": "swimming"
   },
   {
     "muscle_groups": [],
-    "image": require('../img/treadmill_t.jpg'),
+    "image": "treadmill",
     "muscles": [],
     "id": 325,
     "name": "treadmill"
   },
   {
     "muscle_groups": [],
-    "image": require('../img/tennis_t.jpg'),
+    "image": "tennis",
     "muscles": [],
     "id": 326,
     "name": "tennis"
@@ -6940,7 +6940,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/elevated_feet_plank_t.jpg'),
+    "image": "elevated_feet_plank",
     "muscles": [
       {
         "is_primary": 1,
@@ -6960,7 +6960,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/inclined_plank_t.jpg'),
+    "image": "inclined_plank",
     "muscles": [
       {
         "is_primary": 1,
@@ -6980,7 +6980,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/kneeling_plank_t.jpg'),
+    "image": "kneeling_plank",
     "muscles": [
       {
         "is_primary": 1,
@@ -7000,7 +7000,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/plank_t.jpg'),
+    "image": "plank",
     "muscles": [
       {
         "is_primary": 1,
@@ -7020,7 +7020,7 @@ const EXERCISES = [
         "musclegroup_id": 4
       }
     ],
-    "image": require('../img/side_plank_t.jpg'),
+    "image": "side_plank",
     "muscles": [
       {
         "is_primary": 1,
