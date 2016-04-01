@@ -2,14 +2,14 @@ import Realm from 'realm';
 
 
 const realm = new Realm({
-  schemaVersion: 12,
+  schemaVersion: 14,
   schema: [
     {
-      name: 'Foo',
+      name: 'ActivitySet',
       properties: {
         recordDate: Realm.Types.DATE,
         workoutDate: Realm.Types.DATE,
-        exerciseId: Realm.Types.INT,
+        exercise: 'Exercise',
         reps: Realm.Types.INT,
         weightValue: Realm.Types.INT,
         weightUnits: Realm.Types.STRING,

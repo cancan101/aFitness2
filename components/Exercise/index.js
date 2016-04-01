@@ -53,11 +53,13 @@ class ExerciseInner extends Component {
     const workoutDate = new Date(Date.UTC(recordDate.getFullYear(), recordDate.getMonth(), recordDate.getDate()));
 
     realm.write(() => {
-     realm.create('Foo', {
+     realm.create('ActivitySet', {
        recordDate,
        workoutDate,
-       exerciseId: this.props.exercise.id,
-       reps: this.state.reps, weightValue: this.state.weightValue, weightUnits: 'lbs'
+       exercise: this.props.exercise,
+       reps: this.state.reps,
+       weightValue: this.state.weightValue,
+       weightUnits: 'lbs',
      });
     });
   };
@@ -120,7 +122,7 @@ class ExerciseInner extends Component {
 export default class Exercise extends Component {
   constructor(props){
     super(props);
-    this.state = {item: realm.objects('Foo').filtered(`exerciseId = ${this.props.exercise.id}`)};
+    this.state = {item: realm.objects('ActivitySet').filtered(`exercise.id = ${this.props.exercise.id}`)};
   }
   render() {
     return <ExerciseInner {...this.props} item={this.state.item} />

@@ -37,12 +37,12 @@ export default class Logs extends Component {
 
   render(){
     const logs = map(
-      groupBy(realm.objects('Foo'), 'workoutDate'),
+      groupBy(realm.objects('ActivitySet'), 'workoutDate'),
       (v, workoutDate) => {
         return {
           workoutDate: v[0].workoutDate,
           setCount: v.length,
-          exerciseCount: uniqBy(v, 'exerciseId').length
+          exerciseCount: uniqBy(v, 'exercise.id').length
         }
       }
     );
