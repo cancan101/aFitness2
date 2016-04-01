@@ -56,6 +56,7 @@ export default class Toolbar extends React.Component {
         titleColor={TOOLBAR_TITLE_COLOR}
         style={styles.toolbar}
         actions={route.extraActions || []}
+        onActionSelected={i => route.extraActions[i].onSelected()}
       />
     );
   }

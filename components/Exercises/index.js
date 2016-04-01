@@ -1,7 +1,6 @@
 import React, {
   Component,
   Image,
-  ListView,
   Picker,
   Text,
   View,
@@ -10,6 +9,7 @@ import React, {
 import Listitem from 'react-native-listitem';
 import ListitemStyles from 'react-native-listitem/styles';
 import sortBy from 'lodash/sortBy';
+import { ListView } from 'realm/react-native';
 
 import { MainRouter } from '../../routers';
 
@@ -21,9 +21,29 @@ import IMAGES from '../../constants/Images';
 
 const FILTER_ALL = 'all';
 
+import realm from '../../realm';
+
+
+function loadData() {
+  const exercises = realm.objects('Exercise');
+  const needsLoad = EXERCISES.filter((i) => exercises.filtered(`id = ${i.id}`).length == 0);
+  console.log("Loading", needsLoad.length);
+  realm.write(() => {
+    needsLoad.forEach(ex => {
+      realm.create('Exercise', {
+        id: ex.id,
+        name: ex.name,
+        image: ex.image || '',
+        muscleGroupId: ex.muscle_groups[0] ? ex.muscle_groups[0].musclegroup_id : -1,
+        muscles: ex.muscles.map(m => {return {isPrimary: m.is_primary == 1, muscleId: m.muscle_id}})
+      });
+    });
+  });
+}
+
 export default class Exercises extends Component {
   static extraActions = [
-    {title: 'Add', show: 'always', iconName: 'add',}
+    {title: 'Add', show: 'always', iconName: 'add', onSelected: () => loadData()}
   ];
 
   constructor(props){
@@ -116,18 +136,14 @@ export default class Exercises extends Component {
   };
 
   render(){
-    let exercisesFiltered = EXERCISES;
+    let exercisesFiltered = realm.objects('Exercise');
     if(this.state.selectedMuscle != FILTER_ALL) {
-      exercisesFiltered = EXERCISES.filter(
-        ex => ex.muscles.filter(
-          m => m.muscle_id === this.state.selectedMuscle).length > 0);
+      exercisesFiltered = exercisesFiltered.filtered(`muscles.muscleId = ${this.state.selectedMuscle}`);
     }else if(this.state.selectedMuscleGroup != FILTER_ALL) {
-      exercisesFiltered = EXERCISES.filter(
-        ex => ex.muscle_groups.filter(
-          mg => mg.musclegroup_id === this.state.selectedMuscleGroup).length > 0);
+      exercisesFiltered = exercisesFiltered.filtered(`muscleGroupId = ${this.state.selectedMuscleGroup}`);
     }
 
-    exercisesFiltered = sortBy(exercisesFiltered, ex => ex.name.toUpperCase());
+    exercisesFiltered = exercisesFiltered.sorted('name');
 
     return (
       <ListView
