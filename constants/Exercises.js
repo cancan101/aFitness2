@@ -1,7 +1,6 @@
 const EXERCISES = [
   {
     "id": 2,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 2
@@ -25,7 +24,6 @@ const EXERCISES = [
   },
   {
     "id": 3,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 5
@@ -45,7 +43,6 @@ const EXERCISES = [
   },
   {
     "id": 5,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 6
@@ -61,7 +58,6 @@ const EXERCISES = [
   },
   {
     "id": 6,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 6
@@ -77,7 +73,6 @@ const EXERCISES = [
   },
   {
     "id": 8,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 5
@@ -93,7 +88,6 @@ const EXERCISES = [
   },
   {
     "id": 10,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 1
@@ -109,7 +103,6 @@ const EXERCISES = [
   },
   {
     "id": 11,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 2
@@ -125,7 +118,6 @@ const EXERCISES = [
   },
   {
     "id": 12,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 1
@@ -141,7 +133,6 @@ const EXERCISES = [
   },
   {
     "id": 13,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 2
@@ -157,7 +148,6 @@ const EXERCISES = [
   },
   {
     "id": 15,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 3
@@ -173,7 +163,6 @@ const EXERCISES = [
   },
   {
     "id": 16,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 2
@@ -189,7 +178,6 @@ const EXERCISES = [
   },
   {
     "id": 17,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 3
@@ -205,7 +193,6 @@ const EXERCISES = [
   },
   {
     "id": 18,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 5
@@ -221,7 +208,6 @@ const EXERCISES = [
   },
   {
     "id": 19,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 5
@@ -6344,7 +6330,6 @@ const EXERCISES = [
   },
   {
     "id": 327,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 2
@@ -6360,7 +6345,6 @@ const EXERCISES = [
   },
   {
     "id": 328,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 2
@@ -6376,7 +6360,6 @@ const EXERCISES = [
   },
   {
     "id": 329,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 5
@@ -6392,7 +6375,6 @@ const EXERCISES = [
   },
   {
     "id": 330,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 5
@@ -6408,7 +6390,6 @@ const EXERCISES = [
   },
   {
     "id": 331,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 5
@@ -6424,7 +6405,6 @@ const EXERCISES = [
   },
   {
     "id": 332,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 2
@@ -6440,7 +6420,6 @@ const EXERCISES = [
   },
   {
     "id": 333,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 3
@@ -6456,7 +6435,6 @@ const EXERCISES = [
   },
   {
     "id": 334,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 6
@@ -6572,7 +6550,6 @@ const EXERCISES = [
   },
   {
     "id": 340,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 3
@@ -6588,7 +6565,6 @@ const EXERCISES = [
   },
   {
     "id": 341,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 3
@@ -6604,7 +6580,6 @@ const EXERCISES = [
   },
   {
     "id": 342,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 1
@@ -6620,7 +6595,6 @@ const EXERCISES = [
   },
   {
     "id": 343,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 2
@@ -6636,7 +6610,6 @@ const EXERCISES = [
   },
   {
     "id": 344,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 2
@@ -6652,7 +6625,6 @@ const EXERCISES = [
   },
   {
     "id": 345,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 5
@@ -6668,7 +6640,6 @@ const EXERCISES = [
   },
   {
     "id": 346,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 1
@@ -6684,7 +6655,6 @@ const EXERCISES = [
   },
   {
     "id": 347,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 5
@@ -6700,7 +6670,6 @@ const EXERCISES = [
   },
   {
     "id": 348,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 3
@@ -6716,7 +6685,6 @@ const EXERCISES = [
   },
   {
     "id": 349,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 2
@@ -6732,7 +6700,6 @@ const EXERCISES = [
   },
   {
     "id": 350,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 1
@@ -6748,7 +6715,6 @@ const EXERCISES = [
   },
   {
     "id": 351,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 2
@@ -6764,7 +6730,6 @@ const EXERCISES = [
   },
   {
     "id": 352,
-    "image": null,
     "muscle_groups": [
       {
         "musclegroup_id": 5
