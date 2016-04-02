@@ -1,11 +1,6 @@
 const EXERCISES = [
   {
     "id": 2,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -24,11 +19,6 @@ const EXERCISES = [
   },
   {
     "id": 3,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -43,11 +33,6 @@ const EXERCISES = [
   },
   {
     "id": 5,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -58,11 +43,6 @@ const EXERCISES = [
   },
   {
     "id": 6,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -73,11 +53,6 @@ const EXERCISES = [
   },
   {
     "id": 8,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -88,11 +63,6 @@ const EXERCISES = [
   },
   {
     "id": 10,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -103,11 +73,6 @@ const EXERCISES = [
   },
   {
     "id": 11,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -118,11 +83,6 @@ const EXERCISES = [
   },
   {
     "id": 12,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -133,11 +93,6 @@ const EXERCISES = [
   },
   {
     "id": 13,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -148,11 +103,6 @@ const EXERCISES = [
   },
   {
     "id": 15,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -163,11 +113,6 @@ const EXERCISES = [
   },
   {
     "id": 16,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -178,11 +123,6 @@ const EXERCISES = [
   },
   {
     "id": 17,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -193,11 +133,6 @@ const EXERCISES = [
   },
   {
     "id": 18,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -208,11 +143,6 @@ const EXERCISES = [
   },
   {
     "id": 19,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -226,11 +156,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 20,
     "image": "ab_machine",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -246,11 +171,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 21,
     "image": "ab_crunch_on_a_ball",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -274,11 +194,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 22,
     "image": "abdominal_reverse_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -298,11 +213,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 23,
     "image": "abdominal_twist",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -318,11 +228,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 24,
     "image": "alternating_seated_calf_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -342,11 +247,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 25,
     "image": "angled_prone_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -366,11 +266,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 26,
     "image": "angled_prone_reverse_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -390,11 +285,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 27,
     "image": "arnold_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -415,11 +305,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 28,
     "image": "assisted_dumbbell_lunge",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -443,11 +328,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 29,
     "image": "assisted_pull_up",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -471,11 +351,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 30,
     "image": "back_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -499,11 +374,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 31,
     "image": "back_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -527,11 +397,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 32,
     "image": "bar_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -547,11 +412,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 33,
     "image": "bar_military_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -575,11 +435,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 34,
     "image": "bar_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -603,11 +458,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 35,
     "image": "bar_upright_row",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -631,11 +481,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 36,
     "image": "barbell_behind_neck_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -659,11 +504,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 37,
     "image": "barbell_bench_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -687,11 +527,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 38,
     "image": "barbell_bent_over_row",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -715,11 +550,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 39,
     "image": "barbell_cable_rollout",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -743,11 +573,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 40,
     "image": "barbell_crossover_lunge",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -767,11 +592,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 41,
     "image": "barbell_front_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -795,11 +615,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 42,
     "image": "barbell_hack_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -823,11 +638,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 43,
     "image": "barbell_lunge",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -851,11 +661,6 @@ const EXERCISES = [
     "difficulty": "Expert",
     "id": 44,
     "image": "barbell_overhead_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -879,11 +684,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 45,
     "image": "barbell_rollout",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -899,11 +699,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 46,
     "image": "barbell_side_bend",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -924,11 +719,6 @@ const EXERCISES = [
     "difficulty": "Expert",
     "id": 47,
     "image": "barbell_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -948,11 +738,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 48,
     "image": "barbell_standing_calf_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -972,11 +757,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 49,
     "image": "barbell_sumo_deadlift",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1000,11 +780,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 50,
     "image": "beginner_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1028,11 +803,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 51,
     "image": "bench_dip",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -1056,11 +826,6 @@ const EXERCISES = [
     "difficulty": "beginner",
     "id": 52,
     "image": "bench_leg_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1076,11 +841,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 53,
     "image": "bench_side_bridge",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1096,11 +856,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 54,
     "image": "bent_over_row_no_weight",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1124,11 +879,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 55,
     "image": "bicycle_kick",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1148,11 +898,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 56,
     "image": "bosu_crossover_lunge",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1176,11 +921,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 57,
     "image": "bosu_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1196,11 +936,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 58,
     "image": "bosu_jump_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1224,11 +959,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 59,
     "image": "kneeling_pushup",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1248,11 +978,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 60,
     "image": "bosu_lunge",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1276,11 +1001,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 61,
     "image": "bosu_pushup",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1296,11 +1016,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 62,
     "image": "bosu_russian_twist",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1320,11 +1035,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 63,
     "image": "bosu_side_bridge",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1340,11 +1050,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 64,
     "image": "bosu_sit_up",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1360,11 +1065,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 65,
     "image": "bridge_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1380,11 +1080,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 66,
     "image": "bulgarian_split_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1408,11 +1103,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 67,
     "image": "bulgarian_split_squat_no_weight",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1436,11 +1126,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 68,
     "image": "cable_biceps_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1456,11 +1141,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 69,
     "image": "cable_chest_flye",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1484,11 +1164,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 70,
     "image": "cable_chest_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1512,11 +1187,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 71,
     "image": "cable_close_grip_pulldown",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -1540,11 +1210,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 72,
     "image": "cable_crossover",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1568,11 +1233,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 73,
     "image": "cable_front_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1596,11 +1256,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 74,
     "image": "cable_front_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1620,11 +1275,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 75,
     "image": "cable_hamstring_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1644,11 +1294,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 76,
     "image": "cable_kneeling_twisting_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1668,11 +1313,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 77,
     "image": "cable_leg_extension",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1692,11 +1332,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 78,
     "image": "cable_rear_lateral_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1716,11 +1351,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 79,
     "image": "cable_seated_close_row",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1744,11 +1374,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 80,
     "image": "cable_seated_high_row",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -1772,11 +1397,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 81,
     "image": "cable_seated_low_row",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1800,11 +1420,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 82,
     "image": "cable_side_lateral_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1828,11 +1443,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 83,
     "image": "cable_standing_close_row",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1856,11 +1466,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 84,
     "image": "cable_standing_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1876,11 +1481,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 85,
     "image": "cable_straight_arm_pull_down",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -1904,11 +1504,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 86,
     "image": "cable_torso_rotation",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1928,11 +1523,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 87,
     "image": "cable_triceps_overhead_extension",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1948,11 +1538,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 88,
     "image": "cable_triceps_pushdown",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1968,11 +1553,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 89,
     "image": "cable_woodchopper",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -1996,11 +1576,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 90,
     "image": "calf_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2020,11 +1595,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 91,
     "image": "chair_dip_no_weight",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2040,11 +1610,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 92,
     "image": "chinup",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2060,11 +1625,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 93,
     "image": "clam",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2080,11 +1640,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 94,
     "image": "concentration_dumbbell_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2100,11 +1655,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 95,
     "image": "corkscrew",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2120,11 +1670,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 96,
     "image": "crunch_twist",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2144,11 +1689,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 97,
     "image": "cycle_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2168,11 +1708,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 98,
     "image": "dead_lift",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2197,11 +1732,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 99,
     "image": "decline_close_grip_bench_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2226,11 +1756,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 100,
     "image": "decline_dumbbell_bench_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2254,11 +1779,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 101,
     "image": "decline_dumbbell_fly",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2282,11 +1802,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 102,
     "image": "decline_leg_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2302,11 +1817,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 103,
     "image": "decline_pushup",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2326,11 +1836,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 104,
     "image": "decline_twisting_ab_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2350,11 +1855,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 105,
     "image": "diamond_pushup",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -2374,11 +1874,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 106,
     "image": "dip",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -2402,11 +1897,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 107,
     "image": "dive_bomber_pushup",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2430,11 +1920,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 108,
     "image": "drag_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -2458,11 +1943,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 109,
     "image": "dumbbell_bench_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2486,11 +1966,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 110,
     "image": "dumbbell_bench_twist",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2510,11 +1985,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 111,
     "image": "dumbbell_one_arm_bent_over_row",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2538,11 +2008,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 112,
     "image": "dumbbell_biceps_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -2562,11 +2027,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 113,
     "image": "dumbbell_calf_jump",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2590,11 +2050,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 114,
     "image": "dumbbell_deadlift",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2618,11 +2073,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 115,
     "image": "dumbbell_flye",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2646,11 +2096,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 116,
     "image": "dumbbell_front_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2674,11 +2119,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 117,
     "image": "dumbbell_front_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2702,11 +2142,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 118,
     "image": "dumbbell_incline_bench_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2730,11 +2165,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 119,
     "image": "dumbbell_lateral_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2758,11 +2188,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 120,
     "image": "dumbbell_leg_lift",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2778,11 +2203,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 121,
     "image": "dumbbell_barbell_lunge",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2802,11 +2222,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 122,
     "image": "dumbbell_pull_over",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2830,11 +2245,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 123,
     "image": "dumbbell_pushup",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2858,11 +2268,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 124,
     "image": "dumbbell_reverse_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -2882,11 +2287,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 125,
     "image": "dumbbell_lunge",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2910,11 +2310,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 126,
     "image": "dumbbell_romanian_deadlift",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2938,11 +2333,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 127,
     "image": "row_kickback",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -2967,11 +2357,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 128,
     "image": "dumbbell_shoulder_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -2995,11 +2380,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 129,
     "image": "side_bend",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3015,11 +2395,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 130,
     "image": "dumbbell_single_leg_deadlift",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3043,11 +2418,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 131,
     "image": "dumbbell_snatch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3071,11 +2441,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 132,
     "image": "dumbbell_toe_touch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3091,11 +2456,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 133,
     "image": "dumbbell_torso_twist",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3111,11 +2471,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 134,
     "image": "dumbbell_upright_row",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3136,11 +2491,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 135,
     "image": "wrist_twist",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3156,11 +2506,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 136,
     "image": "external_rotation_no_weight",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3176,11 +2521,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 137,
     "image": "figure_8_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3196,11 +2536,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 138,
     "image": "french_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3216,11 +2551,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 139,
     "image": "front_plate_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3236,11 +2566,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 140,
     "image": "front_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3260,11 +2585,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 141,
     "image": "goblet_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3284,11 +2604,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 142,
     "image": "golf_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3309,11 +2624,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 143,
     "image": "good_morning",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3333,11 +2643,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 144,
     "image": "hack_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3353,11 +2658,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 145,
     "image": "hammer_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3377,11 +2677,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 146,
     "image": "hanging_knee_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3401,11 +2696,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 147,
     "image": "hanging_leg_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3425,11 +2715,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 148,
     "image": "high_pull",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3445,11 +2730,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 149,
     "image": "high_woodchopper",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3469,11 +2749,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 150,
     "image": "incline_barbell_bench_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3498,11 +2773,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 151,
     "image": "incline_dumbbell_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -3522,11 +2792,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 152,
     "image": "incline_dumbbell_fly",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3550,11 +2815,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 153,
     "image": "incline_hammer_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3570,11 +2830,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 154,
     "image": "incline_pushup",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3594,11 +2849,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 155,
     "image": "inclined_reverse_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3618,11 +2868,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 156,
     "image": "incline_reverse_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -3642,11 +2887,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 157,
     "image": "incline_shoulder_rotation",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3662,11 +2902,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 158,
     "image": "incline_y_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3686,11 +2921,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 159,
     "image": "jackknife",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3714,11 +2944,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 160,
     "image": "kettlebell_clean",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3744,11 +2969,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 161,
     "image": "kettlebell_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3764,11 +2984,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 162,
     "image": "kettlebell_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3784,11 +2999,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 163,
     "image": "kettlebell_french_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3804,11 +3014,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 164,
     "image": "kettlebell_high_pull",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3834,11 +3039,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 165,
     "image": "kettlebell_kickback",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3854,11 +3054,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 166,
     "image": "kettlebell_overhead_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3874,11 +3069,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 167,
     "image": "kettlebell_pullover",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3894,11 +3084,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 168,
     "image": "kettlebell_pushup",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3922,11 +3107,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 169,
     "image": "kettlebell_rear_delt_row",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3942,11 +3122,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 170,
     "image": "kettlebell_renegade_row",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3971,11 +3146,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 171,
     "image": "kettlebell_russian_twist",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -3991,11 +3161,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 172,
     "image": "kettlebell_side_bend",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4011,11 +3176,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 173,
     "image": "kettlebell_straight_leg_deadlift",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4035,11 +3195,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 174,
     "image": "kettlebell_upright_row",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4059,11 +3214,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 175,
     "image": "kettlebells_bent_over_row",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -4087,11 +3237,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 176,
     "image": "kettlebells_side_lunge",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4111,11 +3256,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 177,
     "image": "kettlebells_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4135,11 +3275,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 178,
     "image": "kneeling_cable_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4159,11 +3294,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 179,
     "image": "lat_pulldown",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -4188,11 +3318,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 180,
     "image": "lunging_step_up",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4216,11 +3341,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 181,
     "image": "lying_hip_extension_no_weight",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4240,11 +3360,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 182,
     "image": "lying_one_arm_extension",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4260,11 +3375,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 183,
     "image": "lying_pullover",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4280,11 +3390,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 184,
     "image": "lying_triceps_extension",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4300,11 +3405,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 185,
     "image": "machine_biceps_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4320,11 +3420,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 186,
     "image": "machine_chest_flye",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4340,11 +3435,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 187,
     "image": "machine_chest_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4360,11 +3450,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 188,
     "image": "machine_lateral_pull_down",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -4388,11 +3473,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 189,
     "image": "machine_lateral_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4412,11 +3492,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 190,
     "image": "machine_leg_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4436,11 +3511,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 191,
     "image": "machine_leg_extension",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4456,11 +3526,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 192,
     "image": "machine_leg_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4484,11 +3549,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 193,
     "image": "machine_rear_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4508,11 +3568,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 194,
     "image": "machine_shoulder_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4532,11 +3587,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 195,
     "image": "machine_triceps_extension",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4552,11 +3602,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 196,
     "image": "medicine_ball_toe_touch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4572,11 +3617,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 197,
     "image": "modified_pushup",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4596,11 +3636,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 198,
     "image": "modified_v_sit",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4620,11 +3655,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 199,
     "image": "neutral_grip_pullup",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -4648,11 +3678,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 200,
     "image": "oblique_vup",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4672,11 +3697,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 201,
     "image": "offset_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4696,11 +3716,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 202,
     "image": "one_arm_row",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -4724,11 +3739,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 203,
     "image": "overhead_bar_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4744,11 +3754,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 204,
     "image": "overhead_triceps_extension",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -4768,11 +3773,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 205,
     "image": "prallel_bar_dip",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -4796,11 +3796,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 206,
     "image": "power_clean",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4824,11 +3819,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 207,
     "image": "prisoner_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4852,11 +3842,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 208,
     "image": "prone_cobra",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4876,11 +3861,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 209,
     "image": "prone_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4896,11 +3876,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 210,
     "image": "prone_hammer_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -4924,11 +3899,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 211,
     "image": "prone_reverse_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4944,11 +3914,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 212,
     "image": "pulse_up",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4968,11 +3933,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 213,
     "image": "push_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -4997,11 +3957,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 214,
     "image": "pushup",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5017,11 +3972,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 215,
     "image": "rear_lateral_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5045,11 +3995,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 216,
     "image": "resistance_band_biceps_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5065,11 +4010,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 217,
     "image": "resistance_band_close_row",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5094,11 +4034,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 218,
     "image": "resistance_band_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5118,11 +4053,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 219,
     "image": "resistance_band_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5138,11 +4068,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 220,
     "image": "resistance_band_hip_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5158,11 +4083,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 221,
     "image": "resistance_band_kneeling_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5182,11 +4102,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 222,
     "image": "resistance_band_lunge",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5210,11 +4125,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 223,
     "image": "resistance_band_overhead_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5230,11 +4140,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 224,
     "image": "resistance_band_overhead_triceps_extension",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5250,11 +4155,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 225,
     "image": "resistance_band_push_up",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5274,11 +4174,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 226,
     "image": "resistance_band_shrug",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5294,11 +4189,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 227,
     "image": "reverse_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5318,11 +4208,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 228,
     "image": "reverse_hyperextension",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5342,11 +4227,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 229,
     "image": "reverse_wrist_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5362,11 +4242,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 230,
     "image": "rollback",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5382,11 +4257,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 231,
     "image": "romanian_barbell_deadlift",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5410,11 +4280,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 232,
     "image": "romanian_deadlift",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5438,11 +4303,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 233,
     "image": "rotational_pushup",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5466,11 +4326,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 234,
     "image": "rotator_cuff_external",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5486,11 +4341,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 235,
     "image": "rotator_cuff_internal",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5506,11 +4356,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 236,
     "image": "saxon_side_bend",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5530,11 +4375,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 237,
     "image": "scaption",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5554,11 +4394,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 238,
     "image": "seated_bent_over_row",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5578,11 +4413,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 239,
     "image": "seated_dumbbell_shoulder_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5606,11 +4436,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 240,
     "image": "seated_front_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5634,11 +4459,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 241,
     "image": "seated_jacknife",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5658,11 +4478,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 242,
     "image": "seated_preacher_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -5682,11 +4497,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 243,
     "image": "seated_reverse_fly",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5710,11 +4520,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 244,
     "image": "seated_triceps_extension",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -5734,11 +4539,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 245,
     "image": "seated_twist",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5758,11 +4558,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 246,
     "image": "shrug",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5779,11 +4574,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 247,
     "image": "side_bridge",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5799,11 +4589,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 248,
     "image": "side_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5823,11 +4608,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 249,
     "image": "side_lunge",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5847,11 +4627,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 250,
     "image": "single_arm_external_rotation",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -5871,11 +4646,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 251,
     "image": "single_arm_pulldown",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -5899,11 +4669,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 252,
     "image": "single_leg_decline_pushup",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5923,11 +4688,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 253,
     "image": "single_leg_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5951,11 +4711,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 254,
     "image": "single_leg_standing_calf_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -5975,11 +4730,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 255,
     "image": "situp",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6003,11 +4753,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 256,
     "image": "ski_squat_no_weight",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6027,11 +4772,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 257,
     "image": "sprinter",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6051,11 +4791,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 258,
     "image": "stabilizing_pushup",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6071,11 +4806,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 259,
     "image": "standing_biceps_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -6095,11 +4825,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 260,
     "image": "standing_concentration_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6119,11 +4844,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 261,
     "image": "standing_calf_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6143,11 +4863,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 262,
     "image": "standing_scarecrow",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6163,11 +4878,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 263,
     "image": "standing_oblique_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6183,11 +4893,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 264,
     "image": "standing_torso_twist",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6207,11 +4912,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 265,
     "image": "standing_triceps_extension",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6227,11 +4927,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 266,
     "image": "standing_wrist_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6247,11 +4942,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 267,
     "image": "steam_engine",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6271,11 +4961,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 268,
     "image": "sumo_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6295,11 +4980,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 269,
     "image": "superman",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6323,11 +5003,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 270,
     "image": "swiss_ball_close_row",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6351,11 +5026,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 271,
     "image": "swiss_ball_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6375,11 +5045,6 @@ const EXERCISES = [
     "difficulty": "intermediate",
     "id": 272,
     "image": "swiss_ball_french_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6395,11 +5060,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 273,
     "image": "swiss_ball_front_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6415,11 +5075,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 274,
     "image": "swiss_ball_glute_bridge",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6439,11 +5094,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 275,
     "image": "swiss_ball_kickback",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6459,11 +5109,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 276,
     "image": "swiss_ball_leg_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6483,11 +5128,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 277,
     "image": "swiss_ball_oblique_back_extension",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6507,11 +5147,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 278,
     "image": "swiss_ball_oblique_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6531,11 +5166,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 279,
     "image": "swiss_ball_pike_pushup",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6555,11 +5185,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 280,
     "image": "swiss_ball_preacher_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6579,11 +5204,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 281,
     "image": "swiss_ball_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6599,11 +5219,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 282,
     "image": "swiss_ball_pullover",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6628,11 +5243,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 283,
     "image": "swiss_ball_pushup",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6648,11 +5258,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 284,
     "image": "swiss_ball_reverse_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6672,11 +5277,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 285,
     "image": "swiss_ball_seated_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -6696,11 +5296,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 286,
     "image": "swiss_ball_shoulder_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6720,11 +5315,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 287,
     "image": "swiss_ball_shrug",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6740,11 +5330,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 288,
     "image": "swiss_ball_split_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -6768,11 +5353,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 289,
     "image": "swiss_ball_torso_twist",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6788,11 +5368,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 290,
     "image": "swiss_ball_trunk_rotation",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6812,11 +5387,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 291,
     "image": "swiss_ball_wall_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6836,11 +5406,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 292,
     "image": "t_bar_bent_over_row",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -6864,11 +5429,6 @@ const EXERCISES = [
     "difficulty": "Expert",
     "id": 293,
     "image": "t_pushup",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6888,11 +5448,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 294,
     "image": "toe_touch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6908,11 +5463,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 295,
     "image": "towel_fly_no_weight",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6936,11 +5486,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 296,
     "image": "traditional_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -6960,11 +5505,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 297,
     "image": "triceps_assisted_dip",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -6988,11 +5528,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 298,
     "image": "triceps_kickback",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7008,11 +5543,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 299,
     "image": "twisting_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7028,11 +5558,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 300,
     "image": "twisting_hip_raise",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7052,11 +5577,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 301,
     "image": "twisting_shoulder_press",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7081,11 +5601,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 302,
     "image": "twisting_windmill",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7101,11 +5616,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 303,
     "image": "two_point_bridge",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7130,11 +5640,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 304,
     "image": "unilateral_high_cable_fly",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7154,11 +5659,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 305,
     "image": "unilateral_low_cable_fly",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7178,11 +5678,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 306,
     "image": "upright_row",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7206,11 +5701,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 307,
     "image": "v_up",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7230,11 +5720,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 308,
     "image": "walking_lunge",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7254,11 +5739,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 309,
     "image": "walking_lunge_twist",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7283,11 +5763,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 310,
     "image": "weighted_chop",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7308,11 +5783,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 311,
     "image": "weighted_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -7332,11 +5802,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 312,
     "image": "weighted_pushup",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7360,11 +5825,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 313,
     "image": "weighted_swiss_ball_crunch",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7384,11 +5844,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 314,
     "image": "wheel_rollout",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7408,11 +5863,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 315,
     "image": "wrist_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7428,11 +5878,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 316,
     "image": "zercher_squat",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7456,11 +5901,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 317,
     "image": "zottman_curl",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 0,
@@ -7484,7 +5924,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 318,
     "image": "cycling",
-    "muscle_groups": [],
     "muscles": [],
     "name": "cycling",
     "target1": "cardio"
@@ -7494,7 +5933,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 319,
     "image": "elliptical",
-    "muscle_groups": [],
     "muscles": [],
     "name": "elliptical",
     "target1": "cardio"
@@ -7504,7 +5942,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 320,
     "image": "jogging",
-    "muscle_groups": [],
     "muscles": [],
     "name": "jogging",
     "target1": "cardio"
@@ -7514,7 +5951,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 321,
     "image": "jump_rope",
-    "muscle_groups": [],
     "muscles": [],
     "name": "jump rope",
     "target1": "cardio"
@@ -7524,7 +5960,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 322,
     "image": "rowing",
-    "muscle_groups": [],
     "muscles": [],
     "name": "rowing",
     "target1": "cardio"
@@ -7534,7 +5969,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 323,
     "image": "step_machine",
-    "muscle_groups": [],
     "muscles": [],
     "name": "step machine",
     "target1": "cardio"
@@ -7544,7 +5978,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 324,
     "image": "swimming",
-    "muscle_groups": [],
     "muscles": [],
     "name": "swimming",
     "target1": "cardio"
@@ -7554,7 +5987,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 325,
     "image": "treadmill",
-    "muscle_groups": [],
     "muscles": [],
     "name": "treadmill",
     "target1": "cardio"
@@ -7564,18 +5996,12 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 326,
     "image": "tennis",
-    "muscle_groups": [],
     "muscles": [],
     "name": "tennis",
     "target1": "cardio"
   },
   {
     "id": 327,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7586,11 +6012,6 @@ const EXERCISES = [
   },
   {
     "id": 328,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7601,11 +6022,6 @@ const EXERCISES = [
   },
   {
     "id": 329,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7616,11 +6032,6 @@ const EXERCISES = [
   },
   {
     "id": 330,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7631,11 +6042,6 @@ const EXERCISES = [
   },
   {
     "id": 331,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7646,11 +6052,6 @@ const EXERCISES = [
   },
   {
     "id": 332,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7661,11 +6062,6 @@ const EXERCISES = [
   },
   {
     "id": 333,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7676,11 +6072,6 @@ const EXERCISES = [
   },
   {
     "id": 334,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 6
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7694,11 +6085,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 335,
     "image": "elevated_feet_plank",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7718,11 +6104,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 336,
     "image": "inclined_plank",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7742,11 +6123,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 337,
     "image": "kneeling_plank",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7766,11 +6142,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 338,
     "image": "plank",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7790,11 +6161,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 339,
     "image": "side_plank",
-    "muscle_groups": [
-      {
-        "musclegroup_id": 4
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7811,11 +6177,6 @@ const EXERCISES = [
   },
   {
     "id": 340,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7826,11 +6187,6 @@ const EXERCISES = [
   },
   {
     "id": 341,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7841,11 +6197,6 @@ const EXERCISES = [
   },
   {
     "id": 342,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7856,11 +6207,6 @@ const EXERCISES = [
   },
   {
     "id": 343,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7871,11 +6217,6 @@ const EXERCISES = [
   },
   {
     "id": 344,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7886,11 +6227,6 @@ const EXERCISES = [
   },
   {
     "id": 345,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7901,11 +6237,6 @@ const EXERCISES = [
   },
   {
     "id": 346,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7916,11 +6247,6 @@ const EXERCISES = [
   },
   {
     "id": 347,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7931,11 +6257,6 @@ const EXERCISES = [
   },
   {
     "id": 348,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 3
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7946,11 +6267,6 @@ const EXERCISES = [
   },
   {
     "id": 349,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7961,11 +6277,6 @@ const EXERCISES = [
   },
   {
     "id": 350,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 1
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7976,11 +6287,6 @@ const EXERCISES = [
   },
   {
     "id": 351,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 2
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
@@ -7991,11 +6297,6 @@ const EXERCISES = [
   },
   {
     "id": 352,
-    "muscle_groups": [
-      {
-        "musclegroup_id": 5
-      }
-    ],
     "muscles": [
       {
         "is_primary": 1,
