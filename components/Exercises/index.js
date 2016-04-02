@@ -27,15 +27,20 @@ import realm from '../../realm';
 function loadData() {
   const exercises = realm.objects('Exercise');
   const needsLoad = EXERCISES.filter((i) => exercises.filtered(`id = ${i.id}`).length == 0);
-  console.log("Loading", needsLoad.length);
   realm.write(() => {
     needsLoad.forEach(ex => {
+      const {muscle_groups, muscles, image, description, difficulty, type, target1, target2, target3, ...data} = ex;
       realm.create('Exercise', {
-        id: ex.id,
-        name: ex.name,
-        image: ex.image || '',
-        muscleGroupId: ex.muscle_groups[0] ? ex.muscle_groups[0].musclegroup_id : -1,
-        muscles: ex.muscles.map(m => {return {isPrimary: m.is_primary == 1, muscleId: m.muscle_id}})
+        ...data,
+        image,
+        description,
+        difficulty,
+        type,
+        target1,
+        target2,
+        target3,
+        muscleGroupId: muscle_groups[0] ? muscle_groups[0].musclegroup_id : -1,
+        muscles: muscles.map(m => {return {isPrimary: m.is_primary == 1, muscleId: m.muscle_id}})
       });
     });
   });
