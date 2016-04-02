@@ -8,13 +8,10 @@ import React, {
 
 import Listitem from 'react-native-listitem';
 import ListitemStyles from 'react-native-listitem/styles';
-import sortBy from 'lodash/sortBy';
 import { ListView } from 'realm/react-native';
 
 import { MainRouter } from '../../routers';
 
-import MUSCLE_GROUPS from '../../constants/MuscleGroups';
-import MUSCLES from '../../constants/Muscles';
 import EXERCISES from '../../constants/Exercises';
 import IMAGES from '../../constants/Images';
 
@@ -25,22 +22,42 @@ import realm from '../../realm';
 
 
 function loadData() {
+  const muscleData = require('../../data/muscles.json');
+
   const exercises = realm.objects('Exercise');
   const needsLoad = EXERCISES.filter((i) => exercises.filtered(`id = ${i.id}`).length == 0);
   realm.write(() => {
+    Object.keys(muscleData).forEach(name => {
+      const muscleGroup = realm.create('MuscleGroup', {name});
+      Object.keys(muscleData[name].Muscle).forEach(name => realm.create('Muscle', {name, muscleGroup}));
+    });
+
     needsLoad.forEach(ex => {
-      const {muscle_groups, muscles, image, description, difficulty, type, target1, target2, target3, ...data} = ex;
+      const {muscles, image, description, difficulty, type, target1, target2, target3, ...data} = ex;
+
+      const targets = [target1, target2, target3].filter(x => x);
+      const muscleGroups = targets.map(x => realm.objects('MuscleGroup').filtered(`name =[c] "${x}"`)[0]);
+
+      if(muscleGroups.filter(x => !x).length) {
+        throw "Unknown target(s): " + targets;
+      }
+
+      const musclesPrimary = muscles.filter(m => m.primary === 1).map(x => realm.objects('Muscle').filtered(`name =[c] "${x.name}"`)[0]);
+      const musclesSecondary = muscles.filter(m => m.primary !== 1).map(x => realm.objects('Muscle').filtered(`name =[c] "${x.name}"`)[0]);
+
+      if(musclesPrimary.filter(x => !x).length || musclesSecondary.filter(x => !x).length) {
+        throw "Unknown muscle(s): " + muscles.map(m => m.name);
+      }
+
       realm.create('Exercise', {
         ...data,
         image,
         description,
         difficulty,
         type,
-        target1,
-        target2,
-        target3,
-        muscleGroupId: muscle_groups[0] ? muscle_groups[0].musclegroup_id : -1,
-        muscles: muscles.map(m => {return {isPrimary: m.is_primary == 1, muscleId: m.muscle_id}})
+        muscleGroups,
+        musclesPrimary,
+        musclesSecondary,
       });
     });
   });
@@ -97,29 +114,25 @@ export default class Exercises extends Component {
     this.setState({selectedMuscle: selectedMuscle});
   };
   _renderMuscleGroups = () => {
-    return sortBy(MUSCLE_GROUPS, i => i.name).map(
+    return realm.objects('MuscleGroup').sorted('name').map(
       (k) =>
-        <Picker.Item label={k.name} value={k.id} key={k.id} color={'black'} />
+        <Picker.Item label={k.name} value={k.name} key={k.name} color={'black'} />
     );
   };
   _renderMuscles = () => {
-    let muscles;
+    let muscles = realm.objects('Muscle');
     if(this.state.selectedMuscleGroup != FILTER_ALL) {
-      muscles = MUSCLES.filter(
-        m => m.muscleGroup === this.state.selectedMuscleGroup);
-    } else {
-      muscles = MUSCLES;
+      muscles = muscles.filtered(`muscleGroup.name = "${this.state.selectedMuscleGroup}"`);
     }
 
-    return sortBy(muscles, i => i.name).map(
+    return muscles.sorted('name').map(
       (k) =>
-        <Picker.Item label={k.name} value={k.id} key={k.id} color={'black'} />
+        <Picker.Item label={k.name} value={k.name} key={k.name} color={'black'} />
     );
   };
   _renderHeader = () => {
     const muscleGroupItems = this._renderMuscleGroups();
     const muscleItems = this._renderMuscles();
-
     return (
       <View style={{flex: 1}}>
         <Picker
@@ -143,9 +156,11 @@ export default class Exercises extends Component {
   render(){
     let exercisesFiltered = realm.objects('Exercise');
     if(this.state.selectedMuscle != FILTER_ALL) {
-      exercisesFiltered = exercisesFiltered.filtered(`muscles.muscleId = ${this.state.selectedMuscle}`);
+      exercisesFiltered = exercisesFiltered.filtered(
+        `musclesPrimary.name = "${this.state.selectedMuscle}" || musclesSecondary.name = "${this.state.selectedMuscle}"`
+      );
     }else if(this.state.selectedMuscleGroup != FILTER_ALL) {
-      exercisesFiltered = exercisesFiltered.filtered(`muscleGroupId = ${this.state.selectedMuscleGroup}`);
+      exercisesFiltered = exercisesFiltered.filtered(`muscleGroups.name = "${this.state.selectedMuscleGroup}"`);
     }
 
     exercisesFiltered = exercisesFiltered.sorted('name');

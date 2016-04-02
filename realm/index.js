@@ -2,8 +2,35 @@ import Realm from 'realm';
 
 
 const realm = new Realm({
-  schemaVersion: 16,
+  schemaVersion: 23,
   schema: [
+    {
+      name: 'MuscleGroup',
+      properties: {
+        name: Realm.Types.STRING,
+      }
+    },
+    {
+      name: 'Muscle',
+      properties: {
+        name: Realm.Types.STRING,
+        muscleGroup: 'MuscleGroup',
+      }
+    },
+    {
+      name: 'Exercise',
+      properties: {
+        id: Realm.Types.INT,
+        name: Realm.Types.STRING,
+        image: {type: Realm.Types.STRING, optional: true},
+        muscleGroups: {type: 'list', objectType: 'MuscleGroup'},
+        musclesPrimary: {type: 'list', objectType: 'Muscle'},
+        musclesSecondary: {type: 'list', objectType: 'Muscle'},
+        description: {type: Realm.Types.STRING, optional: true},
+        difficulty: {type: Realm.Types.STRING, optional: true},
+        type: {type: Realm.Types.STRING, optional: true},
+      }
+    },
     {
       name: 'ActivitySet',
       properties: {
@@ -15,34 +42,11 @@ const realm = new Realm({
         weightUnits: Realm.Types.STRING,
       }
     },
-    {
-      name: 'ExerciseMuscle',
-      properties: {
-        isPrimary: Realm.Types.BOOL,
-        muscleId: Realm.Types.INT,
-      }
-    },
-    {
-      name: 'Exercise',
-      properties: {
-        id: Realm.Types.INT,
-        name: Realm.Types.STRING,
-        image: {type: Realm.Types.STRING, optional: true},
-        muscleGroupId: Realm.Types.INT,
-        muscles: {type: 'list', objectType: 'ExerciseMuscle'},
-        target1: {type: Realm.Types.STRING, optional: true},
-        target2: {type: Realm.Types.STRING, optional: true},
-        target3: {type: Realm.Types.STRING, optional: true},
-        description: {type: Realm.Types.STRING, optional: true},
-        difficulty: {type: Realm.Types.STRING, optional: true},
-        type: {type: Realm.Types.STRING, optional: true},
-      }
-    }
   ]
 });
 
-// realm.write(() => {
-//   realm.deleteAll();
-// });
+realm.write(() => {
+  realm.deleteAll();
+});
 
 export default realm;
