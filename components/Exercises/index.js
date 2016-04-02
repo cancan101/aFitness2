@@ -33,7 +33,7 @@ function loadData() {
     });
 
     needsLoad.forEach(ex => {
-      const {muscles, image, description, difficulty, type, target1, target2, target3, ...data} = ex;
+      const {MajorMuscles, SecondaryMuscles, image, description, difficulty, type, target1, target2, target3, ...data} = ex;
 
       const targets = [target1, target2, target3].filter(x => x);
       const muscleGroups = targets.map(x => realm.objects('MuscleGroup').filtered(`name =[c] "${x}"`)[0]);
@@ -42,11 +42,15 @@ function loadData() {
         throw "Unknown target(s): " + targets;
       }
 
-      const musclesPrimary = muscles.filter(m => m.primary === 1).map(x => realm.objects('Muscle').filtered(`name =[c] "${x.name}"`)[0]);
-      const musclesSecondary = muscles.filter(m => m.primary !== 1).map(x => realm.objects('Muscle').filtered(`name =[c] "${x.name}"`)[0]);
+      const musclesMajor = Object.keys((MajorMuscles || {}).Muscle || {}).map(x => realm.objects('Muscle').filtered(`name =[c] "${x}"`)[0]);
+      const musclesSecondary = Object.keys((SecondaryMuscles || {}).Muscle || {}).map(x => realm.objects('Muscle').filtered(`name =[c] "${x}"`)[0]);
 
-      if(musclesPrimary.filter(x => !x).length || musclesSecondary.filter(x => !x).length) {
-        throw "Unknown muscle(s): " + muscles.map(m => m.name);
+      if(musclesMajor.filter(x => !x).length) {
+        throw "Unknown muscle(s): " + Object.keys(MajorMuscles.Muscle);
+      }
+
+      if(musclesSecondary.filter(x => !x).length) {
+        throw "Unknown muscle(s): " + Object.keys(SecondaryMuscles.Muscle);
       }
 
       realm.create('Exercise', {
@@ -56,7 +60,7 @@ function loadData() {
         difficulty,
         type,
         muscleGroups,
-        musclesPrimary,
+        musclesMajor,
         musclesSecondary,
       });
     });
@@ -157,7 +161,7 @@ export default class Exercises extends Component {
     let exercisesFiltered = realm.objects('Exercise');
     if(this.state.selectedMuscle != FILTER_ALL) {
       exercisesFiltered = exercisesFiltered.filtered(
-        `musclesPrimary.name = "${this.state.selectedMuscle}" || musclesSecondary.name = "${this.state.selectedMuscle}"`
+        `musclesMajor.name = "${this.state.selectedMuscle}" || musclesSecondary.name = "${this.state.selectedMuscle}"`
       );
     }else if(this.state.selectedMuscleGroup != FILTER_ALL) {
       exercisesFiltered = exercisesFiltered.filtered(`muscleGroups.name = "${this.state.selectedMuscleGroup}"`);
