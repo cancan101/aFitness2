@@ -1,154 +1,139 @@
-const EXERCISES = [
+[
   {
-    "id": 2,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
+    "MajorMuscles": {
+      "Muscle": {
+        "Triceps brachii": {}
       }
-    ],
+    },
+    "SecondaryMuscles": {
+      "Muscle": {
+        "Deltoids": {},
+        "Pectoralis": {}
+      }
+    },
+    "id": 2,
     "name": "Dip"
   },
   {
-    "id": 3,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
+    "MajorMuscles": {
+      "Muscle": {
+        "Quadriceps": {}
       }
-    ],
+    },
+    "SecondaryMuscles": {
+      "Muscle": {
+        "Glutes": {}
+      }
+    },
+    "id": 3,
     "name": "Squat"
   },
   {
-    "id": 5,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
+    "MajorMuscles": {
+      "Muscle": {
+        "Deltoids": {}
       }
-    ],
+    },
+    "id": 5,
     "name": "Shoulder press dumbell"
   },
   {
-    "id": 6,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
+    "MajorMuscles": {
+      "Muscle": {
+        "Deltoids": {}
       }
-    ],
+    },
+    "id": 6,
     "name": "Shoulder raises"
   },
   {
-    "id": 8,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 11
+    "MajorMuscles": {
+      "Muscle": {
+        "Glutes": {}
       }
-    ],
+    },
+    "id": 8,
     "name": "Calf raise - leg press machine"
   },
   {
-    "id": 10,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
+    "MajorMuscles": {
+      "Muscle": {
+        "Pectoralis": {}
       }
-    ],
+    },
+    "id": 10,
     "name": "Chest press dumbell"
   },
   {
-    "id": 11,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
+    "MajorMuscles": {
+      "Muscle": {
+        "Triceps brachii": {}
       }
-    ],
+    },
+    "id": 11,
     "name": "Tricep extension lying barbell"
   },
   {
-    "id": 12,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
+    "MajorMuscles": {
+      "Muscle": {
+        "Pectoralis": {}
       }
-    ],
+    },
+    "id": 12,
     "name": "Chest press barbell narrow"
   },
   {
-    "id": 13,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 2
+    "MajorMuscles": {
+      "Muscle": {
+        "Biceps brachii": {}
       }
-    ],
+    },
+    "id": 13,
     "name": "Bicep curl barbell"
   },
   {
-    "id": 15,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 8
+    "MajorMuscles": {
+      "Muscle": {
+        "Latissimus dorsi": {}
       }
-    ],
+    },
+    "id": 15,
     "name": "Pullups wide"
   },
   {
-    "id": 16,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 2
+    "MajorMuscles": {
+      "Muscle": {
+        "Biceps brachii": {}
       }
-    ],
+    },
+    "id": 16,
     "name": "Bicep curl machine cable"
   },
   {
-    "id": 17,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 8
+    "MajorMuscles": {
+      "Muscle": {
+        "Latissimus dorsi": {}
       }
-    ],
+    },
+    "id": 17,
     "name": "Lat pulldown machine"
   },
   {
-    "id": 18,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
+    "MajorMuscles": {
+      "Muscle": {
+        "Quadriceps": {}
       }
-    ],
+    },
+    "id": 18,
     "name": "Seated leg press"
   },
   {
-    "id": 19,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 11
+    "MajorMuscles": {
+      "Muscle": {
+        "Glutes": {}
       }
-    ],
+    },
+    "id": 19,
     "name": "Leg curl seated"
   },
   {
@@ -161,12 +146,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 20,
     "image": "ab_machine",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      }
-    ],
     "name": "ab crunch machine",
     "target1": "abdominals",
     "type": "machine"
@@ -187,20 +166,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 21,
     "image": "ab_crunch_on_a_ball",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 13
-      }
-    ],
     "name": "ab crunch on a ball",
     "target1": "abdominals",
     "type": "swissball"
@@ -220,16 +185,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 22,
     "image": "abdominal_reverse_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "abdominal reverse curl",
     "target1": "abdominals",
     "type": "none"
@@ -244,12 +199,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 23,
     "image": "abdominal_twist",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      }
-    ],
     "name": "abdominal twist",
     "target1": "abdominals",
     "type": "none"
@@ -269,16 +218,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 24,
     "image": "alternating_seated_calf_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 15
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 17
-      }
-    ],
     "name": "alternating seated calf raise",
     "target1": "legs",
     "type": "dumbbell"
@@ -298,16 +237,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 25,
     "image": "angled_prone_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 3
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "angled prone curl",
     "target1": "arms",
     "type": "dumbbell"
@@ -327,16 +256,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 26,
     "image": "angled_prone_reverse_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 3
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "angled prone reverse curl",
     "target1": "arms",
     "type": "dumbbell"
@@ -356,16 +275,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 27,
     "image": "arnold_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "arnold press",
     "target1": "shoulders",
     "target2": "arms",
@@ -387,20 +296,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 28,
     "image": "assisted_dumbbell_lunge",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 17
-      }
-    ],
     "name": "assisted dumbbell lunge",
     "target1": "legs",
     "type": "dumbbell"
@@ -421,20 +316,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 29,
     "image": "assisted_pull_up",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 8
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "assisted pull-up",
     "target1": "back",
     "type": "machine"
@@ -455,20 +336,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 30,
     "image": "back_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 16
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 13
-      }
-    ],
     "name": "back raise",
     "target1": "back",
     "type": "machine"
@@ -489,20 +356,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 31,
     "image": "back_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 17
-      }
-    ],
     "name": "back squat",
     "target1": "legs",
     "type": "barbell"
@@ -517,12 +370,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 32,
     "image": "bar_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      }
-    ],
     "name": "bar crunch",
     "target1": "abdominals",
     "type": "barbell"
@@ -543,20 +390,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 33,
     "image": "bar_military_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "bar military press",
     "target1": "shoulders",
     "type": "barbell"
@@ -577,20 +410,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 34,
     "image": "bar_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 13
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 16
-      }
-    ],
     "name": "bar squat",
     "target1": "legs",
     "type": "barbell"
@@ -611,20 +430,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 35,
     "image": "bar_upright_row",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 19
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      }
-    ],
     "name": "bar upright row",
     "target1": "shoulders",
     "type": "barbell"
@@ -645,20 +450,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 36,
     "image": "barbell_behind_neck_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "barbell behind neck press",
     "target1": "shoulders",
     "type": "barbell"
@@ -679,20 +470,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 37,
     "image": "barbell_bench_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "barbell bench press",
     "target1": "chest",
     "type": "barbell"
@@ -713,20 +490,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 38,
     "image": "barbell_bent_over_row",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 13
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 8
-      }
-    ],
     "name": "barbell bent-over row",
     "target1": "back",
     "type": "barbell"
@@ -747,20 +510,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 39,
     "image": "barbell_cable_rollout",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 13
-      }
-    ],
     "name": "barbell cable rollout",
     "target1": "abdominals",
     "type": "barbell machine"
@@ -780,16 +529,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 40,
     "image": "barbell_crossover_lunge",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 16
-      }
-    ],
     "name": "barbell crossover lunge",
     "target1": "legs",
     "type": "barbell"
@@ -810,20 +549,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 41,
     "image": "barbell_front_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      }
-    ],
     "name": "barbell front raise",
     "target1": "shoulders",
     "type": "barbell"
@@ -844,20 +569,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 42,
     "image": "barbell_hack_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 17
-      }
-    ],
     "name": "barbell hack squat",
     "target1": "legs",
     "type": "barbell"
@@ -878,20 +589,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 43,
     "image": "barbell_lunge",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 16
-      }
-    ],
     "name": "barbell lunge",
     "target1": "legs",
     "type": "barbell"
@@ -912,20 +609,6 @@ const EXERCISES = [
     "difficulty": "Expert",
     "id": 44,
     "image": "barbell_overhead_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 16
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 15
-      }
-    ],
     "name": "barbell overhead squat",
     "target1": "legs",
     "type": "barbell"
@@ -940,12 +623,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 45,
     "image": "barbell_rollout",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      }
-    ],
     "name": "barbell rollout",
     "target1": "abdominals",
     "type": "barbell"
@@ -965,16 +642,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 46,
     "image": "barbell_side_bend",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 13
-      }
-    ],
     "name": "barbell side bend",
     "target1": "abdominals",
     "target2": "back",
@@ -995,16 +662,6 @@ const EXERCISES = [
     "difficulty": "Expert",
     "id": 47,
     "image": "barbell_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      }
-    ],
     "name": "barbell squat",
     "target1": "legs",
     "type": "barbell"
@@ -1024,16 +681,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 48,
     "image": "barbell_standing_calf_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 15
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 17
-      }
-    ],
     "name": "barbell standing calf raise",
     "target1": "legs",
     "type": "barbell"
@@ -1054,20 +701,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 49,
     "image": "barbell_sumo_deadlift",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 17
-      }
-    ],
     "name": "barbell sumo deadlift",
     "target1": "legs",
     "type": "barbell"
@@ -1088,20 +721,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 50,
     "image": "beginner_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 17
-      }
-    ],
     "name": "beginner squat",
     "target1": "legs",
     "type": "dumbbell"
@@ -1122,20 +741,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 51,
     "image": "bench_dip",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "bench dip",
     "target1": "arms",
     "type": "none"
@@ -1150,12 +755,6 @@ const EXERCISES = [
     "difficulty": "beginner",
     "id": 52,
     "image": "bench_leg_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      }
-    ],
     "name": "bench leg raise",
     "target1": "abdominals",
     "type": "none"
@@ -1170,12 +769,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 53,
     "image": "bench_side_bridge",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      }
-    ],
     "name": "bench side bridge",
     "target1": "abdominals",
     "type": "none"
@@ -1196,20 +789,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 54,
     "image": "bent_over_row_no_weight",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 13
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 8
-      }
-    ],
     "name": "bent over row (no weights)",
     "target1": "back",
     "type": "none"
@@ -1229,16 +808,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 55,
     "image": "bicycle_kick",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "bicycle kick",
     "target1": "abdominals",
     "type": "none"
@@ -1259,20 +828,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 56,
     "image": "bosu_crossover_lunge",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 17
-      }
-    ],
     "name": "bosu crossover lunge",
     "target1": "legs",
     "type": "bosu"
@@ -1287,12 +842,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 57,
     "image": "bosu_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      }
-    ],
     "name": "bosu crunch",
     "target1": "abdominals",
     "type": "bosu"
@@ -1313,20 +862,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 58,
     "image": "bosu_jump_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 16
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      }
-    ],
     "name": "bosu jump squat",
     "target1": "legs",
     "type": "bosu"
@@ -1346,16 +881,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 59,
     "image": "kneeling_pushup",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "bosu kneeling pushup",
     "target1": "chest",
     "type": "bosu"
@@ -1376,20 +901,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 60,
     "image": "bosu_lunge",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 17
-      }
-    ],
     "name": "bosu lunge",
     "target1": "legs",
     "type": "bosu"
@@ -1404,12 +915,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 61,
     "image": "bosu_pushup",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      }
-    ],
     "name": "bosu pushup",
     "target1": "abdominals",
     "type": "bosu"
@@ -1429,16 +934,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 62,
     "image": "bosu_russian_twist",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "bosu russian twist",
     "target1": "abdominals",
     "type": "bosu"
@@ -1453,12 +948,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 63,
     "image": "bosu_side_bridge",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      }
-    ],
     "name": "bosu side bridge",
     "target1": "abdominals",
     "type": "bosu"
@@ -1473,12 +962,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 64,
     "image": "bosu_sit_up",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      }
-    ],
     "name": "bosu sit-up",
     "target1": "abdominals",
     "type": "bosu"
@@ -1493,12 +976,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 65,
     "image": "bridge_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      }
-    ],
     "name": "bridge crunch",
     "target1": "abdominals",
     "type": "none"
@@ -1519,20 +996,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 66,
     "image": "bulgarian_split_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 17
-      }
-    ],
     "name": "bulgarian split squat",
     "target1": "legs",
     "type": "barbell"
@@ -1553,20 +1016,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 67,
     "image": "bulgarian_split_squat_no_weight",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 17
-      }
-    ],
     "name": "bulgarian split squat (no weights)",
     "target1": "legs",
     "type": "none"
@@ -1581,12 +1030,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 68,
     "image": "cable_biceps_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 2
-      }
-    ],
     "name": "cable biceps curl",
     "target1": "arms",
     "type": "machine"
@@ -1607,20 +1050,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 69,
     "image": "cable_chest_flye",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 8
-      }
-    ],
     "name": "cable chest flye",
     "target1": "chest",
     "type": "machine"
@@ -1641,20 +1070,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 70,
     "image": "cable_chest_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "cable chest press",
     "target1": "chest",
     "type": "machine"
@@ -1675,20 +1090,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 71,
     "image": "cable_close_grip_pulldown",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 3
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 8
-      }
-    ],
     "name": "cable close grip pulldown",
     "target1": "back",
     "type": "machine"
@@ -1709,20 +1110,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 72,
     "image": "cable_crossover",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "cable crossover",
     "target1": "chest",
     "type": "machine"
@@ -1743,20 +1130,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 73,
     "image": "cable_front_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 1
-      }
-    ],
     "name": "cable front raise",
     "target1": "shoulders",
     "type": "machine"
@@ -1776,16 +1149,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 74,
     "image": "cable_front_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 16
-      }
-    ],
     "name": "cable front squat",
     "target1": "legs",
     "type": "machine"
@@ -1805,16 +1168,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 75,
     "image": "cable_hamstring_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 16
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 15
-      }
-    ],
     "name": "cable hamstring curl",
     "target1": "legs",
     "type": "machine"
@@ -1834,16 +1187,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 76,
     "image": "cable_kneeling_twisting_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 14
-      }
-    ],
     "name": "cable kneeling twisting crunch",
     "target1": "abdominals",
     "type": "machine"
@@ -1863,16 +1206,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 77,
     "image": "cable_leg_extension",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      }
-    ],
     "name": "cable leg extension",
     "target1": "legs",
     "type": "machine"
@@ -1892,16 +1225,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 78,
     "image": "cable_rear_lateral_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      }
-    ],
     "name": "cable rear lateral raise",
     "target1": "shoulders",
     "type": "machine"
@@ -1922,20 +1245,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 79,
     "image": "cable_seated_close_row",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 8
-      }
-    ],
     "name": "cable seated close row",
     "target1": "back",
     "type": "machine"
@@ -1956,20 +1265,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 80,
     "image": "cable_seated_high_row",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 8
-      }
-    ],
     "name": "cable seated high row",
     "target1": "back",
     "type": "machine"
@@ -1990,20 +1285,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 81,
     "image": "cable_seated_low_row",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 8
-      }
-    ],
     "name": "cable seated low row",
     "target1": "back",
     "type": "machine"
@@ -2024,20 +1305,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 82,
     "image": "cable_side_lateral_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 19
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      }
-    ],
     "name": "cable side lateral raise",
     "target1": "shoulders",
     "type": "machine"
@@ -2058,20 +1325,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 83,
     "image": "cable_standing_close_row",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 8
-      }
-    ],
     "name": "cable standing close row",
     "target1": "back",
     "type": "machine"
@@ -2086,12 +1339,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 84,
     "image": "cable_standing_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      }
-    ],
     "name": "cable standing crunch",
     "target1": "abdominals",
     "type": "machine"
@@ -2112,20 +1359,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 85,
     "image": "cable_straight_arm_pull_down",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 8
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "cable straight arm pull-down",
     "target1": "back",
     "type": "machine"
@@ -2145,16 +1378,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 86,
     "image": "cable_torso_rotation",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      }
-    ],
     "name": "cable torso rotation",
     "target1": "abdominals",
     "type": "machine"
@@ -2169,12 +1392,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 87,
     "image": "cable_triceps_overhead_extension",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "cable triceps overhead extension",
     "target1": "arms",
     "type": "machine"
@@ -2189,12 +1406,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 88,
     "image": "cable_triceps_pushdown",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "cable triceps pushdown",
     "target1": "arms",
     "type": "machine"
@@ -2215,20 +1426,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 89,
     "image": "cable_woodchopper",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 13
-      }
-    ],
     "name": "cable woodchopper",
     "target1": "shoulders",
     "type": "machine"
@@ -2248,16 +1445,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 90,
     "image": "calf_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 15
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 17
-      }
-    ],
     "name": "calf raise",
     "target1": "legs",
     "type": "machine"
@@ -2272,12 +1459,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 91,
     "image": "chair_dip_no_weight",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "chair dip (no weights)",
     "target1": "arms",
     "type": "none"
@@ -2292,12 +1473,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 92,
     "image": "chinup",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 8
-      }
-    ],
     "name": "chinup",
     "target1": "back",
     "type": "machine"
@@ -2312,12 +1487,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 93,
     "image": "clam",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      }
-    ],
     "name": "clam",
     "target1": "abdominals",
     "type": "none"
@@ -2332,12 +1501,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 94,
     "image": "concentration_dumbbell_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 2
-      }
-    ],
     "name": "concentration dumbbell curl",
     "target1": "arms",
     "type": "dumbbell"
@@ -2352,12 +1515,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 95,
     "image": "corkscrew",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      }
-    ],
     "name": "corkscrew",
     "target1": "shoulders",
     "type": "dumbbell"
@@ -2377,16 +1534,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 96,
     "image": "crunch_twist",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 14
-      }
-    ],
     "name": "crunch twist",
     "target1": "abdominals",
     "type": "none"
@@ -2406,16 +1553,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 97,
     "image": "cycle_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "cycle crunch",
     "target1": "abdominals",
     "type": "dumbbell"
@@ -2436,20 +1573,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 98,
     "image": "dead_lift",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 17
-      }
-    ],
     "name": "dead lift",
     "target1": "back",
     "target2": "legs",
@@ -2471,20 +1594,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 99,
     "image": "decline_close_grip_bench_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "decline close-grip bench press",
     "target1": "arms",
     "target2": "chest",
@@ -2506,20 +1615,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 100,
     "image": "decline_dumbbell_bench_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "decline dumbbell bench press",
     "target1": "chest",
     "type": "dumbbell"
@@ -2540,20 +1635,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 101,
     "image": "decline_dumbbell_fly",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "decline dumbbell fly",
     "target1": "chest",
     "type": "barbell"
@@ -2568,12 +1649,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 102,
     "image": "decline_leg_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 16
-      }
-    ],
     "name": "decline leg curl",
     "target1": "legs",
     "type": "machine"
@@ -2593,16 +1668,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 103,
     "image": "decline_pushup",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      }
-    ],
     "name": "decline pushup",
     "target1": "chest",
     "type": "none"
@@ -2622,16 +1687,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 104,
     "image": "decline_twisting_ab_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 14
-      }
-    ],
     "name": "decline twisting ab crunch",
     "target1": "abdominals",
     "type": "other"
@@ -2651,16 +1706,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 105,
     "image": "diamond_pushup",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "diamond pushup",
     "target1": "arms",
     "type": "none"
@@ -2681,20 +1726,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 106,
     "image": "dip",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "dip",
     "target1": "arms",
     "type": "machine"
@@ -2715,20 +1746,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 107,
     "image": "dive_bomber_pushup",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "dive-bomber pushup",
     "target1": "chest",
     "type": "none"
@@ -2749,20 +1766,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 108,
     "image": "drag_curl",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 3
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 2
-      }
-    ],
     "name": "drag curl",
     "target1": "arms",
     "type": "barbell"
@@ -2783,20 +1786,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 109,
     "image": "dumbbell_bench_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "dumbbell bench press",
     "target1": "chest",
     "type": "dumbbell"
@@ -2816,16 +1805,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 110,
     "image": "dumbbell_bench_twist",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "dumbbell bench twist",
     "target1": "abdominals",
     "type": "dumbbell"
@@ -2846,20 +1825,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 111,
     "image": "dumbbell_one_arm_bent_over_row",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 8
-      }
-    ],
     "name": "dumbbell bent-over row",
     "target1": "back",
     "type": "dumbbell"
@@ -2879,16 +1844,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 112,
     "image": "dumbbell_biceps_curl",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 3
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 2
-      }
-    ],
     "name": "dumbbell biceps curl",
     "target1": "arms",
     "type": "dumbbell"
@@ -2909,20 +1864,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 113,
     "image": "dumbbell_calf_jump",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 15
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 16
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 10
-      }
-    ],
     "name": "dumbbell calf jump",
     "target1": "legs",
     "type": "dumbbell"
@@ -2943,20 +1884,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 114,
     "image": "dumbbell_deadlift",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 13
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 10
-      }
-    ],
     "name": "dumbbell deadlift",
     "target1": "back",
     "type": "dumbbell"
@@ -2977,20 +1904,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 115,
     "image": "dumbbell_flye",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "dumbbell flye",
     "target1": "chest",
     "type": "dumbbell"
@@ -3011,20 +1924,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 116,
     "image": "dumbbell_front_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 1
-      }
-    ],
     "name": "dumbbell front raise",
     "target1": "shoulders",
     "type": "dumbbell"
@@ -3045,20 +1944,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 117,
     "image": "dumbbell_front_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 16
-      }
-    ],
     "name": "dumbbell front squat",
     "target1": "legs",
     "type": "dumbbell"
@@ -3079,20 +1964,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 118,
     "image": "dumbbell_incline_bench_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "dumbbell incline bench press",
     "target1": "chest",
     "type": "dumbbell"
@@ -3113,20 +1984,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 119,
     "image": "dumbbell_lateral_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 19
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      }
-    ],
     "name": "dumbbell lateral raise",
     "target1": "shoulders",
     "type": "dumbbell"
@@ -3141,12 +1998,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 120,
     "image": "dumbbell_leg_lift",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      }
-    ],
     "name": "dumbbell leg lift",
     "target1": "abdominals",
     "type": "dumbbell"
@@ -3166,16 +2017,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 121,
     "image": "dumbbell_barbell_lunge",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 17
-      }
-    ],
     "name": "dumbbell lunge",
     "target1": "legs",
     "type": "dumbbell"
@@ -3196,20 +2037,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 122,
     "image": "dumbbell_pull_over",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 8
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "dumbbell pull-over",
     "target1": "chest",
     "type": "dumbbell"
@@ -3230,20 +2057,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 123,
     "image": "dumbbell_pushup",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "dumbbell pushup",
     "target1": "chest",
     "type": "dumbbell"
@@ -3263,16 +2076,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 124,
     "image": "dumbbell_reverse_curl",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 6
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 2
-      }
-    ],
     "name": "dumbbell reverse curl",
     "target1": "arms",
     "type": "dumbbell"
@@ -3293,20 +2096,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 125,
     "image": "dumbbell_lunge",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 16
-      }
-    ],
     "name": "dumbbell reverse lunge",
     "target1": "legs",
     "type": "dumbbell"
@@ -3327,20 +2116,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 126,
     "image": "dumbbell_romanian_deadlift",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 13
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 10
-      }
-    ],
     "name": "dumbbell romanian deadlift",
     "target1": "legs",
     "type": "dumbbell"
@@ -3361,20 +2136,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 127,
     "image": "row_kickback",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 13
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "dumbbell row kickback",
     "target1": "back",
     "target2": "arms",
@@ -3396,20 +2157,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 128,
     "image": "dumbbell_shoulder_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 19
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      }
-    ],
     "name": "dumbbell shoulder press",
     "target1": "shoulders",
     "type": "dumbbell"
@@ -3424,12 +2171,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 129,
     "image": "side_bend",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      }
-    ],
     "name": "dumbbell side bend",
     "target1": "abdominals",
     "type": "dumbbell"
@@ -3450,20 +2191,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 130,
     "image": "dumbbell_single_leg_deadlift",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 16
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 10
-      }
-    ],
     "name": "dumbbell single-leg deadlift",
     "target1": "legs",
     "type": "dumbbell"
@@ -3484,20 +2211,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 131,
     "image": "dumbbell_snatch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 16
-      }
-    ],
     "name": "dumbbell snatch",
     "target1": "shoulders",
     "type": "dumbbell"
@@ -3512,12 +2225,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 132,
     "image": "dumbbell_toe_touch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      }
-    ],
     "name": "dumbbell toe touch",
     "target1": "abdominals",
     "type": "dumbbell"
@@ -3532,12 +2239,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 133,
     "image": "dumbbell_torso_twist",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      }
-    ],
     "name": "dumbbell torso twist",
     "target1": "abdominals",
     "type": "dumbbell"
@@ -3557,16 +2258,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 134,
     "image": "dumbbell_upright_row",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      }
-    ],
     "name": "dumbbell upright row",
     "target1": "arms",
     "target2": "back",
@@ -3582,12 +2273,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 135,
     "image": "wrist_twist",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 5
-      }
-    ],
     "name": "dumbbell wrist twist",
     "target1": "arms",
     "type": "dumbbell"
@@ -3602,12 +2287,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 136,
     "image": "external_rotation_no_weight",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      }
-    ],
     "name": "external rotation (no weights)",
     "target1": "arms",
     "type": "none"
@@ -3622,12 +2301,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 137,
     "image": "figure_8_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      }
-    ],
     "name": "figure-8 crunch",
     "target1": "abdominals",
     "type": "swissball"
@@ -3642,12 +2315,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 138,
     "image": "french_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "french press",
     "target1": "arms",
     "type": "barbell"
@@ -3662,12 +2329,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 139,
     "image": "front_plate_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      }
-    ],
     "name": "front plate raise",
     "target1": "shoulders",
     "type": "dumbbell"
@@ -3687,16 +2348,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 140,
     "image": "front_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      }
-    ],
     "name": "front squat",
     "target1": "legs",
     "type": "barbell"
@@ -3716,16 +2367,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 141,
     "image": "goblet_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      }
-    ],
     "name": "goblet squat",
     "target1": "legs",
     "type": "dumbbell"
@@ -3745,16 +2386,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 142,
     "image": "golf_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "golf squat",
     "target1": "legs",
     "target2": "abdominals",
@@ -3775,16 +2406,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 143,
     "image": "good_morning",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 16
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 13
-      }
-    ],
     "name": "good morning",
     "target1": "legs",
     "type": "barbell"
@@ -3799,12 +2420,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 144,
     "image": "hack_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      }
-    ],
     "name": "hack squat",
     "target1": "legs",
     "type": "barbell"
@@ -3824,16 +2439,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 145,
     "image": "hammer_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 3
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "hammer curl",
     "target1": "arms",
     "type": "dumbbell"
@@ -3853,16 +2458,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 146,
     "image": "hanging_knee_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "hanging knee raise",
     "target1": "abdominals",
     "type": "machine"
@@ -3882,16 +2477,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 147,
     "image": "hanging_leg_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "hanging leg raise",
     "target1": "abdominals",
     "type": "machine"
@@ -3906,12 +2491,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 148,
     "image": "high_pull",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      }
-    ],
     "name": "high pull",
     "target1": "shoulders",
     "type": "barbell"
@@ -3931,16 +2510,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 149,
     "image": "high_woodchopper",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "high woodchopper",
     "target1": "abdominals",
     "type": "machine"
@@ -3961,20 +2530,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 150,
     "image": "incline_barbell_bench_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "incline barbell bench press",
     "target1": "chest",
     "target2": "arms",
@@ -3995,16 +2550,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 151,
     "image": "incline_dumbbell_curl",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 3
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 2
-      }
-    ],
     "name": "incline dumbbell curl",
     "target1": "arms",
     "type": "dumbbell"
@@ -4025,20 +2570,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 152,
     "image": "incline_dumbbell_fly",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "incline dumbbell fly",
     "target1": "chest",
     "type": "dumbbell"
@@ -4053,12 +2584,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 153,
     "image": "incline_hammer_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 2
-      }
-    ],
     "name": "incline hammer curl",
     "target1": "arms",
     "type": "dumbbell"
@@ -4078,16 +2603,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 154,
     "image": "incline_pushup",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      }
-    ],
     "name": "incline pushup",
     "target1": "chest",
     "type": "none"
@@ -4107,16 +2622,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 155,
     "image": "inclined_reverse_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "incline reverse crunch",
     "target1": "abdominals",
     "type": "machine"
@@ -4136,16 +2641,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 156,
     "image": "incline_reverse_curl",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 6
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 2
-      }
-    ],
     "name": "incline reverse curl",
     "target1": "arms",
     "type": "dumbbell"
@@ -4160,12 +2655,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 157,
     "image": "incline_shoulder_rotation",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      }
-    ],
     "name": "incline shoulder rotation",
     "target1": "shoulders",
     "type": "dumbbell"
@@ -4185,16 +2674,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 158,
     "image": "incline_y_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      }
-    ],
     "name": "incline y raise",
     "target1": "back",
     "type": "dumbbell"
@@ -4215,20 +2694,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 159,
     "image": "jackknife",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 10
-      }
-    ],
     "name": "jackknife",
     "target1": "abdominals",
     "type": "swissball"
@@ -4249,20 +2714,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 160,
     "image": "kettlebell_clean",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 13
-      }
-    ],
     "name": "kettlebell clean",
     "target1": "legs",
     "target2": "back",
@@ -4279,12 +2730,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 161,
     "image": "kettlebell_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      }
-    ],
     "name": "kettlebell crunch",
     "target1": "abdominals",
     "type": "kettlebell"
@@ -4299,12 +2744,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 162,
     "image": "kettlebell_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 2
-      }
-    ],
     "name": "kettlebell curl",
     "target1": "arms",
     "type": "kettlebell"
@@ -4319,12 +2758,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 163,
     "image": "kettlebell_french_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "kettlebell french press",
     "target1": "arms",
     "type": "kettlebell"
@@ -4345,20 +2778,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 164,
     "image": "kettlebell_high_pull",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 13
-      }
-    ],
     "name": "kettllebell high pull",
     "target1": "legs",
     "target2": "back",
@@ -4375,12 +2794,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 165,
     "image": "kettlebell_kickback",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "kettlebell kickback",
     "target1": "arms",
     "type": "kettlebell"
@@ -4395,12 +2808,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 166,
     "image": "kettlebell_overhead_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "kettlebell overhead press",
     "target1": "arms",
     "type": "kettlebell"
@@ -4415,12 +2822,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 167,
     "image": "kettlebell_pullover",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "kettlebell pullover",
     "target1": "arms",
     "type": "kettlebell"
@@ -4441,20 +2842,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 168,
     "image": "kettlebell_pushup",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "kettlebell pushup",
     "target1": "chest",
     "type": "kettlebell"
@@ -4469,12 +2856,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 169,
     "image": "kettlebell_rear_delt_row",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      }
-    ],
     "name": "kettlebell rear delt row",
     "target1": "shoulders",
     "type": "kettlebell"
@@ -4495,20 +2876,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 170,
     "image": "kettlebell_renegade_row",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 8
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "kettlebell renegade row",
     "target1": "chest",
     "target2": "arms",
@@ -4524,12 +2891,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 171,
     "image": "kettlebell_russian_twist",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      }
-    ],
     "name": "kettlebell russian twist",
     "target1": "abdominals",
     "type": "kettlebell"
@@ -4544,12 +2905,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 172,
     "image": "kettlebell_side_bend",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      }
-    ],
     "name": "kettlebell side bend",
     "target1": "abdominals",
     "type": "kettlebell"
@@ -4569,16 +2924,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 173,
     "image": "kettlebell_straight_leg_deadlift",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 16
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      }
-    ],
     "name": "kettlebell straight-leg deadlift",
     "target1": "legs",
     "type": "kettlebell"
@@ -4598,16 +2943,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 174,
     "image": "kettlebell_upright_row",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "kettlebell upright row",
     "target1": "shoulders",
     "type": "kettlebell"
@@ -4628,20 +2963,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 175,
     "image": "kettlebells_bent_over_row",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 13
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 8
-      }
-    ],
     "name": "kettlebells bent-over-row",
     "target1": "back",
     "type": "kettlebell"
@@ -4661,16 +2982,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 176,
     "image": "kettlebells_side_lunge",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 10
-      }
-    ],
     "name": "kettlebells side lunge",
     "target1": "legs",
     "type": "kettlebell"
@@ -4690,16 +3001,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 177,
     "image": "kettlebells_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 10
-      }
-    ],
     "name": "kettlebells squat",
     "target1": "legs",
     "type": "kettlebell"
@@ -4719,16 +3020,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 178,
     "image": "kneeling_cable_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "kneeling cable crunch",
     "target1": "abdominals",
     "type": "machine"
@@ -4749,20 +3040,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 179,
     "image": "lat_pulldown",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 8
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "lat pulldown",
     "target1": "arms",
     "target2": "back",
@@ -4784,20 +3061,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 180,
     "image": "lunging_step_up",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 16
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 10
-      }
-    ],
     "name": "lunging step up",
     "target1": "legs",
     "type": "dumbbell"
@@ -4817,16 +3080,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 181,
     "image": "lying_hip_extension_no_weight",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 16
-      }
-    ],
     "name": "lying hip extension (no weights)",
     "target1": "legs",
     "type": "none"
@@ -4841,12 +3094,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 182,
     "image": "lying_one_arm_extension",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "lying one-arm extension",
     "target1": "arms",
     "type": "dumbbell"
@@ -4861,12 +3108,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 183,
     "image": "lying_pullover",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "lying pullover",
     "target1": "arms",
     "type": "barbell"
@@ -4881,12 +3122,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 184,
     "image": "lying_triceps_extension",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "lying triceps extension",
     "target1": "arms",
     "type": "dumbbell"
@@ -4901,12 +3136,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 185,
     "image": "machine_biceps_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 2
-      }
-    ],
     "name": "machine biceps curl",
     "target1": "arms",
     "type": "machine"
@@ -4921,12 +3150,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 186,
     "image": "machine_chest_flye",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      }
-    ],
     "name": "machine chest flye",
     "target1": "chest",
     "type": "machine"
@@ -4941,12 +3164,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 187,
     "image": "machine_chest_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      }
-    ],
     "name": "machine chest press",
     "target1": "chest",
     "type": "machine"
@@ -4967,20 +3184,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 188,
     "image": "machine_lateral_pull_down",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 8
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "machine lateral pull-down",
     "target1": "back",
     "type": "machine"
@@ -5000,16 +3203,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 189,
     "image": "machine_lateral_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 19
-      }
-    ],
     "name": "machine lateral raise",
     "target1": "shoulders",
     "type": "machine"
@@ -5029,16 +3222,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 190,
     "image": "machine_leg_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 16
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      }
-    ],
     "name": "machine leg curl",
     "target1": "legs",
     "type": "machine"
@@ -5053,12 +3236,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 191,
     "image": "machine_leg_extension",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      }
-    ],
     "name": "machine leg extension",
     "target1": "legs",
     "type": "machine"
@@ -5079,20 +3256,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 192,
     "image": "machine_leg_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 15
-      }
-    ],
     "name": "machine leg press",
     "target1": "legs",
     "type": "machine"
@@ -5112,16 +3275,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 193,
     "image": "machine_rear_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      }
-    ],
     "name": "machine rear raise",
     "target1": "shoulders",
     "type": "machine"
@@ -5141,16 +3294,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 194,
     "image": "machine_shoulder_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 19
-      }
-    ],
     "name": "machine shoulder press",
     "target1": "shoulders",
     "type": "machine"
@@ -5165,12 +3308,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 195,
     "image": "machine_triceps_extension",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "machine triceps extension",
     "target1": "arms",
     "type": "machine"
@@ -5185,12 +3322,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 196,
     "image": "medicine_ball_toe_touch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      }
-    ],
     "name": "medicine ball toe touch",
     "target1": "abdominals",
     "type": "swissball"
@@ -5210,16 +3341,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 197,
     "image": "modified_pushup",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      }
-    ],
     "name": "modified pushup",
     "target1": "chest",
     "type": "none"
@@ -5239,16 +3360,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 198,
     "image": "modified_v_sit",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "modified v-sit",
     "target1": "abdominals",
     "type": "none"
@@ -5269,20 +3380,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 199,
     "image": "neutral_grip_pullup",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 8
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "neutral-grip pullup",
     "target1": "back",
     "type": "machine"
@@ -5302,16 +3399,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 200,
     "image": "oblique_vup",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "oblique v-up",
     "target1": "abdominals",
     "type": "none"
@@ -5331,16 +3418,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 201,
     "image": "offset_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 10
-      }
-    ],
     "name": "offset squat",
     "target1": "legs",
     "type": "dumbbell"
@@ -5361,20 +3438,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 202,
     "image": "one_arm_row",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 8
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "one-arm row",
     "target1": "back",
     "type": "dumbbell"
@@ -5389,12 +3452,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 203,
     "image": "overhead_bar_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "overhead bar press",
     "target1": "arms",
     "type": "barbell"
@@ -5414,16 +3471,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 204,
     "image": "overhead_triceps_extension",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "overhead triceps extension",
     "target1": "arms",
     "type": "barbell"
@@ -5444,20 +3491,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 205,
     "image": "prallel_bar_dip",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "parallel bar dip",
     "target1": "chest",
     "type": "machine"
@@ -5478,20 +3511,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 206,
     "image": "power_clean",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 13
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      }
-    ],
     "name": "power clean",
     "target1": "legs",
     "type": "dumbbell"
@@ -5512,20 +3531,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 207,
     "image": "prisoner_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 16
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      }
-    ],
     "name": "prisoner squat",
     "target1": "legs",
     "type": "none"
@@ -5545,16 +3550,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 208,
     "image": "prone_cobra",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 13
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 14
-      }
-    ],
     "name": "prone cobra",
     "target1": "abdominals",
     "type": "none"
@@ -5569,12 +3564,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 209,
     "image": "prone_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 2
-      }
-    ],
     "name": "prone curl",
     "target1": "arms",
     "type": "dumbbell"
@@ -5595,20 +3584,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 210,
     "image": "prone_hammer_curl",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 6
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 5
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 2
-      }
-    ],
     "name": "prone hammer curl",
     "target1": "arms",
     "type": "dumbbell"
@@ -5623,12 +3598,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 211,
     "image": "prone_reverse_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 2
-      }
-    ],
     "name": "prone reverse curl",
     "target1": "arms",
     "type": "dumbbell"
@@ -5648,16 +3617,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 212,
     "image": "pulse_up",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 13
-      }
-    ],
     "name": "pulse up",
     "target1": "abdominals",
     "type": "none"
@@ -5678,20 +3637,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 213,
     "image": "push_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 16
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      }
-    ],
     "name": "push press",
     "target1": "legs",
     "target2": "shoulders",
@@ -5707,12 +3652,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 214,
     "image": "pushup",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      }
-    ],
     "name": "pushup",
     "target1": "chest",
     "type": "none"
@@ -5733,20 +3672,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 215,
     "image": "rear_lateral_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 18
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      }
-    ],
     "name": "rear lateral raise",
     "target1": "shoulders",
     "type": "dumbbell"
@@ -5761,12 +3686,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 216,
     "image": "resistance_band_biceps_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 2
-      }
-    ],
     "name": "resistance band biceps curl",
     "target1": "arms",
     "type": "bands"
@@ -5787,20 +3706,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 217,
     "image": "resistance_band_close_row",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 8
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "resistance band close row",
     "target1": "back",
     "target2": "arms",
@@ -5821,16 +3726,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 218,
     "image": "resistance_band_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "resistance band crunch",
     "target1": "abdominals",
     "type": "bands"
@@ -5845,12 +3740,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 219,
     "image": "resistance_band_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 2
-      }
-    ],
     "name": "resistance band curl",
     "target1": "arms",
     "type": "bands"
@@ -5865,12 +3754,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 220,
     "image": "resistance_band_hip_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      }
-    ],
     "name": "resistance band hip raise",
     "target1": "abdominals",
     "type": "bands"
@@ -5890,16 +3773,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 221,
     "image": "resistance_band_kneeling_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "resistance band kneeling crunch",
     "target1": "abdominals",
     "type": "bands"
@@ -5920,20 +3793,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 222,
     "image": "resistance_band_lunge",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 17
-      }
-    ],
     "name": "resistance band lunge",
     "target1": "legs",
     "type": "bands"
@@ -5948,12 +3807,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 223,
     "image": "resistance_band_overhead_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      }
-    ],
     "name": "resistance band overhead press",
     "target1": "shoulders",
     "type": "bands"
@@ -5968,12 +3821,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 224,
     "image": "resistance_band_overhead_triceps_extension",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "resistance band overhead triceps extension",
     "target1": "arms",
     "type": "bands"
@@ -5993,16 +3840,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 225,
     "image": "resistance_band_push_up",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      }
-    ],
     "name": "resistance band push up",
     "target1": "chest",
     "type": "bands"
@@ -6017,12 +3854,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 226,
     "image": "resistance_band_shrug",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      }
-    ],
     "name": "resistance band shrug",
     "target1": "shoulders",
     "type": "bands"
@@ -6042,16 +3873,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 227,
     "image": "reverse_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "reverse crunch",
     "target1": "abdominals",
     "type": "none"
@@ -6071,16 +3892,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 228,
     "image": "reverse_hyperextension",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 16
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      }
-    ],
     "name": "reverse hyperextension",
     "target1": "legs",
     "type": "none"
@@ -6095,12 +3906,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 229,
     "image": "reverse_wrist_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 5
-      }
-    ],
     "name": "reverse wrist curl",
     "target1": "arms",
     "type": "barbell"
@@ -6115,12 +3920,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 230,
     "image": "rollback",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      }
-    ],
     "name": "rollback",
     "target1": "abdominals",
     "type": "none"
@@ -6141,20 +3940,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 231,
     "image": "romanian_barbell_deadlift",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 13
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 10
-      }
-    ],
     "name": "romanian barbell deadlift",
     "target1": "legs",
     "type": "barbell"
@@ -6175,20 +3960,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 232,
     "image": "romanian_deadlift",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 13
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 10
-      }
-    ],
     "name": "romanian deadlift",
     "target1": "legs",
     "type": "barbell"
@@ -6209,20 +3980,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 233,
     "image": "rotational_pushup",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "rotational pushup",
     "target1": "chest",
     "type": "none"
@@ -6237,12 +3994,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 234,
     "image": "rotator_cuff_external",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 19
-      }
-    ],
     "name": "rotator cuff - external",
     "target1": "shoulders",
     "type": "machine"
@@ -6257,12 +4008,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 235,
     "image": "rotator_cuff_internal",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 19
-      }
-    ],
     "name": "rotator cuff - internal",
     "target1": "shoulders",
     "type": "machine"
@@ -6282,16 +4027,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 236,
     "image": "saxon_side_bend",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      }
-    ],
     "name": "saxon side bend",
     "target1": "abdominals",
     "type": "none"
@@ -6311,16 +4046,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 237,
     "image": "scaption",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 19
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      }
-    ],
     "name": "scaption",
     "target1": "shoulders",
     "type": "dumbbell"
@@ -6340,16 +4065,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 238,
     "image": "seated_bent_over_row",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 8
-      }
-    ],
     "name": "seated bent over row",
     "target1": "back",
     "type": "dumbbell"
@@ -6370,20 +4085,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 239,
     "image": "seated_dumbbell_shoulder_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 18
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      }
-    ],
     "name": "seated dumbbell shoulder press",
     "target1": "shoulders",
     "type": "dumbbell"
@@ -6404,20 +4105,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 240,
     "image": "seated_front_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      }
-    ],
     "name": "seated front raise",
     "target1": "shoulders",
     "type": "dumbbell"
@@ -6437,16 +4124,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 241,
     "image": "seated_jacknife",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "seated jackknife",
     "target1": "abdominals",
     "type": "none"
@@ -6466,16 +4143,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 242,
     "image": "seated_preacher_curl",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 3
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 2
-      }
-    ],
     "name": "seated preacher curl",
     "target1": "arms",
     "type": "barbell"
@@ -6496,20 +4163,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 243,
     "image": "seated_reverse_fly",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 18
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      }
-    ],
     "name": "seated reverse fly",
     "target1": "back",
     "type": "dumbbell"
@@ -6529,16 +4182,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 244,
     "image": "seated_triceps_extension",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "seated triceps extension",
     "target1": "arms",
     "type": "dumbbell"
@@ -6558,16 +4201,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 245,
     "image": "seated_twist",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "seated twist",
     "target1": "abdominals",
     "type": "swissball"
@@ -6582,12 +4215,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 246,
     "image": "shrug",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 7
-      }
-    ],
     "name": "shrug",
     "target1": "arms",
     "target2": "shoulders",
@@ -6603,12 +4230,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 247,
     "image": "side_bridge",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      }
-    ],
     "name": "side bridge",
     "target1": "abdominals",
     "type": "none"
@@ -6628,16 +4249,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 248,
     "image": "side_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 14
-      }
-    ],
     "name": "side crunch",
     "target1": "abdominals",
     "type": "none"
@@ -6657,16 +4268,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 249,
     "image": "side_lunge",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 10
-      }
-    ],
     "name": "side lunge",
     "target1": "legs",
     "type": "dumbbell"
@@ -6686,16 +4287,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 250,
     "image": "single_arm_external_rotation",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 19
-      }
-    ],
     "name": "single-arm external rotation",
     "target1": "chest",
     "type": "dumbbell"
@@ -6716,20 +4307,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 251,
     "image": "single_arm_pulldown",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 8
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "single-arm pulldown",
     "target1": "shoulders",
     "type": "machine"
@@ -6749,16 +4326,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 252,
     "image": "single_leg_decline_pushup",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      }
-    ],
     "name": "single-leg decline pushup",
     "target1": "chest",
     "type": "none"
@@ -6779,20 +4346,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 253,
     "image": "single_leg_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 16
-      }
-    ],
     "name": "single-leg squat",
     "target1": "legs",
     "type": "none"
@@ -6812,16 +4365,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 254,
     "image": "single_leg_standing_calf_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 15
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 17
-      }
-    ],
     "name": "single-leg standing calf raise",
     "target1": "legs",
     "type": "none"
@@ -6842,20 +4385,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 255,
     "image": "situp",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 10
-      }
-    ],
     "name": "situp",
     "target1": "abdominals",
     "type": "none"
@@ -6875,16 +4404,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 256,
     "image": "ski_squat_no_weight",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      }
-    ],
     "name": "ski squat (no weights)",
     "target1": "legs",
     "type": "none"
@@ -6904,16 +4423,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 257,
     "image": "sprinter",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "sprinter",
     "target1": "abdominals",
     "type": "none"
@@ -6928,12 +4437,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 258,
     "image": "stabilizing_pushup",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 2
-      }
-    ],
     "name": "stabilizing pushup",
     "target1": "arms",
     "type": "swisball"
@@ -6953,16 +4456,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 259,
     "image": "standing_biceps_curl",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 3
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 2
-      }
-    ],
     "name": "standing biceps curl",
     "target1": "arms",
     "type": "barbell"
@@ -6982,16 +4475,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 260,
     "image": "standing_concentration_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 3
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "standing concentration curl",
     "target1": "arms",
     "type": "dumbbell"
@@ -7011,16 +4494,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 261,
     "image": "standing_calf_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 15
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 17
-      }
-    ],
     "name": "standing dumbbell calf raise",
     "target1": "legs",
     "type": "dumbbell"
@@ -7035,12 +4508,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 262,
     "image": "standing_scarecrow",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      }
-    ],
     "name": "standing scarecrow",
     "target1": "shoulders",
     "type": "dumbbell"
@@ -7055,12 +4522,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 263,
     "image": "standing_oblique_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      }
-    ],
     "name": "standing oblique crunch",
     "target1": "abdominals",
     "type": "machine"
@@ -7080,16 +4541,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 264,
     "image": "standing_torso_twist",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "standing torso twist",
     "target1": "abdominals",
     "type": "barbell"
@@ -7104,12 +4555,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 265,
     "image": "standing_triceps_extension",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "standing triceps extension",
     "target1": "arms",
     "type": "dumbbell"
@@ -7124,12 +4569,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 266,
     "image": "standing_wrist_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 6
-      }
-    ],
     "name": "standing wrist curl",
     "target1": "arms",
     "type": "barbell"
@@ -7149,16 +4588,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 267,
     "image": "steam_engine",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "steam engine",
     "target1": "abdominals",
     "type": "none"
@@ -7178,16 +4607,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 268,
     "image": "sumo_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      }
-    ],
     "name": "sumo squat",
     "target1": "legs",
     "type": "dumbbell"
@@ -7208,20 +4627,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 269,
     "image": "superman",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 13
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "superman",
     "target1": "abdominals",
     "type": "none"
@@ -7242,20 +4647,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 270,
     "image": "swiss_ball_close_row",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 13
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 8
-      }
-    ],
     "name": "swiss-ball close row",
     "target1": "back",
     "type": "swissball dumbbell"
@@ -7275,16 +4666,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 271,
     "image": "swiss_ball_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 14
-      }
-    ],
     "name": "swiss-ball crunch",
     "target1": "abdominals",
     "type": "swissball"
@@ -7299,12 +4680,6 @@ const EXERCISES = [
     "difficulty": "intermediate",
     "id": 272,
     "image": "swiss_ball_french_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "swiss-ball french press",
     "target1": "arms",
     "type": "swissball"
@@ -7319,12 +4694,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 273,
     "image": "swiss_ball_front_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      }
-    ],
     "name": "swiss-ball front raise",
     "target1": "shoulders",
     "type": "swissball dumbbell"
@@ -7344,16 +4713,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 274,
     "image": "swiss_ball_glute_bridge",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 11
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 13
-      }
-    ],
     "name": "swiss-ball glute bridge",
     "target1": "legs",
     "type": "swissball"
@@ -7368,12 +4727,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 275,
     "image": "swiss_ball_kickback",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "swiss-ball kickback",
     "target1": "arms",
     "type": "dumbbell swissball"
@@ -7393,16 +4746,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 276,
     "image": "swiss_ball_leg_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 16
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 10
-      }
-    ],
     "name": "swiss-ball leg curl",
     "target1": "legs",
     "type": "swissball"
@@ -7422,16 +4765,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 277,
     "image": "swiss_ball_oblique_back_extension",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 13
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 8
-      }
-    ],
     "name": "swiss-ball oblique back extension",
     "target1": "back",
     "type": "swissball"
@@ -7451,16 +4784,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 278,
     "image": "swiss_ball_oblique_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 14
-      }
-    ],
     "name": "swiss-ball oblique crunch",
     "target1": "abdominals",
     "type": "swissball"
@@ -7480,16 +4803,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 279,
     "image": "swiss_ball_pike_pushup",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      }
-    ],
     "name": "swiss-ball pike pushup",
     "target1": "abdominals",
     "type": "swissball"
@@ -7509,16 +4822,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 280,
     "image": "swiss_ball_preacher_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 3
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "swiss-ball preacher curl",
     "target1": "arms",
     "type": "swissball dumbbell"
@@ -7533,12 +4836,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 281,
     "image": "swiss_ball_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      }
-    ],
     "name": "swiss-ball press",
     "target1": "chest",
     "type": "swissball dumbbell"
@@ -7559,20 +4856,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 282,
     "image": "swiss_ball_pullover",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 8
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "swiss-ball pullover",
     "target1": "chest",
     "target2": "back",
@@ -7588,12 +4871,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 283,
     "image": "swiss_ball_pushup",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      }
-    ],
     "name": "swiss-ball pushup",
     "target1": "chest",
     "type": "swissball"
@@ -7613,16 +4890,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 284,
     "image": "swiss_ball_reverse_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "swiss-ball reverse crunch",
     "target1": "abdominals",
     "type": "swissball"
@@ -7642,16 +4909,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 285,
     "image": "swiss_ball_seated_curl",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 3
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 2
-      }
-    ],
     "name": "swiss-ball seated curl",
     "target1": "arms",
     "type": "swissball dumbbell"
@@ -7671,16 +4928,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 286,
     "image": "swiss_ball_shoulder_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "swiss-ball shoulder press",
     "target1": "shoulders",
     "type": "swissball"
@@ -7695,12 +4942,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 287,
     "image": "swiss_ball_shrug",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      }
-    ],
     "name": "swiss-ball shrug",
     "target1": "shoulders",
     "type": "dumbbell swissball"
@@ -7721,20 +4962,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 288,
     "image": "swiss_ball_split_squat",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 17
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 11
-      }
-    ],
     "name": "swiss-ball split squat",
     "target1": "legs",
     "type": "swissball"
@@ -7749,12 +4976,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 289,
     "image": "swiss_ball_torso_twist",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      }
-    ],
     "name": "swiss-ball torso twist",
     "target1": "abdominals",
     "type": "swissball dumbbell"
@@ -7774,16 +4995,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 290,
     "image": "swiss_ball_trunk_rotation",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 14
-      }
-    ],
     "name": "swiss-ball trunk rotation",
     "target1": "abdominals",
     "type": "swissball"
@@ -7803,16 +5014,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 291,
     "image": "swiss_ball_wall_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      }
-    ],
     "name": "swiss-ball wall squat",
     "target1": "legs",
     "type": "swissball"
@@ -7833,20 +5034,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 292,
     "image": "t_bar_bent_over_row",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 8
-      }
-    ],
     "name": "t-bar bent-over row",
     "target1": "back",
     "type": "barbell"
@@ -7866,16 +5053,6 @@ const EXERCISES = [
     "difficulty": "Expert",
     "id": 293,
     "image": "t_pushup",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      }
-    ],
     "name": "t-pushup",
     "target1": "legs",
     "type": "barbell"
@@ -7890,12 +5067,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 294,
     "image": "toe_touch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      }
-    ],
     "name": "toe touch",
     "target1": "abdominals",
     "type": "none"
@@ -7916,20 +5087,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 295,
     "image": "towel_fly_no_weight",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "towel fly (no weights)",
     "target1": "chest",
     "type": "none"
@@ -7949,16 +5106,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 296,
     "image": "traditional_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "traditional crunch",
     "target1": "abdominals",
     "type": "none"
@@ -7979,20 +5126,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 297,
     "image": "triceps_assisted_dip",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "triceps assisted dip",
     "target1": "arms",
     "type": "machine"
@@ -8007,12 +5140,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 298,
     "image": "triceps_kickback",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
-      }
-    ],
     "name": "triceps kickback",
     "target1": "arms",
     "type": "dumbbell"
@@ -8027,12 +5154,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 299,
     "image": "twisting_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      }
-    ],
     "name": "twisting crunch",
     "target1": "abdominals",
     "type": "none"
@@ -8052,16 +5173,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 300,
     "image": "twisting_hip_raise",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "twisting hip raise",
     "target1": "abdominals",
     "type": "none"
@@ -8082,20 +5193,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 301,
     "image": "twisting_shoulder_press",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      }
-    ],
     "name": "twisting shoulder press",
     "target1": "shoulders",
     "target2": "abdominals",
@@ -8111,12 +5208,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 302,
     "image": "twisting_windmill",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      }
-    ],
     "name": "twisting windmill",
     "target1": "abdominals",
     "type": "none"
@@ -8137,20 +5228,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 303,
     "image": "two_point_bridge",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 16
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "two-point bridge",
     "target1": "arms",
     "target2": "chest",
@@ -8171,16 +5248,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 304,
     "image": "unilateral_high_cable_fly",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      }
-    ],
     "name": "unilateral high cable fly",
     "target1": "chest",
     "type": "machine"
@@ -8200,16 +5267,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 305,
     "image": "unilateral_low_cable_fly",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "unilateral low cable fly",
     "target1": "chest",
     "type": "machine"
@@ -8230,20 +5287,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 306,
     "image": "upright_row",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 7
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 2
-      }
-    ],
     "name": "upright row",
     "target1": "shoulders",
     "type": "machine"
@@ -8263,16 +5306,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 307,
     "image": "v_up",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "v-up",
     "target1": "abdominals",
     "type": "none"
@@ -8292,16 +5325,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 308,
     "image": "walking_lunge",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      }
-    ],
     "name": "walking dumbbell lunge",
     "target1": "legs",
     "type": "dumbbell"
@@ -8322,20 +5345,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 309,
     "image": "walking_lunge_twist",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 10
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 11
-      }
-    ],
     "name": "walking lunge twist",
     "target1": "legs",
     "target2": "abdominals",
@@ -8356,16 +5365,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 310,
     "image": "weighted_chop",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 13
-      }
-    ],
     "name": "weighted chop",
     "target1": "abdominals",
     "target2": "back",
@@ -8386,16 +5385,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 311,
     "image": "weighted_crunch",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      }
-    ],
     "name": "weighted crunch",
     "target1": "abdominals",
     "type": "dumbbell"
@@ -8416,20 +5405,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 312,
     "image": "weighted_pushup",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 12
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 4
-      }
-    ],
     "name": "weighted pushup",
     "target1": "chest",
     "type": "dumbbell"
@@ -8449,16 +5424,6 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 313,
     "image": "weighted_swiss_ball_crunch",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "weighted swiss-ball crunch",
     "target1": "abdominals",
     "type": "swissball other"
@@ -8478,16 +5443,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 314,
     "image": "wheel_rollout",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "wheel rollout",
     "target1": "abdominals",
     "type": "other"
@@ -8502,12 +5457,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 315,
     "image": "wrist_curl",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 6
-      }
-    ],
     "name": "wrist curl",
     "target1": "arms",
     "type": "barbell"
@@ -8528,20 +5477,6 @@ const EXERCISES = [
     "difficulty": "Advanced",
     "id": 316,
     "image": "zercher_squat",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 13
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 16
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 10
-      }
-    ],
     "name": "zercher squat",
     "target1": "back",
     "type": "barbell"
@@ -8562,183 +5497,179 @@ const EXERCISES = [
     "difficulty": "Intermediate",
     "id": 317,
     "image": "zottman_curl",
-    "muscles": [
-      {
-        "is_primary": 0,
-        "muscle_id": 5
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 6
-      },
-      {
-        "is_primary": 1,
-        "muscle_id": 2
-      }
-    ],
     "name": "zottman curl",
     "target1": "arms",
     "type": "dumbbell"
   },
   {
+    "MajorMuscles": {
+      "Muscle": {}
+    },
     "description": "Exercise bikes and treadmills are both great for getting in shape. Generally speaking though, a workout on a treadmill can burn more calories and because you are usually moving your arms, you'll get more of an overall aerobic workout.\n\nSince exercise bikes are usually more fun than treadmills though, you are much more likely to stick with it in the long-term. This means that even though you can burn more calories on a treadmill, you are also more likely to stop using it altogether.\n\nYou might also find it difficult to use it long enough per workout session to get the full benefits. Most people find it easier to workout for 20 minutes on an exercise bike than 20 minutes on a treadmill. You have to think about that. If you are likely to only do 10 minutes on a treadmill but can easily do 20 minutes on an exercise bike, you will burn more calories per session on an exercise bike.",
     "difficulty": "Beginner",
     "id": 318,
     "image": "cycling",
-    "muscles": [],
     "name": "cycling",
     "target1": "cardio"
   },
   {
+    "MajorMuscles": {
+      "Muscle": {}
+    },
     "description": "When you compare treadmills to elliptical trainers, you can't help but notice how impact free the elliptical trainer appears to be. With the elliptical, there is no impact on the ground, so the joints in your lower body are free from any abuse. Although the treadmill mat is better for your knees than cement, there is still a significant amount of impact on your joints.\n\nOne obvious point that is in favor of treadmills is that it provides a better training experience for a dedicated runner/jogger than an elliptical trainer. That being said, if you are looking for a quality cardiovascular workout with the maximum amount of efficiency, you will not be able to overlook the elliptical machine. Most elliptical trainers give you a total body workout if you have dual action handlebars for your arms and foot pedals for your legs, whereas treadmills focus more on your lower body as they simulate the jogging experience. What is even more interesting, according to recent studies, is that the lack of impact on the joints allows the user to burn roughly the same amount of calories as treadmills with the impression of putting less effort.\n\nTherefore, it is no wonder that ellipticals have been the machine of choice for elder exercisers with knee problems, as well as physical trainers who are involved in rehabilitating their clients.",
     "difficulty": "Beginner",
     "id": 319,
     "image": "elliptical",
-    "muscles": [],
     "name": "elliptical",
     "target1": "cardio"
   },
   {
+    "MajorMuscles": {
+      "Muscle": {}
+    },
     "description": "The best way to start jogging is, as you both have done, to gradually build up your fitness over time through power walking. Once you feel your fitness has improved you can then start to introduce short sections of jogging.\n\nSelect a route which you can safely walk/jog around for at least 20 mins. It is a good idea if there are lampposts or something similar, to help you to be able to split the route up into segments of approximately 2-3 lampposts in length. The idea is to walk for one segment and slowly jog the next. Initially you might find that you can only jog 3 segments throughout your whole route, but by slowly increasing the number of jogging segments over the next few weeks, you will find the jogging segments become easier. Use the same route for the first four weeks so that you can visibly see the improvement. Before you know it you will both be jogging around your whole route.\n\nJogging burns more calories than walking as you consume more oxygen per mile you run than walking in addition to the impact factor. Circulation increases briefly as does the heart beat. Once you get seasoned enough, you begin to see benefits of jogging. You won\u2019t find sudden thumping of your heart which gets increased and vital oxygen. Jogging tones muscles too. Perhaps it is the best exercise for overweight people. Because of the impact they can burn more calories from hips, thighs and abdominal area. Rotating the torso as you run gives a smoother stride in addition to strengthening waist muscle.",
     "difficulty": "Beginner",
     "id": 320,
     "image": "jogging",
-    "muscles": [],
     "name": "jogging",
     "target1": "cardio"
   },
   {
+    "MajorMuscles": {
+      "Muscle": {}
+    },
     "description": "Jumping rope is a great cardiovascular exercise. It's one of the foundations of a boxer's conditioning program, and you've got to be in shape to box.\n\nRemember to wear supportive shoes while skipping rope. Running shoes won't give you enough forefoot support and are not intended for bouncing on the balls of your feet. Avoid jumping on concrete, floors laid over concrete, and other hard surfaces like tile. If you don't have a springy wooden or carpeted floor, place a thin exercise mat on whatever surface you do have and jump on that.\n\nJumping rope is strenuous and may be hard to sustain for the 30 minutes that you need for a good aerobic workout. Try this routine, used in many boxing classes:\n\nSkip rope for three minutes, take a minute off and do as many crunches as you can. Then, skip rope for another three minutes, and use the break to do as many pushups as you are able. Finally, go back to skipping for three minutes and finish off with doing crunches once more. Repeat.",
     "difficulty": "Beginner",
     "id": 321,
     "image": "jump_rope",
-    "muscles": [],
     "name": "jump rope",
     "target1": "cardio"
   },
   {
+    "MajorMuscles": {
+      "Muscle": {}
+    },
     "description": "Rowing machine training is a great all round exercise routine. Of course it is not the same as rowing on the water but for many it offers an excellent and safe way to keep fit.\n\nRowing uses all your muscles with very little impact on your joints making it suitable for all ages. Strenuous rowing uses more calories an hour and with less risk of injury than other sports. However, you still need to learn and practice correct rowing technique before starting a vigorous hourly workout.\n\nTraining with a rowing machine is also an excellent activity to strengthen your arms, back, shoulder, abdomen and leg muscles \u2013 pretty much the lot really! But the benefits can only be gained if you focus on correct technique as over tightening your back will strain both your lower back and knees.",
     "difficulty": "Beginner",
     "id": 322,
     "image": "rowing",
-    "muscles": [],
     "name": "rowing",
     "target1": "cardio"
   },
   {
+    "MajorMuscles": {
+      "Muscle": {}
+    },
     "description": "For a gym owner, a step machine makes an excellent choice for a number of reasons. They offer an excellent low-impact workout which focuses on your glutes, hamstrings and calf muscles. This makes them particularly popular with women, who are often highly focused on toning their butt and legs.\n\nUsing them is easy - stepping is an intuitive motion - though care needs to be taken to get the action right. Try to follow the following guidelines:\n\nStand up straight, rather than bending forward. If they need to hold the handrails, use them to stabilize, rather than for support.\n\nClimb in the middle of the machine's range, and avoid letting the steps touch the floor or come to a stop at the top.\n\nTake deep full steps to engage the large muscle groups (quadriceps and hamstrings). Rapid, shallow steps are not nearly as effective.",
     "difficulty": "Beginner",
     "id": 323,
     "image": "step_machine",
-    "muscles": [],
     "name": "step machine",
     "target1": "cardio"
   },
   {
+    "MajorMuscles": {
+      "Muscle": {}
+    },
     "description": "Swimming is an excellent form of exercise. Because the density of the human body is very similar to that of water, the water supports the body and less stress is therefore placed on joints and bones. Swimming is frequently used as an exercise in rehabilitation after injuries or for those with disabilities.\n\nResistance swimming is one form of swimming exercise. It is done either for training purposes, to hold the swimmer in place for stroke analysis, or to enable swimming in a confined space for athletic or therapeutic reasons. Resistance swimming can be done either against a stream of moving water (often termed a swimming machine) or by holding the swimmer stationary with elastic attachments.\n\nSwimming is primarily an aerobic exercise due to the long exercise time, requiring a constant oxygen supply to the muscles, except for short sprints where the muscles work anaerobically. As with most aerobic exercise swimming is believed to reduce the harmful effects of stress. Swimming can improve posture and develop a strong lean physique, often called a \"swimmer's build.\"\n\nSource: Wikipedia",
     "difficulty": "Beginner",
     "id": 324,
     "image": "swimming",
-    "muscles": [],
     "name": "swimming",
     "target1": "cardio"
   },
   {
+    "MajorMuscles": {
+      "Muscle": {}
+    },
     "description": "Running or walking on a treadmill can be an effective way to work out, like other complex cardiovascular exercises. As with all exercise, regular treadmill use increases endurance.\n\nTreadmills offer the benefit of reduced impact since all treadmills offer some sort of shock absorption. Exercising on a treadmill can reduce the strain to the ankles, knees and lower back of users.\n\nLack of wind resistance makes running on a treadmill easier than running outdoors - even at the same elevation. Wind resistance is thought to increase the workload by 2-3%. This problem is very easily overcome by elevating your treadmill to 1% or level 1. The slight incline will make your treadmill workout more equal to running outside on level ground.\n\nIncreasing the incline actually requires more muscle activation than running on a level terrain. You build more than just your leg muscles - your core stabilizer muscles also get worked out. An increase in incline also results in improved bone density, increased cardiovascular fitness, and stamina.",
     "difficulty": "Beginner",
     "id": 325,
     "image": "treadmill",
-    "muscles": [],
     "name": "treadmill",
     "target1": "cardio"
   },
   {
+    "MajorMuscles": {
+      "Muscle": {}
+    },
     "description": "Playing tennis is a good sport to maintain your health, fitness, strength and agility. It has been calculated that a good hour-long game of singles tennis burns around 600 calories for men and 420 calories for women. In addition to the fitness and physical health benefits, tennis also provides numerous social and mental health benefits as well.\n\nTennis can be a great workout and lots of fun. The numerous health benefits of tennis include increased aerobic capacity, lowering of resting heart rate and pressure, improved metabolic function, bone density and muscle tone! It is no wonder that tennis is considered the sport \"for all ages\".",
     "difficulty": "Beginner",
     "id": 326,
     "image": "tennis",
-    "muscles": [],
     "name": "tennis",
     "target1": "cardio"
   },
   {
-    "id": 327,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 2
+    "MajorMuscles": {
+      "Muscle": {
+        "Biceps brachii": {}
       }
-    ],
+    },
+    "id": 327,
     "name": "Bicep curl dumbell inward"
   },
   {
-    "id": 328,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 3
+    "MajorMuscles": {
+      "Muscle": {
+        "Brachialis": {}
       }
-    ],
+    },
+    "id": 328,
     "name": "Bicep curl machine cable inverse"
   },
   {
-    "id": 329,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 15
+    "MajorMuscles": {
+      "Muscle": {
+        "Gastrocnemius": {}
       }
-    ],
+    },
+    "id": 329,
     "name": "Calf raise machine"
   },
   {
-    "id": 330,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 11
+    "MajorMuscles": {
+      "Muscle": {
+        "Glutes": {}
       }
-    ],
+    },
+    "id": 330,
     "name": "Outer thigh machine"
   },
   {
-    "id": 331,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 15
+    "MajorMuscles": {
+      "Muscle": {
+        "Gastrocnemius": {}
       }
-    ],
+    },
+    "id": 331,
     "name": "Inner thigh machine"
   },
   {
-    "id": 332,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 2
+    "MajorMuscles": {
+      "Muscle": {
+        "Biceps brachii": {}
       }
-    ],
+    },
+    "id": 332,
     "name": "arm lift shrug"
   },
   {
-    "id": 333,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 8
+    "MajorMuscles": {
+      "Muscle": {
+        "Latissimus dorsi": {}
       }
-    ],
+    },
+    "id": 333,
     "name": "multi machine pulldown"
   },
   {
-    "id": 334,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 12
+    "MajorMuscles": {
+      "Muscle": {
+        "Deltoids": {}
       }
-    ],
+    },
+    "id": 334,
     "name": "machine rear delt"
   },
   {
@@ -8756,16 +5687,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 335,
     "image": "elevated_feet_plank",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "elevated-feet plank",
     "target1": "abdominals",
     "type": "none"
@@ -8785,16 +5706,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 336,
     "image": "inclined_plank",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "incline plank",
     "target1": "abdominals",
     "type": "none"
@@ -8814,16 +5725,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 337,
     "image": "kneeling_plank",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "kneeling plank",
     "target1": "abdominals",
     "type": "none"
@@ -8843,16 +5744,6 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 338,
     "image": "plank",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 14
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 9
-      }
-    ],
     "name": "plank",
     "target1": "abdominals",
     "type": "none"
@@ -8872,150 +5763,125 @@ const EXERCISES = [
     "difficulty": "Beginner",
     "id": 339,
     "image": "side_plank",
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 9
-      },
-      {
-        "is_primary": 0,
-        "muscle_id": 14
-      }
-    ],
     "name": "side plank",
     "target1": "abdominals",
     "type": "none"
   },
   {
-    "id": 340,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 8
+    "MajorMuscles": {
+      "Muscle": {
+        "Latissimus dorsi": {}
       }
-    ],
+    },
+    "id": 340,
     "name": "machine mid row"
   },
   {
-    "id": 341,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 8
+    "MajorMuscles": {
+      "Muscle": {
+        "Latissimus dorsi": {}
       }
-    ],
+    },
+    "id": 341,
     "name": "machine low row"
   },
   {
-    "id": 342,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
+    "MajorMuscles": {
+      "Muscle": {
+        "Pectoralis": {}
       }
-    ],
+    },
+    "id": 342,
     "name": "Kinesis chest press"
   },
   {
-    "id": 343,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 2
+    "MajorMuscles": {
+      "Muscle": {
+        "Biceps brachii": {}
       }
-    ],
+    },
+    "id": 343,
     "name": "Kinesis arm curl"
   },
   {
-    "id": 344,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 2
+    "MajorMuscles": {
+      "Muscle": {
+        "Biceps brachii": {}
       }
-    ],
+    },
+    "id": 344,
     "name": "barbell reverse curl"
   },
   {
-    "id": 345,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 16
+    "MajorMuscles": {
+      "Muscle": {
+        "Hamstrings": {}
       }
-    ],
+    },
+    "id": 345,
     "name": "leg curl TechnoGym"
   },
   {
-    "id": 346,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
+    "MajorMuscles": {
+      "Muscle": {
+        "Pectoralis": {}
       }
-    ],
+    },
+    "id": 346,
     "name": "machine inline press"
   },
   {
-    "id": 347,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 11
+    "MajorMuscles": {
+      "Muscle": {
+        "Glutes": {}
       }
-    ],
+    },
+    "id": 347,
     "name": "calf extension"
   },
   {
-    "id": 348,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 8
+    "MajorMuscles": {
+      "Muscle": {
+        "Latissimus dorsi": {}
       }
-    ],
+    },
+    "id": 348,
     "name": "cable upright row"
   },
   {
-    "id": 349,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 4
+    "MajorMuscles": {
+      "Muscle": {
+        "Triceps brachii": {}
       }
-    ],
+    },
+    "id": 349,
     "name": "cable tricep pushdown kinesis"
   },
   {
-    "id": 350,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 1
+    "MajorMuscles": {
+      "Muscle": {
+        "Pectoralis": {}
       }
-    ],
+    },
+    "id": 350,
     "name": "hoist pec fly"
   },
   {
-    "id": 351,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 2
+    "MajorMuscles": {
+      "Muscle": {
+        "Biceps brachii": {}
       }
-    ],
+    },
+    "id": 351,
     "name": "rocit bicep curl"
   },
   {
-    "id": 352,
-    "muscles": [
-      {
-        "is_primary": 1,
-        "muscle_id": 16
+    "MajorMuscles": {
+      "Muscle": {
+        "Hamstrings": {}
       }
-    ],
+    },
+    "id": 352,
     "name": "hoist leg curl"
   }
-];
-
-export default EXERCISES;
+]

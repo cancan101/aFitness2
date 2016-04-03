@@ -12,7 +12,6 @@ import { ListView } from 'realm/react-native';
 
 import { MainRouter } from '../../routers';
 
-import EXERCISES from '../../constants/Exercises';
 import IMAGES from '../../constants/Images';
 
 
@@ -23,9 +22,10 @@ import realm from '../../realm';
 
 function loadData() {
   const muscleData = require('../../data/muscles.json');
+  const exerciseData = require('../../data/exercises.json');
 
   const exercises = realm.objects('Exercise');
-  const needsLoad = EXERCISES.filter((i) => exercises.filtered(`id = ${i.id}`).length == 0);
+  const needsLoad = exerciseData.filter((i) => exercises.filtered(`id = ${i.id}`).length == 0);
   realm.write(() => {
     Object.keys(muscleData).forEach(name => {
       const muscleGroup = realm.create('MuscleGroup', {name});
