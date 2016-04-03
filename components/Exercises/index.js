@@ -20,7 +20,7 @@ const FILTER_ALL = 'all';
 import realm from '../../realm';
 
 
-function loadData() {
+export function loadData() {
   const muscleData = require('../../data/muscles.json');
   const exerciseData = require('../../data/exercises.json');
 
