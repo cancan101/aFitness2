@@ -7,8 +7,6 @@ import React, {
 } from 'react-native';
 
 import ScrollableTabView from 'react-native-scrollable-tab-view';
-import Icon from 'react-native-vector-icons/Ionicons';
-import ExNavigator from '@exponent/react-native-navigator';
 
 import Exercises from '../Exercises';
 import Workouts from '../Workouts';
