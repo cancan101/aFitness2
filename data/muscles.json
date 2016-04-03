@@ -1,0 +1,48 @@
+{
+  "Shoulders": {
+    "Muscle": {
+      "Deltoids": {},
+      "Infraspinatus": {},
+      "Rotator Cuff": {}
+    }
+  },
+  "Arms": {
+    "Muscle": {
+      "Brachialis": {},
+      "Triceps brachii": {},
+      "Biceps brachii": {},
+      "Wrist Flexors": {},
+      "Wrist Extensors": {}
+    }
+  },
+  "Back": {
+    "Muscle": {
+      "Trapezius": {},
+      "Lower Back": {},
+      "Latissimus dorsi": {}
+    }
+  },
+  "Chest": {
+    "Muscle": {
+      "Pectoralis": {}
+    }
+  },
+  "Legs": {
+    "Muscle": {
+      "Glutes": {},
+      "Hamstrings": {},
+      "Quadriceps": {},
+      "Soleus": {},
+      "Gastrocnemius": {}
+    }
+  },
+  "Cardio": {
+    "Muscle": {}
+  },
+  "Abdominals": {
+    "Muscle": {
+      "Rectus Abdominis": {},
+      "Obliques": {}
+    }
+  }
+}

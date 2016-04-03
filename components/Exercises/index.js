@@ -1,7 +1,6 @@
 import React, {
   Component,
   Image,
-  ListView,
   Picker,
   Text,
   View,
@@ -9,21 +8,70 @@ import React, {
 
 import Listitem from 'react-native-listitem';
 import ListitemStyles from 'react-native-listitem/styles';
-import sortBy from 'lodash/sortBy';
+import { ListView } from 'realm/react-native';
 
 import { MainRouter } from '../../routers';
 
-import MUSCLE_GROUPS from '../../constants/MuscleGroups';
-import MUSCLES from '../../constants/Muscles';
-import EXERCISES from '../../constants/Exercises';
 import IMAGES from '../../constants/Images';
 
 
 const FILTER_ALL = 'all';
 
+import realm from '../../realm';
+
+
+function loadData() {
+  const muscleData = require('../../data/muscles.json');
+  const exerciseData = require('../../data/exercises.json');
+
+  const exercises = realm.objects('Exercise');
+  const muscles = realm.objects('Muscle');
+
+  const needsLoad = exerciseData.filter((i) => exercises.filtered(`id = "${i.id}"`).length == 0);
+  realm.write(() => {
+    Object.keys(muscleData).forEach(name => {
+      const muscleGroup = realm.create('MuscleGroup', {name});
+      Object.keys(muscleData[name].Muscle).forEach(name => realm.create('Muscle', {name, muscleGroup}));
+    });
+
+    needsLoad.forEach(ex => {
+      const {MajorMuscles, SecondaryMuscles, image, description, difficulty, type, target1, target2, target3, ...data} = ex;
+
+      const targets = [target1, target2, target3].filter(x => x);
+      const muscleGroups = targets.map(x => realm.objects('MuscleGroup').filtered(`name =[c] "${x}"`)[0]);
+
+      if(muscleGroups.filter(x => !x).length) {
+        throw "Unknown target(s): " + targets;
+      }
+
+      const musclesMajor = Object.keys((MajorMuscles || {}).Muscle || {}).map(x => muscles.filtered(`name =[c] "${x}"`)[0]);
+      const musclesSecondary = Object.keys((SecondaryMuscles || {}).Muscle || {}).map(x => muscles.filtered(`name =[c] "${x}"`)[0]);
+
+      if(musclesMajor.filter(x => !x).length) {
+        throw "Unknown muscle(s): " + Object.keys(MajorMuscles.Muscle);
+      }
+
+      if(musclesSecondary.filter(x => !x).length) {
+        throw "Unknown muscle(s): " + Object.keys(SecondaryMuscles.Muscle);
+      }
+
+      realm.create('Exercise', {
+        ...data,
+        image,
+        description,
+        difficulty,
+        type,
+        muscleGroups,
+        musclesMajor,
+        musclesSecondary,
+      });
+    });
+  });
+}
+
 export default class Exercises extends Component {
   static extraActions = [
-    {title: 'Add', show: 'always', iconName: 'add',}
+    {title: 'Add', show: 'always', iconName: 'add', onSelected: () => loadData()}
   ];
 
   constructor(props){
@@ -72,29 +120,25 @@ export default class Exercises extends Component {
     this.setState({selectedMuscle: selectedMuscle});
   };
   _renderMuscleGroups = () => {
-    return sortBy(MUSCLE_GROUPS, i => i.name).map(
+    return realm.objects('MuscleGroup').sorted('name').map(
       (k) =>
-        <Picker.Item label={k.name} value={k.id} key={k.id} color={'black'} />
+        <Picker.Item label={k.name} value={k.name} key={k.name} color={'black'} />
     );
   };
   _renderMuscles = () => {
-    let muscles;
+    let muscles = realm.objects('Muscle');
     if(this.state.selectedMuscleGroup != FILTER_ALL) {
-      muscles = MUSCLES.filter(
-        m => m.muscleGroup === this.state.selectedMuscleGroup);
-    } else {
-      muscles = MUSCLES;
+      muscles = muscles.filtered(`muscleGroup.name = "${this.state.selectedMuscleGroup}"`);
     }
 
-    return sortBy(muscles, i => i.name).map(
+    return muscles.sorted('name').map(
       (k) =>
-        <Picker.Item label={k.name} value={k.id} key={k.id} color={'black'} />
+        <Picker.Item label={k.name} value={k.name} key={k.name} color={'black'} />
     );
   };
   _renderHeader = () => {
     const muscleGroupItems = this._renderMuscleGroups();
     const muscleItems = this._renderMuscles();
-
     return (
       <View style={{flex: 1}}>
         <Picker
@@ -116,18 +160,16 @@ export default class Exercises extends Component {
   };
 
   render(){
-    let exercisesFiltered = EXERCISES;
+    let exercisesFiltered = realm.objects('Exercise');
     if(this.state.selectedMuscle != FILTER_ALL) {
-      exercisesFiltered = EXERCISES.filter(
-        ex => ex.muscles.filter(
-          m => m.muscle_id === this.state.selectedMuscle).length > 0);
+      exercisesFiltered = exercisesFiltered.filtered(
+        `musclesMajor.name = "${this.state.selectedMuscle}" || musclesSecondary.name = "${this.state.selectedMuscle}"`
+      );
     }else if(this.state.selectedMuscleGroup != FILTER_ALL) {
-      exercisesFiltered = EXERCISES.filter(
-        ex => ex.muscle_groups.filter(
-          mg => mg.musclegroup_id === this.state.selectedMuscleGroup).length > 0);
+      exercisesFiltered = exercisesFiltered.filtered(`muscleGroups.name = "${this.state.selectedMuscleGroup}"`);
     }
 
-    exercisesFiltered = sortBy(exercisesFiltered, ex => ex.name.toUpperCase());
+    exercisesFiltered = exercisesFiltered.sorted('name');
 
     return (
       <ListView
