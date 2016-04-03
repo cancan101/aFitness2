@@ -25,7 +25,9 @@ function loadData() {
   const exerciseData = require('../../data/exercises.json');
 
   const exercises = realm.objects('Exercise');
-  const needsLoad = exerciseData.filter((i) => exercises.filtered(`id = ${i.id}`).length == 0);
+  const muscles = realm.objects('Muscle');
+
+  const needsLoad = exerciseData.filter((i) => exercises.filtered(`id = "${i.id}"`).length == 0);
   realm.write(() => {
     Object.keys(muscleData).forEach(name => {
       const muscleGroup = realm.create('MuscleGroup', {name});
@@ -42,8 +44,8 @@ function loadData() {
         throw "Unknown target(s): " + targets;
       }
 
-      const musclesMajor = Object.keys((MajorMuscles || {}).Muscle || {}).map(x => realm.objects('Muscle').filtered(`name =[c] "${x}"`)[0]);
-      const musclesSecondary = Object.keys((SecondaryMuscles || {}).Muscle || {}).map(x => realm.objects('Muscle').filtered(`name =[c] "${x}"`)[0]);
+      const musclesMajor = Object.keys((MajorMuscles || {}).Muscle || {}).map(x => muscles.filtered(`name =[c] "${x}"`)[0]);
+      const musclesSecondary = Object.keys((SecondaryMuscles || {}).Muscle || {}).map(x => muscles.filtered(`name =[c] "${x}"`)[0]);
 
       if(musclesMajor.filter(x => !x).length) {
         throw "Unknown muscle(s): " + Object.keys(MajorMuscles.Muscle);

@@ -1,7 +1,6 @@
 import React, {
   Component,
   Image,
-  ListView,
   StyleSheet,
   Text,
   TextInput,
@@ -10,6 +9,7 @@ import React, {
 
 import Listitem from 'react-native-listitem';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import { ListView } from 'realm/react-native';
 
 import realm from '../../realm';
 import IMAGES from '../../constants/Images';
@@ -122,7 +122,7 @@ class ExerciseInner extends Component {
 export default class Exercise extends Component {
   constructor(props){
     super(props);
-    this.state = {item: realm.objects('ActivitySet').filtered(`exercise.id = ${this.props.exercise.id}`)};
+    this.state = {item: realm.objects('ActivitySet').filtered(`exercise.id = "${this.props.exercise.id}"`)};
   }
   render() {
     return <ExerciseInner {...this.props} item={this.state.item} />
