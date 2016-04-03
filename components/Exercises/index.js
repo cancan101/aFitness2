@@ -71,7 +71,12 @@ export function loadData() {
 
 export default class Exercises extends Component {
   static extraActions = [
-    {title: 'Add', show: 'always', iconName: 'add', onSelected: () => loadData()}
+    {title: 'Add', show: 'always', iconName: 'add',
+      onSelected: (navigator) => {
+        loadData();
+        navigator.forceUpdate();
+      }
+    }
   ];
 
   constructor(props){
