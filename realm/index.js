@@ -2,7 +2,7 @@ import Realm from 'realm';
 
 
 const realm = new Realm({
-  schemaVersion: 24,
+  schemaVersion: 25,
   schema: [
     {
       name: 'MuscleGroup',
@@ -20,7 +20,7 @@ const realm = new Realm({
     {
       name: 'Exercise',
       properties: {
-        id: Realm.Types.INT,
+        id: Realm.Types.STRING,
         name: Realm.Types.STRING,
         image: {type: Realm.Types.STRING, optional: true},
         muscleGroups: {type: 'list', objectType: 'MuscleGroup'},
