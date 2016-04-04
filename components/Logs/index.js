@@ -19,14 +19,14 @@ import { getDateString } from '../../utils';
 export default class Logs extends Component {
   static title = 'Logs';
   static systemIcon = 'history';
-  
+
   constructor(props) {
     super(props);
     this._ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
   }
 
   _renderRow = (logEntry) => {
-    const route = MainRouter.getLogRoute(logEntry);
+    const route = MainRouter.getLogWorkoutDateRoute(logEntry);
     const { workoutDate, setCount, exerciseCount} = logEntry;
     const workoutDateLocalStr = getDateString(workoutDate);
 
@@ -39,15 +39,14 @@ export default class Logs extends Component {
   };
 
   render(){
+    //TODO: sort this
     const logs = map(
       groupBy(realm.objects('ActivitySet'), 'workoutDate'),
-      (v, workoutDate) => {
-        return {
-          workoutDate: v[0].workoutDate,
-          setCount: v.length,
-          exerciseCount: uniqBy(v, 'exercise.id').length
-        }
-      }
+      (v, workoutDate) => ({
+        workoutDate: v[0].workoutDate,
+        setCount: v.length,
+        exerciseCount: uniqBy(v, 'exercise.id').length
+      })
     );
     return (
       <ListView

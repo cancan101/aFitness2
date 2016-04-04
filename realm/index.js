@@ -45,8 +45,8 @@ const realm = new Realm({
   ]
 });
 
-realm.write(() => {
-  realm.deleteAll();
-});
+// realm.write(() => {
+//   realm.deleteAll();
+// });
 
 export default realm;
