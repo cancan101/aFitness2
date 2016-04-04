@@ -14,7 +14,8 @@ import Logs from '../Logs';
 
 import { TOOLBAR_BACKGROUND_COLOR } from '../../colors';
 
-const labels = ['Exercises', 'Workouts', 'Logs',];
+const TABS = [Exercises, Workouts, Logs, ];
+const INITIAL_PAGE = 0;
 
 const styles = StyleSheet.create({
   container: {
@@ -24,16 +25,12 @@ const styles = StyleSheet.create({
 
 
 export default class Main extends React.Component {
-  constructor(props) {
-    super(props);
-    this._initialPage = 0;
-  }
   onChangeTab = (v) => {
     this.props.setTab(v.ref.props.tabLabel, v.ref.type.extraActions || []);
   };
 
   componentDidMount() {
-    this.props.setTab(labels[this._initialPage], Exercises.extraActions || []);
+    this.props.setTab(TABS[INITIAL_PAGE].title, TABS[INITIAL_PAGE].extraActions || []);
   }
 
   render() {
@@ -46,12 +43,10 @@ export default class Main extends React.Component {
         <View style={styles.container}>
           <ScrollableTabView
             onChangeTab={this.onChangeTab}
-            initialPage={this._initialPage}
+            initialPage={INITIAL_PAGE}
             tabBarBackgroundColor={TOOLBAR_BACKGROUND_COLOR}
           >
-            <Exercises tabLabel={labels[0]} navigator={this.props.navigator} />
-            <Workouts tabLabel={labels[1]} navigator={this.props.navigator} />
-            <Logs tabLabel={labels[2]} navigator={this.props.navigator} />
+            {TABS.map(T => <T tabLabel={T.title} key={T.title} navigator={this.props.navigator} /> )}
           </ScrollableTabView>
         </View>
       </View>

@@ -6,6 +6,7 @@ import React, {
 
 export default class Workouts extends Component {
   static extraActions = [{title: 'Add', show: 'always', iconName: 'add',}];
+  static title = 'Workouts';
 
   render(){
     return (

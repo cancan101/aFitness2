@@ -1,33 +1,28 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- */
 'use strict';
 import React, {
   AppRegistry,
   Component,
   StyleSheet,
-  Text,
-  TouchableHighlight,
-  View
 } from 'react-native';
 
-import Exercises, { loadData } from './components/Exercises';
+import ExNavigator from '@exponent/react-native-navigator';
+
+import { MainRouter } from './routers';
 
 
 class aFitness2 extends Component {
-  _onPressButton = () => {
-    loadData();
-    this.forceUpdate();
+  setRoute = (route) => {
+    this.setState({route});
   };
   render() {
     return (
-      <View style={[styles.container, {paddingTop: 20,}]}>
-        <TouchableHighlight onPress={this._onPressButton}>
-          <Text>Load Data</Text>
-        </TouchableHighlight>
-        <Exercises ref="exercises" />
-      </View>
+      <ExNavigator
+        ref="navigator"
+        initialRoute={ MainRouter.getHomeRoute(this.setRoute) }
+        style={styles.container}
+        showNavigationBar={true}
+        sceneStyle={{ paddingTop: 64 }}
+      />
     );
   }
 }
