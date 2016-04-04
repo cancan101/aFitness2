@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
 
 class ExerciseInner extends Component {
   static extraActions = [{title: 'History', show: 'always', iconName: 'history',}];
+
   constructor(props) {
     super(props);
     this._ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
@@ -120,6 +121,7 @@ class ExerciseInner extends Component {
 }
 
 export default class Exercise extends Component {
+  static extraActions = ExerciseInner.extraActions;
   constructor(props){
     super(props);
     this.state = {item: realm.objects('ActivitySet').filtered(`exercise.id = "${this.props.exercise.id}"`)};

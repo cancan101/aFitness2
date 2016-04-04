@@ -17,6 +17,9 @@ import { getDateString } from '../../utils';
 
 
 export default class Logs extends Component {
+  static title = 'Logs';
+  static systemIcon = 'history';
+  
   constructor(props) {
     super(props);
     this._ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});

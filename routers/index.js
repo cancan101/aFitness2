@@ -1,6 +1,9 @@
 import React, {
+  Text,
+  TouchableOpacity,
 } from 'react-native';
 
+import ExNavigator from '@exponent/react-native-navigator';
 
 import Exercise from '../components/Exercise';
 import Log from '../components/Log';
@@ -42,6 +45,21 @@ export const MainRouter = {
       renderScene(navigator) {
         return <Main navigator={navigator} setTab={(title, extraActions) => this._setTab(title, extraActions)} />
       },
+      renderRightButton(navigator) {
+        if(this.extraActions && this.extraActions[0]) {
+          const onPress = () => this.extraActions[0].onSelected(navigator);
+          return (
+            <TouchableOpacity
+              pressRetentionOffset={ExNavigator.Styles.barButtonPressRetentionOffset}
+              onPress={onPress}
+              style={ExNavigator.Styles.barRightButton}>
+              <Text style={ExNavigator.Styles.barRightButtonText}>
+                { this.extraActions[0].title }
+              </Text>
+            </TouchableOpacity>
+          );
+        }
+      }
     };
   },
 };

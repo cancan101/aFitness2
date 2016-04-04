@@ -71,13 +71,16 @@ export function loadData() {
 
 export default class Exercises extends Component {
   static extraActions = [
-    {title: 'Add', show: 'always', iconName: 'add',
+    {
+      title: 'Add', show: 'always', iconName: 'add',
       onSelected: (navigator) => {
         loadData();
         navigator.forceUpdate();
       }
     }
   ];
+  static title = 'Exercises';
+  static systemIcon = 'bookmarks';
 
   constructor(props){
     super(props);
