@@ -14,6 +14,7 @@ import { ListView } from 'realm/react-native';
 import realm from '../../realm';
 import IMAGES from '../../constants/Images';
 import { getToday } from '../../utils';
+import { MainRouter } from '../../routers';
 
 
 const styles = StyleSheet.create({
@@ -23,7 +24,16 @@ const styles = StyleSheet.create({
 });
 
 class ExerciseInner extends Component {
-  static extraActions = [{title: 'History', show: 'always', iconName: 'history', onSelected: () => {}, }];
+  static extraActions = [
+    {
+      title: 'History',
+      show: 'always',
+      iconName: 'history',
+      onSelected: (navigator, route) => {
+        const newRoute = MainRouter.getLogExerciseRoute(route._exercise.props.exercise);
+        navigator.push(newRoute)
+      },
+    }];
 
   constructor(props) {
     super(props);

@@ -9,6 +9,7 @@ import ExNavigator from '@exponent/react-native-navigator';
 import Exercise from '../components/Exercise';
 import LogWorkoutDate from '../components/LogWorkoutDate';
 import LogExerciseDate from '../components/LogExerciseDate';
+import LogExercise from '../components/LogExercise';
 import Main from '../components/Main';
 import { getDateString, isToday } from '../utils';
 
@@ -20,8 +21,10 @@ export const MainRouter = {
         return exercise.name;
       },
       renderScene(navigator) {
-        return <Exercise navigator={navigator} exercise={exercise}
-                         weightValue={setItem.weightValue} reps={setItem.reps} />;
+        return <Exercise
+          ref={c => this._exercise = c}
+          navigator={navigator} exercise={exercise}
+          weightValue={setItem.weightValue} reps={setItem.reps} />;
       },
     };
   },
@@ -35,7 +38,7 @@ export const MainRouter = {
       },
     };
   },
-  getLogExerciseRoute(logEntry, exercise) {
+  getLogExerciseDateRoute(logEntry, exercise) {
     if(isToday(logEntry.workoutDate)) {
       return MainRouter.getExerciseRoute(exercise);
     }
@@ -49,6 +52,16 @@ export const MainRouter = {
       },
       renderScene(navigator) {
         return <LogExerciseDate navigator={navigator} logEntry={logEntry} exercise={exercise} />;
+      },
+    };
+  },
+  getLogExerciseRoute(exercise) {
+    return {
+      getTitle(){
+        return exercise.name;
+      },
+      renderScene(navigator) {
+        return <LogExercise navigator={navigator} exercise={exercise} />;
       },
     };
   },

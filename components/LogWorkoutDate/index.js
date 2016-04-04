@@ -20,7 +20,7 @@ export default class LogWorkoutDate extends Component {
 
   _renderRow = (logEntryExercise) => {
     const { exercise, setCount } = logEntryExercise;
-    const route = MainRouter.getLogExerciseRoute(this.props.logEntry, exercise);
+    const route = MainRouter.getLogExerciseDateRoute(this.props.logEntry, exercise);
 
     return (
       <Listitem
