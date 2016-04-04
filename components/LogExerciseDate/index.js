@@ -20,10 +20,11 @@ export default class LogExerciseDate extends Component {
     const setNum = this._item.length - rowID;
     // TODO: Make this a function:
     const text = `Set ${setNum}: ${setItem.reps} x ${setItem.weightValue}${setItem.weightUnits}`;
-    // TODO: on clicking go to exercise with pre-populated
+    const route = MainRouter.getExerciseRoute(exercise, setItem);
     return (
       <Listitem
         text={text}
+        onPress={ () => this.props.navigator.push(route) }
       />
     );
   };

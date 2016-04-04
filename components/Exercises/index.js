@@ -86,7 +86,7 @@ export default class Exercises extends Component {
   };
   _renderMuscles = () => {
     let muscles = realm.objects('Muscle');
-    if(this.state.selectedMuscleGroup != FILTER_ALL) {
+    if(this.state.selectedMuscleGroup !== FILTER_ALL) {
       muscles = muscles.filtered(`muscleGroup.name = "${this.state.selectedMuscleGroup}"`);
     }
 
@@ -110,7 +110,7 @@ export default class Exercises extends Component {
           selectedValue={this.state.selectedMuscle}
           onValueChange={this._selectMuscle}
           mode='dropdown'
-          //enabled={this.state.selectedMuscleGroup != FILTER_ALL}
+          //enabled={this.state.selectedMuscleGroup !== FILTER_ALL}
           >
           {[(<Picker.Item label={'All'} value={FILTER_ALL} key={FILTER_ALL} color={'red'} />), ...muscleItems]}
       </Picker>
@@ -120,11 +120,11 @@ export default class Exercises extends Component {
 
   render(){
     let exercisesFiltered = realm.objects('Exercise');
-    if(this.state.selectedMuscle != FILTER_ALL) {
+    if(this.state.selectedMuscle !== FILTER_ALL) {
       exercisesFiltered = exercisesFiltered.filtered(
         `musclesMajor.name = "${this.state.selectedMuscle}" || musclesSecondary.name = "${this.state.selectedMuscle}"`
       );
-    }else if(this.state.selectedMuscleGroup != FILTER_ALL) {
+    }else if(this.state.selectedMuscleGroup !== FILTER_ALL) {
       exercisesFiltered = exercisesFiltered.filtered(`muscleGroups.name = "${this.state.selectedMuscleGroup}"`);
     }
 

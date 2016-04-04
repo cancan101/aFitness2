@@ -8,7 +8,7 @@ export function loadData() {
   const exercises = realm.objects('Exercise');
   const muscles = realm.objects('Muscle');
 
-  const needsLoad = exerciseData.filter((i) => exercises.filtered(`id = "${i.id}"`).length == 0);
+  const needsLoad = exerciseData.filter((i) => exercises.filtered(`id = "${i.id}"`).length === 0);
   realm.write(() => {
     Object.keys(muscleData).forEach(name => {
       const muscleGroup = realm.create('MuscleGroup', {name});

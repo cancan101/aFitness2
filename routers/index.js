@@ -1,4 +1,5 @@
 import React, {
+  Platform,
   Text,
   TouchableOpacity,
 } from 'react-native';
@@ -9,7 +10,7 @@ import Exercise from '../components/Exercise';
 import LogWorkoutDate from '../components/LogWorkoutDate';
 import LogExerciseDate from '../components/LogExerciseDate';
 import Main from '../components/Main';
-import { getDateString } from '../utils';
+import { getDateString, isToday } from '../utils';
 
 export const MainRouter = {
   getExerciseRoute(exercise) {
@@ -35,9 +36,16 @@ export const MainRouter = {
     };
   },
   getLogExerciseRoute(logEntry, exercise) {
+    if(isToday(logEntry.workoutDate)) {
+      return MainRouter.getExerciseRoute(exercise);
+    }
     return {
       getTitle(){
-        return `${getDateString(logEntry.workoutDate)} - ${exercise.name}`;
+        if (Platform.OS === 'ios') {
+          return exercise.name;
+        } else {
+          return `${getDateString(logEntry.workoutDate)} - ${exercise.name}`;
+        }
       },
       renderScene(navigator) {
         return <LogExerciseDate navigator={navigator} logEntry={logEntry} exercise={exercise} />;
