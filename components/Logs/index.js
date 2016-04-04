@@ -18,6 +18,7 @@ import { getDateString } from '../../utils';
 
 export default class Logs extends Component {
   static title = 'Logs';
+  static systemIcon = 'history';
   
   constructor(props) {
     super(props);

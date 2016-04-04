@@ -80,6 +80,7 @@ export default class Exercises extends Component {
     }
   ];
   static title = 'Exercises';
+  static systemIcon = 'bookmarks';
 
   constructor(props){
     super(props);

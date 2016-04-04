@@ -30,13 +30,16 @@ export default class Main extends React.Component {
     return (
       <TabBarIOS>
         {
-          TABS.map((T, i) => {
-            return (
-              <TabBarIOS.Item
-                title={T.title} key={T.title} selected={this.state.selectedTab === i} onPress={() => this._setTab(i)}>
-                <T navigator={this.props.navigator} />
-              </TabBarIOS.Item>
-          )})
+          TABS.map((T, i) => (
+            <TabBarIOS.Item
+              systemIcon={T.systemIcon}
+              title={T.title}
+              key={T.title}
+              selected={this.state.selectedTab === i}
+              onPress={() => this._setTab(i)}>
+              <T navigator={this.props.navigator} />
+            </TabBarIOS.Item>
+          ))
         }
       </TabBarIOS>
     );
