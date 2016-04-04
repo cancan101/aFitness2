@@ -17,10 +17,10 @@ export default class LogExerciseDate extends Component {
   }
 
   _renderRow = (setItem, _, rowID) => {
-    const setNum = this._item.length - rowID;
+    const setNum = rowID + 1;
     // TODO: Make this a function:
     const text = `Set ${setNum}: ${setItem.reps} x ${setItem.weightValue}${setItem.weightUnits}`;
-    const route = MainRouter.getExerciseRoute(exercise, setItem);
+    const route = MainRouter.getExerciseRoute(this.props.exercise, setItem);
     return (
       <Listitem
         text={text}

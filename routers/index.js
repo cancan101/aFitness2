@@ -13,19 +13,19 @@ import Main from '../components/Main';
 import { getDateString, isToday } from '../utils';
 
 export const MainRouter = {
-  getExerciseRoute(exercise) {
+  getExerciseRoute(exercise, setItem={}) {
     return {
       extraActions: Exercise.extraActions,
       getTitle() {
         return exercise.name;
       },
       renderScene(navigator) {
-        return <Exercise navigator={navigator} exercise={exercise} />;
+        return <Exercise navigator={navigator} exercise={exercise}
+                         weightValue={setItem.weightValue} reps={setItem.reps} />;
       },
     };
   },
   getLogWorkoutDateRoute(logEntry) {
-    // TODO: if today go directly to exercise
     return {
       getTitle(){
         return getDateString(logEntry.workoutDate);
