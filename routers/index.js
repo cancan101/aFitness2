@@ -6,7 +6,8 @@ import React, {
 import ExNavigator from '@exponent/react-native-navigator';
 
 import Exercise from '../components/Exercise';
-import Log from '../components/Log';
+import LogWorkoutDate from '../components/LogWorkoutDate';
+import LogExerciseDate from '../components/LogExerciseDate';
 import Main from '../components/Main';
 import { getDateString } from '../utils';
 
@@ -22,13 +23,24 @@ export const MainRouter = {
       },
     };
   },
-  getLogRoute(logEntry) {
+  getLogWorkoutDateRoute(logEntry) {
+    // TODO: if today go directly to exercise
     return {
       getTitle(){
         return getDateString(logEntry.workoutDate);
       },
-      getSceneClass() {
-        return Log;
+      renderScene(navigator) {
+        return <LogWorkoutDate navigator={navigator} logEntry={logEntry} />;
+      },
+    };
+  },
+  getLogExerciseRoute(logEntry, exercise) {
+    return {
+      getTitle(){
+        return `${getDateString(logEntry.workoutDate)} - ${exercise.name}`;
+      },
+      renderScene(navigator) {
+        return <LogExerciseDate navigator={navigator} logEntry={logEntry} exercise={exercise} />;
       },
     };
   },

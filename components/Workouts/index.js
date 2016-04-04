@@ -5,14 +5,14 @@ import React, {
 } from 'react-native';
 
 export default class Workouts extends Component {
-  static extraActions = [{title: 'Add', show: 'always', iconName: 'add',}];
+  static extraActions = [{title: 'Add', show: 'always', iconName: 'add', onSelected: () => {}}];
   static title = 'Workouts';
   static systemIcon = 'most-viewed';
 
   render(){
     return (
       <View>
-        <Text>Alex</Text>
+        <Text>Coming soon</Text>
       </View>
     );
   }

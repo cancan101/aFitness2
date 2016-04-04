@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
 });
 
 class ExerciseInner extends Component {
-  static extraActions = [{title: 'History', show: 'always', iconName: 'history',}];
+  static extraActions = [{title: 'History', show: 'always', iconName: 'history', onSelected: () => {}, }];
 
   constructor(props) {
     super(props);
@@ -34,10 +34,12 @@ class ExerciseInner extends Component {
   }
   _renderRow = (setItem, sectionID, rowID) => {
     const setNum = this.props.item.length - rowID;
+    // TODO: Make this a function:
+    const text = `Set ${setNum}: ${setItem.reps} x ${setItem.weightValue}${setItem.weightUnits}`;
     return (
       <Listitem
         onPress={() => this.onSetItemPress(setItem)}
-        text={`Set ${setNum}: ${setItem.reps} x ${setItem.weightValue}${setItem.weightUnits}`} />
+        text={text} />
     );
   };
   _canRecord() {
