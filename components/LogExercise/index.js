@@ -44,7 +44,6 @@ export default class LogExercise extends Component {
   };
 
   render(){
-    //TODO: sort this
     const logs = sortBy(map(
       groupBy(realm.objects('ActivitySet').filtered('exercise == $0', this.props.exercise), 'workoutDate'),
       (v, workoutDate) => ({
