@@ -87,7 +87,7 @@ export default class Exercises extends Component {
   _renderMuscles = () => {
     let muscles = realm.objects('Muscle');
     if(this.state.selectedMuscleGroup !== FILTER_ALL) {
-      muscles = muscles.filtered(`muscleGroup.name = "${this.state.selectedMuscleGroup}"`);
+      muscles = muscles.filtered('muscleGroup.name = $0', this.state.selectedMuscleGroup);
     }
 
     return muscles.sorted('name').map(
@@ -122,10 +122,11 @@ export default class Exercises extends Component {
     let exercisesFiltered = realm.objects('Exercise');
     if(this.state.selectedMuscle !== FILTER_ALL) {
       exercisesFiltered = exercisesFiltered.filtered(
-        `musclesMajor.name = "${this.state.selectedMuscle}" || musclesSecondary.name = "${this.state.selectedMuscle}"`
+        'musclesMajor.name = $0 || musclesSecondary.name = $0',
+        this.state.selectedMuscle,
       );
     }else if(this.state.selectedMuscleGroup !== FILTER_ALL) {
-      exercisesFiltered = exercisesFiltered.filtered(`muscleGroups.name = "${this.state.selectedMuscleGroup}"`);
+      exercisesFiltered = exercisesFiltered.filtered('muscleGroups.name = $0', this.state.selectedMuscleGroup);
     }
 
     exercisesFiltered = exercisesFiltered.sorted('name');
