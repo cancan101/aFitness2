@@ -8,33 +8,36 @@ import React, {
 import Listitem from 'react-native-listitem';
 import { liText } from 'react-native-listitem/styles';
 
-import map from 'lodash/map';
 import groupBy from 'lodash/groupBy';
-import maxBy from 'lodash/maxBy';
 import sortBy from 'lodash/sortBy';
 
-import realm from '../../realm';
+import map from 'lodash/map';
+
 import { MainRouter } from '../../routers';
+import realm from '../../realm';
+import { getDateString } from '../../utils';
 
 
-export default class LogWorkoutDate extends Component {
+
+export default class LogExercise extends Component {
+
   constructor(props) {
     super(props);
     this._ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-    this._item = realm.objects('ActivitySet').filtered('workoutDate == $0', this.props.logEntry.workoutDate);
   }
 
-  _renderRow = (logEntryExercise) => {
-    const { exercise, setCount } = logEntryExercise;
-    const route = MainRouter.getLogExerciseDateRoute(this.props.logEntry, exercise);
+  _renderRow = (logEntry) => {
+    const route = MainRouter.getLogExerciseDateRoute(logEntry, this.props.exercise);
+    const { workoutDate, setCount } = logEntry;
+    const workoutDateLocalStr = getDateString(workoutDate);
 
     return (
       <Listitem
         onPress={ () => this.props.navigator.push(route) }
       >
         <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-          <Text style={liText}>{exercise.name}</Text>
-          <Text style={liText}>{`${setCount} sets`}</Text>
+          <Text style={liText}>{workoutDateLocalStr}</Text>
+          <Text style={liText}>{`Sets: ${setCount}`}</Text>
         </View>
       </Listitem>
     );
@@ -42,13 +45,12 @@ export default class LogWorkoutDate extends Component {
 
   render(){
     const logs = sortBy(map(
-      groupBy(this._item, 'exercise.id'),
-      (v, exerciseId) => ({
-        exercise: v[0].exercise,
+      groupBy(realm.objects('ActivitySet').filtered('exercise == $0', this.props.exercise), 'workoutDate'),
+      (v, workoutDate) => ({
+        workoutDate: v[0].workoutDate,
         setCount: v.length,
-        lastSet: maxBy(v, 'recordDate').recordDate,
       })
-    ), 'lastSet').reverse();
+    ), 'workoutDate').reverse();
     return (
       <ListView
         dataSource={this._ds.cloneWithRows(logs)}

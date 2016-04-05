@@ -13,6 +13,8 @@ import { ListView } from 'realm/react-native';
 
 import realm from '../../realm';
 import IMAGES from '../../constants/Images';
+import { getToday } from '../../utils';
+import { MainRouter } from '../../routers';
 
 
 const styles = StyleSheet.create({
@@ -22,12 +24,24 @@ const styles = StyleSheet.create({
 });
 
 class ExerciseInner extends Component {
-  static extraActions = [{title: 'History', show: 'always', iconName: 'history', onSelected: () => {}, }];
+  static extraActions = [
+    {
+      title: 'History',
+      show: 'always',
+      iconName: 'history',
+      onSelected: (navigator, route) => {
+        const newRoute = MainRouter.getLogExerciseRoute(route._exercise.props.exercise);
+        navigator.push(newRoute)
+      },
+    }];
 
   constructor(props) {
     super(props);
     this._ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-    this.state = {};
+    this.state = {
+      weightValue: String(this.props.weightValue || ''),
+      reps: String(this.props.reps || ''),
+    };
   }
   onSetItemPress(setItem) {
     this.setState({reps: String(setItem.reps), weightValue: String(setItem.weightValue)});
@@ -126,7 +140,7 @@ export default class Exercise extends Component {
   static extraActions = ExerciseInner.extraActions;
   constructor(props){
     super(props);
-    this.state = {item: realm.objects('ActivitySet').filtered(`exercise.id = "${this.props.exercise.id}"`)};
+    this.state = {item: realm.objects('ActivitySet').filtered('exercise == $0 && workoutDate == $1', this.props.exercise, getToday())};
   }
   render() {
     return <ExerciseInner {...this.props} item={this.state.item} />
