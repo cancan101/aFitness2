@@ -1,5 +1,6 @@
 import React, {
   BackAndroid,
+  StatusBar,
   View,
 } from 'react-native';
 
@@ -8,6 +9,7 @@ import ExNavigator from '@exponent/react-native-navigator';
 import { MainRouter } from '../../routers';
 
 import Toolbar from '../Toolbar';
+import { TOOLBAR_BACKGROUND_COLOR } from '../../colors';
 
 import styles from './styles';
 
@@ -30,6 +32,9 @@ export default class Main extends React.Component {
   augmentScene = (scene, route, navigator) => {
     return (
       <View style={styles.container}>
+        <StatusBar
+          backgroundColor={ TOOLBAR_BACKGROUND_COLOR }
+        />
         <Toolbar
           navigator={navigator}
           route={route}

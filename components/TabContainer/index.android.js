@@ -1,6 +1,5 @@
 import React, {
   Component,
-  StatusBar,
   StyleSheet,
   Text,
   View,
@@ -35,20 +34,14 @@ export default class TabContainer extends Component {
 
   render() {
     return (
-      <View style={{flex: 1}}>
-        <StatusBar
-          backgroundColor={ TOOLBAR_BACKGROUND_COLOR }
-        />
-
-        <View style={styles.container}>
-          <ScrollableTabView
-            onChangeTab={this.onChangeTab}
-            initialPage={INITIAL_PAGE}
-            tabBarBackgroundColor={TOOLBAR_BACKGROUND_COLOR}
-          >
-            {TABS.map(T => <T tabLabel={T.title} key={T.title} navigator={this.props.navigator} /> )}
-          </ScrollableTabView>
-        </View>
+      <View style={styles.container}>
+        <ScrollableTabView
+          onChangeTab={this.onChangeTab}
+          initialPage={INITIAL_PAGE}
+          tabBarBackgroundColor={TOOLBAR_BACKGROUND_COLOR}
+        >
+          {TABS.map(T => <T tabLabel={T.title} key={T.title} navigator={this.props.navigator} /> )}
+        </ScrollableTabView>
       </View>
     );
   }
