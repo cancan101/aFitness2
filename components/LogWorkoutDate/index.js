@@ -1,11 +1,17 @@
 import React, {
   Component,
   ListView,
+  Text,
+  View,
 } from 'react-native';
 
 import Listitem from 'react-native-listitem';
+import { liText } from 'react-native-listitem/styles';
+
 import map from 'lodash/map';
 import groupBy from 'lodash/groupBy';
+import maxBy from 'lodash/maxBy';
+import sortBy from 'lodash/sortBy';
 
 import realm from '../../realm';
 import { MainRouter } from '../../routers';
@@ -24,18 +30,25 @@ export default class LogWorkoutDate extends Component {
 
     return (
       <Listitem
-        text={`${exercise.name} ${setCount} sets`}
         onPress={ () => this.props.navigator.push(route) }
-      />
+      >
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+          <Text style={liText}>{exercise.name}</Text>
+          <Text style={liText}>{`${setCount} sets`}</Text>
+        </View>
+      </Listitem>
     );
   };
 
   render(){
-    //TODO: sort this
-    const logs = map(
+    const logs = sortBy(map(
       groupBy(this._item, 'exercise.id'),
-      (v, exerciseId) => ({exercise: v[0].exercise, setCount: v.length,})
-    );
+      (v, exerciseId) => ({
+        exercise: v[0].exercise,
+        setCount: v.length,
+        lastSet: maxBy(v, 'recordDate').recordDate,
+      })
+    ), 'lastSet').reverse();
     return (
       <ListView
         dataSource={this._ds.cloneWithRows(logs)}
