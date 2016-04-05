@@ -8,7 +8,7 @@ export function loadData() {
   const exercises = realm.objects('Exercise');
   const muscles = realm.objects('Muscle');
 
-  const needsLoad = exerciseData.filter((i) => exercises.filtered(`id = "${i.id}"`).length === 0);
+  const needsLoad = exerciseData.filter((i) => exercises.filtered('id = $0', i.id).length === 0);
   realm.write(() => {
     Object.keys(muscleData).forEach(name => {
       const muscleGroup = realm.create('MuscleGroup', {name});
@@ -19,14 +19,14 @@ export function loadData() {
       const {MajorMuscles, SecondaryMuscles, image, description, difficulty, type, target1, target2, target3, ...data} = ex;
 
       const targets = [target1, target2, target3].filter(x => x);
-      const muscleGroups = targets.map(x => realm.objects('MuscleGroup').filtered(`name =[c] "${x}"`)[0]);
+      const muscleGroups = targets.map(x => realm.objects('MuscleGroup').filtered('name =[c] $0', x)[0]);
 
       if(muscleGroups.filter(x => !x).length) {
         throw "Unknown target(s): " + targets;
       }
 
-      const musclesMajor = Object.keys((MajorMuscles || {}).Muscle || {}).map(x => muscles.filtered(`name =[c] "${x}"`)[0]);
-      const musclesSecondary = Object.keys((SecondaryMuscles || {}).Muscle || {}).map(x => muscles.filtered(`name =[c] "${x}"`)[0]);
+      const musclesMajor = Object.keys((MajorMuscles || {}).Muscle || {}).map(x => muscles.filtered('name =[c] $0', x)[0]);
+      const musclesSecondary = Object.keys((SecondaryMuscles || {}).Muscle || {}).map(x => muscles.filtered('name =[c] $0', x)[0]);
 
       if(musclesMajor.filter(x => !x).length) {
         throw "Unknown muscle(s): " + Object.keys(MajorMuscles.Muscle);
