@@ -4,6 +4,8 @@ import React, {
   StyleSheet,
   Text,
   TextInput,
+  UIManager,
+  findNodeHandle,
   View,
 } from 'react-native';
 
@@ -22,6 +24,9 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 });
+
+const ACTION_ITEM_SELECTED = 'itemSelected';
+
 
 class ExerciseInner extends Component {
   static extraActions = [
@@ -46,13 +51,32 @@ class ExerciseInner extends Component {
   onSetItemPress(setItem) {
     this.setState({reps: String(setItem.reps), weightValue: String(setItem.weightValue)});
   }
+  _deleteSetItem(setItem) {
+    realm.write(() => {
+      realm.delete(setItem);
+    });
+  }
   _renderRow = (setItem, sectionID, rowID) => {
     const setNum = this.props.item.length - rowID;
     // TODO: Make this a function:
     const text = `Set ${setNum}: ${setItem.reps} x ${setItem.weightValue}${setItem.weightUnits}`;
+    const refs = {};
     return (
       <Listitem
+        ref={c => refs.item = c}
         onPress={() => this.onSetItemPress(setItem)}
+        onLongPress={() => {
+          UIManager.showPopupMenu(
+            findNodeHandle(refs.item),
+            ["Delete"],
+            () => {}, // error
+            (action, selectedIndex) => {
+              if (action === ACTION_ITEM_SELECTED){
+                this._deleteSetItem(setItem);
+              }
+            }, // success
+          );
+        }}
         text={text} />
     );
   };
