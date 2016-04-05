@@ -1,55 +1,62 @@
 import React, {
-  Component,
+  BackAndroid,
   StatusBar,
-  StyleSheet,
-  Text,
   View,
 } from 'react-native';
 
-import ScrollableTabView from 'react-native-scrollable-tab-view';
+import ExNavigator from '@exponent/react-native-navigator';
 
-import Exercises from '../Exercises';
-import Workouts from '../Workouts';
-import Logs from '../Logs';
+import { MainRouter } from '../../routers';
 
+import Toolbar from '../Toolbar';
 import { TOOLBAR_BACKGROUND_COLOR } from '../../colors';
 
-const TABS = [Exercises, Workouts, Logs, ];
-const INITIAL_PAGE = 0;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
+import styles from './styles';
 
 
 export default class Main extends React.Component {
-  onChangeTab = (v) => {
-    this.props.setTab(v.ref.props.tabLabel, v.ref.type.extraActions || []);
+  _onHardwareBackPress = () => {
+    if(this.refs.navigator.getCurrentRoutes().length > 1) {
+      this.refs.navigator.pop();
+      return true;
+    }else{
+      return false;
+    }
   };
-
   componentDidMount() {
-    this.props.setTab(TABS[INITIAL_PAGE].title, TABS[INITIAL_PAGE].extraActions || []);
+    BackAndroid.addEventListener('hardwareBackPress', this._onHardwareBackPress);
   }
-
-  render() {
+  componentWillUnmount() {
+    BackAndroid.removeEventListener('hardwareBackPress', this._onHardwareBackPress);
+  }
+  augmentScene = (scene, route, navigator) => {
     return (
-      <View style={{flex: 1}}>
+      <View style={styles.container}>
         <StatusBar
           backgroundColor={ TOOLBAR_BACKGROUND_COLOR }
         />
-
-        <View style={styles.container}>
-          <ScrollableTabView
-            onChangeTab={this.onChangeTab}
-            initialPage={INITIAL_PAGE}
-            tabBarBackgroundColor={TOOLBAR_BACKGROUND_COLOR}
-          >
-            {TABS.map(T => <T tabLabel={T.title} key={T.title} navigator={this.props.navigator} /> )}
-          </ScrollableTabView>
+        <Toolbar
+          navigator={navigator}
+          route={route}
+        />
+        <View style={{ paddingTop: 56, flex:1 }}>
+          { scene }
         </View>
       </View>
+    );
+  };
+  setRoute = (route) => {
+    this.setState({route});
+  };
+  render() {
+    return (
+      <ExNavigator
+        ref="navigator"
+        initialRoute={ MainRouter.getHomeRoute(this.setRoute) }
+        style={styles.container}
+        augmentScene={this.augmentScene}
+        showNavigationBar={false}
+      />
     );
   }
 }
