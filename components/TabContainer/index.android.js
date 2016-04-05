@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
 });
 
 
-export default class Main extends React.Component {
+export default class TabContainer extends Component {
   onChangeTab = (v) => {
     this.props.setTab(v.ref.props.tabLabel, v.ref.type.extraActions || []);
   };

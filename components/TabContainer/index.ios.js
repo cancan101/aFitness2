@@ -12,7 +12,7 @@ const TABS = [Exercises, Workouts, Logs, ];
 const INITIAL_PAGE = 0;
 
 
-export default class Main extends React.Component {
+export default class TabContainer extends Component {
   constructor(props){
     super(props);
     this.state = {selectedTab: INITIAL_PAGE};

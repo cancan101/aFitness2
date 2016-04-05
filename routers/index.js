@@ -10,7 +10,7 @@ import Exercise from '../components/Exercise';
 import LogWorkoutDate from '../components/LogWorkoutDate';
 import LogExerciseDate from '../components/LogExerciseDate';
 import LogExercise from '../components/LogExercise';
-import Main from '../components/Main';
+import TabContainer from '../components/TabContainer';
 import { getDateString, isToday } from '../utils';
 
 export const MainRouter = {
@@ -76,7 +76,7 @@ export const MainRouter = {
         return this.title || 'Main';
       },
       renderScene(navigator) {
-        return <Main navigator={navigator} setTab={(title, extraActions) => this._setTab(title, extraActions)} />
+        return <TabContainer navigator={navigator} setTab={(title, extraActions) => this._setTab(title, extraActions)} />
       },
       renderRightButton(navigator) {
         if(this.extraActions && this.extraActions[0]) {
