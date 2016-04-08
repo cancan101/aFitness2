@@ -133,6 +133,7 @@ export default class Exercises extends Component {
 
     return (
       <ListView
+        enableEmptySections
         renderHeader={this._renderHeader}
         dataSource={this._ds.cloneWithRows(exercisesFiltered)}
         renderRow={this._renderRow} />

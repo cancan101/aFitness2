@@ -32,6 +32,7 @@ export default class LogExerciseDate extends Component {
   render(){
     return (
       <ListView
+        enableEmptySections
         dataSource={this._ds.cloneWithRows(this._item)}
         renderRow={this._renderRow} />
     );

@@ -51,6 +51,7 @@ export default class LogWorkoutDate extends Component {
     ), 'lastSet').reverse();
     return (
       <ListView
+        enableEmptySections
         dataSource={this._ds.cloneWithRows(logs)}
         renderRow={this._renderRow} />
     );
