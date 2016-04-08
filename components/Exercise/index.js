@@ -18,6 +18,8 @@ import IMAGES from '../../constants/Images';
 import { getToday } from '../../utils';
 import { MainRouter } from '../../routers';
 
+import PushNotification from 'react-native-push-notification';
+
 
 const styles = StyleSheet.create({
   container: {
@@ -104,6 +106,20 @@ class ExerciseInner extends Component {
      });
     });
   };
+  componentDidMount = () => {
+    Icon.getImageSource('timer', 30).then(
+      source => {this._timeIconUri = source.uri;}
+    );
+  };
+  sendNotification = () => {
+    PushNotification.localNotification({
+        id: '0',
+        message: "Select to return to " + this.props.exercise.name,
+        largeIcon: this._timeIconUri,
+        title: "Rest After Exercise Complete",
+        ticker: "Rest Complete",
+    });
+  };
   render(){
     const recordBtnExtras = {};
     if (!this._canRecord()) {
@@ -158,7 +174,7 @@ class ExerciseInner extends Component {
             { recordBtn }
           </View>
           <View style={{flex: 1}}>
-            <Icon.Button name="timer">
+            <Icon.Button name="timer" onPress={this.sendNotification}>
               Timer
             </Icon.Button>
           </View>
