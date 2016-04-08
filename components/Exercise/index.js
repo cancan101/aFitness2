@@ -117,6 +117,21 @@ class ExerciseInner extends Component {
       </Icon.Button>
     );
 
+    const data = this.props.item.sorted('recordDate', true);
+    let listView = null;
+    if (data.length) {
+      listView = (
+        <ListView
+          enableEmptySections
+          keyboardDismissMode={'interactive'}
+          dataSource={this._ds.cloneWithRows(data)}
+          renderRow={this._renderRow}
+        />
+      );
+    } else {
+      listView = <View style={{flex: 1}}><Text>No Exercises for Today</Text></View>;
+    }
+
     return (
       <View style={styles.container}>
         <View style={{flexDirection: 'row'}}>
@@ -148,12 +163,7 @@ class ExerciseInner extends Component {
             </Icon.Button>
           </View>
         </View>
-        <ListView
-          //keyboardShouldPersistTaps={true}
-          keyboardDismissMode={'interactive'}
-          dataSource={this._ds.cloneWithRows(this.props.item.sorted('recordDate', true))}
-          renderRow={this._renderRow}
-        />
+        { listView }
         <Image source={IMAGES[this.props.exercise.image]} style={{width: 80, height: 80}} />
       </View>
     );

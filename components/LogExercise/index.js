@@ -53,6 +53,7 @@ export default class LogExercise extends Component {
     ), 'workoutDate').reverse();
     return (
       <ListView
+        enableEmptySections
         dataSource={this._ds.cloneWithRows(logs)}
         renderRow={this._renderRow} />
     );
