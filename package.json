@@ -14,6 +14,6 @@
     "react-native-push-notification": "github:cancan101/react-native-push-notification#patch-2",
     "react-native-scrollable-tab-view": "^0.4.2",
     "react-native-vector-icons": "^1.3.4",
-    "realm": "^0.11.1"
+    "realm": "^0.12.0-rc"
   }
 }
