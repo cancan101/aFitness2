@@ -1,4 +1,5 @@
 import React, {
+  Alert,
   Component,
   Image,
   Picker,
@@ -25,8 +26,7 @@ export default class Exercises extends Component {
     {
       title: 'Add', show: 'always', iconName: 'add',
       onSelected: (navigator) => {
-        loadData();
-        navigator.forceUpdate();
+        Alert.alert("Not implemented", "Adding new exercises is not implmented");
       }
     }
   ];
