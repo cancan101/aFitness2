@@ -16,7 +16,7 @@ export function loadData() {
     });
 
     needsLoad.forEach(ex => {
-      const {MajorMuscles, SecondaryMuscles, image, description, difficulty, type, target1, target2, target3, ...data} = ex;
+      const {MajorMuscles, SecondaryMuscles, target1, target2, target3, ...data} = ex;
 
       const targets = [target1, target2, target3].filter(x => x);
       const muscleGroups = targets.map(x => realm.objects('MuscleGroup').filtered('name =[c] $0', x)[0]);
@@ -38,10 +38,6 @@ export function loadData() {
 
       realm.create('Exercise', {
         ...data,
-        image,
-        description,
-        difficulty,
-        type,
         muscleGroups,
         musclesMajor,
         musclesSecondary,
