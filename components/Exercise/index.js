@@ -18,6 +18,8 @@ import IMAGES from '../../constants/Images';
 import { getToday } from '../../utils';
 import { MainRouter } from '../../routers';
 
+import PushNotification from 'react-native-push-notification';
+
 
 const styles = StyleSheet.create({
   container: {
@@ -104,6 +106,26 @@ class ExerciseInner extends Component {
      });
     });
   };
+  sendNotification = () => {
+    PushNotification.localNotification({
+        id: '0',
+        message: "Select to return to " + this.props.exercise.name,
+        title: "Rest After Exercise Complete",
+        ticker: "Rest Complete",
+        smallIcon: "drawable/ic_sync",
+    });
+  };
+  onTimerClick = () => {
+    this.timer = setTimeout(() => {
+      this.sendNotification();
+    }, 1000);
+  };
+
+  componentWillUnmount() {
+    if (this.timer) {
+      clearTimeout(this.timer);
+    }
+  }
   render(){
     const recordBtnExtras = {};
     if (!this._canRecord()) {
@@ -158,7 +180,7 @@ class ExerciseInner extends Component {
             { recordBtn }
           </View>
           <View style={{flex: 1}}>
-            <Icon.Button name="timer">
+            <Icon.Button name="timer" onPress={this.onTimerClick}>
               Timer
             </Icon.Button>
           </View>
