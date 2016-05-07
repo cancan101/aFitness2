@@ -3,6 +3,8 @@ import React, {
   TabBarIOS,
 } from 'react-native';
 
+import Icon from 'react-native-vector-icons/MaterialIcons';
+
 import Exercises from '../Exercises';
 import Workouts from '../Workouts';
 import Logs from '../Logs';
@@ -31,14 +33,14 @@ export default class TabContainer extends Component {
       <TabBarIOS>
         {
           TABS.map((T, i) => (
-            <TabBarIOS.Item
-              systemIcon={T.systemIcon}
+            <Icon.TabBarItemIOS
+              iconName={T.iconName}
               title={T.title}
               key={T.title}
               selected={this.state.selectedTab === i}
               onPress={() => this._setTab(i)}>
               <T navigator={this.props.navigator} />
-            </TabBarIOS.Item>
+            </Icon.TabBarItemIOS>
           ))
         }
       </TabBarIOS>

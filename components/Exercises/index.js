@@ -30,7 +30,7 @@ export default class Exercises extends Component {
     }
   ];
   static title = 'Exercises';
-  static systemIcon = 'bookmarks';
+  static iconName = 'view-carousel';
 
   constructor(props){
     super(props);

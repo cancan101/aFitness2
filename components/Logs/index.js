@@ -49,7 +49,7 @@ export default class Logs extends Component {
     }
   ];
   static title = 'Logs';
-  static systemIcon = 'history';
+  static iconName = 'history';
 
   constructor(props) {
     super(props);
