@@ -110,18 +110,17 @@ class ExerciseInner extends Component {
     });
   };
   sendNotification = () => {
-    PushNotification.localNotification({
+    PushNotification.localNotificationSchedule({
       id: '0',
       message: `Select to return to ${this.props.exercise.name}`,
       title: 'Rest After Exercise Complete',
       ticker: 'Rest Complete',
       smallIcon: 'drawable/ic_sync',
+      sendAt: (new Date().getTime() + 5000).toString(),
     });
   };
   onTimerClick = () => {
-    this.timer = setTimeout(() => {
-      this.sendNotification();
-    }, 1000);
+    this.sendNotification();
   };
   _deleteSetItem(setItem) {
     realm.write(() => {
@@ -130,7 +129,7 @@ class ExerciseInner extends Component {
   }
   componentWillUnmount() {
     if (this.timer) {
-      clearTimeout(this.timer);
+      // clearTimeout(this.timer);
     }
   }
   render() {
