@@ -17,10 +17,37 @@ import map from 'lodash/map';
 import { MainRouter } from '../../routers';
 import realm from '../../realm';
 import { getDateString } from '../../utils';
-
-
+import prompt from '../utils/prompt';
+import { loadActivitiesFromUrl } from './utils';
 
 export default class Logs extends Component {
+  static extraActions = [
+    {
+      title: 'Add',
+      show: 'always',
+      iconName: 'add',
+      onSelected: (navigator) => {
+        prompt(
+          'Load Activities',
+          'Enter URL to activities JSON',
+          [
+            {style: 'cancel', text: 'Cancel'},
+            {
+              style: 'default', text: 'Load',
+              onPress: (url) => {
+                if(url) {
+                  loadActivitiesFromUrl(url)
+                    .then(() => navigator.forceUpdate())
+                    .catch(() => alert(`Unable to load: ${url}.`));
+                }
+              }
+            },
+          ],
+          'plain-text',
+        )
+      }
+    }
+  ];
   static title = 'Logs';
   static systemIcon = 'history';
 

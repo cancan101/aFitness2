@@ -4,6 +4,7 @@ import android.content.Intent;
 
 import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
 import com.facebook.react.ReactActivity;
+import com.aakashns.reactnativedialogs.ReactNativeDialogsPackage;
 import io.realm.react.RealmReactPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.facebook.react.ReactPackage;
@@ -42,6 +43,7 @@ public class MainActivity extends ReactActivity {
         mReactNativePushNotificationPackage = new ReactNativePushNotificationPackage(this);
         return Arrays.<ReactPackage>asList(
             new MainReactPackage(),
+            new ReactNativeDialogsPackage(),
             new RealmReactPackage(),
             new VectorIconsPackage(),
             mReactNativePushNotificationPackage
