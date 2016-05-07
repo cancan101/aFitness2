@@ -7,7 +7,7 @@ const {
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-import { TOOLBAR_BACKGROUND_COLOR, TOOLBAR_TITLE_COLOR, } from '../../colors';
+import { TOOLBAR_BACKGROUND_COLOR, TOOLBAR_TITLE_COLOR } from '../../colors';
 
 
 const styles = StyleSheet.create({
@@ -37,16 +37,16 @@ export default class Toolbar extends React.Component {
   };
 
   render() {
-    const { route, navigator, } = this.props;
+    const { route, navigator } = this.props;
     const routes = navigator.getCurrentRoutes();
     let navIconName = undefined;
 
     for (let i = routes.length - 1; i >= 0; i--) {
-       if (routes[i] === route && i > 0) {
-         navIconName = 'arrow-back';
-         break;
-       }
-     }
+      if (routes[i] === route && i > 0) {
+        navIconName = 'arrow-back';
+        break;
+      }
+    }
 
     return (
       <Icon.ToolbarAndroid

@@ -5,11 +5,11 @@ import React, {
 } from 'react-native';
 
 export default class Workouts extends Component {
-  static extraActions = [{title: 'Add', show: 'always', iconName: 'add', onSelected: () => {}}];
+  static extraActions = [{ title: 'Add', show: 'always', iconName: 'add', onSelected: () => {} }];
   static title = 'Workouts';
   static iconName = 'playlist-play';
 
-  render(){
+  render() {
     return (
       <View>
         <Text>Coming soon</Text>

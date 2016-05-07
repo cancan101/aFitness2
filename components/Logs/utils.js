@@ -7,12 +7,12 @@ function loadActivities(activities) {
       const exercise = exercises.filtered('id = $0', activity.exercise_id)[0];
       const date = new Date(activity.record_date);
       realm.create('ActivitySet', {
-       recordDate: date,
-       workoutDate: date,
-       exercise,
-       reps: activity.reps,
-       weightValue: activity.weight,
-       weightUnits: 'lbs',
+        recordDate: date,
+        workoutDate: date,
+        exercise,
+        reps: activity.reps,
+        weightValue: activity.weight,
+        weightUnits: 'lbs',
       });
     });
   });

@@ -11,15 +11,15 @@ import styles from './styles';
 
 export default class Main extends Component {
   setRoute = (route) => {
-    this.setState({route});
+    this.setState({ route });
   };
   render() {
     return (
       <ExNavigator
         ref="navigator"
-        initialRoute={ MainRouter.getHomeRoute(this.setRoute) }
+        initialRoute={MainRouter.getHomeRoute(this.setRoute)}
         style={styles.container}
-        showNavigationBar={true}
+        showNavigationBar
         sceneStyle={{ paddingTop: 64 }}
       />
     );

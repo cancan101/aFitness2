@@ -12,7 +12,7 @@ import { MainRouter } from '../../routers';
 export default class LogExerciseDate extends Component {
   constructor(props) {
     super(props);
-    this._ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+    this._ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
     this._item = realm.objects('ActivitySet').filtered('workoutDate == $0 && exercise == $1', this.props.logEntry.workoutDate, this.props.exercise).sorted('recordDate');
   }
 
@@ -24,17 +24,18 @@ export default class LogExerciseDate extends Component {
     return (
       <Listitem
         text={text}
-        onPress={ () => this.props.navigator.push(route) }
+        onPress={() => this.props.navigator.push(route)}
       />
     );
   };
 
-  render(){
+  render() {
     return (
       <ListView
         enableEmptySections
         dataSource={this._ds.cloneWithRows(this._item)}
-        renderRow={this._renderRow} />
+        renderRow={this._renderRow}
+    />
     );
   }
 }

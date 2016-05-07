@@ -1,4 +1,4 @@
-export function getToday(){
+export function getToday() {
   const now = new Date();
   return new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
 }
@@ -15,7 +15,7 @@ export function getDateString(dateUTC) {
   const dateLocalStr = dateLocal.toLocaleDateString();
 
   if (isToday(dateUTC)) {
-    return "Today";
+    return 'Today';
   }
   return dateLocalStr;
 }

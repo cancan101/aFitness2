@@ -38,20 +38,25 @@ class ExerciseInner extends Component {
       iconName: 'history',
       onSelected: (navigator, route) => {
         const newRoute = MainRouter.getLogExerciseRoute(route._exercise.props.exercise);
-        navigator.push(newRoute)
+        navigator.push(newRoute);
       },
     }];
 
+  static propTypes = {
+    weightValue: React.propTypes.number,
+    reps: React.propTypes.number,
+  };
+
   constructor(props) {
     super(props);
-    this._ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+    this._ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
     this.state = {
       weightValue: String(this.props.weightValue || ''),
       reps: String(this.props.reps || ''),
     };
   }
   onSetItemPress(setItem) {
-    this.setState({reps: String(setItem.reps), weightValue: String(setItem.weightValue)});
+    this.setState({ reps: String(setItem.reps), weightValue: String(setItem.weightValue) });
   }
   _deleteSetItem(setItem) {
     realm.write(() => {
@@ -70,49 +75,50 @@ class ExerciseInner extends Component {
         onLongPress={() => {
           UIManager.showPopupMenu(
             findNodeHandle(refs.item),
-            ["Delete"],
+            ['Delete'],
             () => {}, // error
-            (action, selectedIndex) => {
-              if (action === ACTION_ITEM_SELECTED){
+            action => {
+              if (action === ACTION_ITEM_SELECTED) {
                 this._deleteSetItem(setItem);
               }
             }, // success
           );
         }}
-        text={text} />
+        text={text}
+    />
     );
   };
   _canRecord() {
     return this.state.weightValue && this.state.reps;
-  };
+  }
   _onChangeTextReps = (value) => {
-    this.setState({reps: value});
+    this.setState({ reps: value });
   };
   _onChangeTextWeightValue = (value) => {
-    this.setState({weightValue: value});
+    this.setState({ weightValue: value });
   };
   _recordBtnOnPress = () => {
     const recordDate = new Date();
     const workoutDate = new Date(Date.UTC(recordDate.getFullYear(), recordDate.getMonth(), recordDate.getDate()));
 
     realm.write(() => {
-     realm.create('ActivitySet', {
-       recordDate,
-       workoutDate,
-       exercise: this.props.exercise,
-       reps: parseInt(this.state.reps),
-       weightValue: parseFloat(this.state.weightValue),
-       weightUnits: 'lbs',
-     });
+      realm.create('ActivitySet', {
+        recordDate,
+        workoutDate,
+        exercise: this.props.exercise,
+        reps: parseInt(this.state.reps),
+        weightValue: parseFloat(this.state.weightValue),
+        weightUnits: 'lbs',
+      });
     });
   };
   sendNotification = () => {
     PushNotification.localNotification({
-        id: '0',
-        message: "Select to return to " + this.props.exercise.name,
-        title: "Rest After Exercise Complete",
-        ticker: "Rest Complete",
-        smallIcon: "drawable/ic_sync",
+      id: '0',
+      message: 'Select to return to ' + this.props.exercise.name,
+      title: 'Rest After Exercise Complete',
+      ticker: 'Rest Complete',
+      smallIcon: 'drawable/ic_sync',
     });
   };
   onTimerClick = () => {
@@ -126,11 +132,11 @@ class ExerciseInner extends Component {
       clearTimeout(this.timer);
     }
   }
-  render(){
+  render() {
     const recordBtnExtras = {};
     if (!this._canRecord()) {
-      recordBtnExtras['disabled'] = true;
-      recordBtnExtras['backgroundColor'] = 'grey';
+      recordBtnExtras.disabled = true;
+      recordBtnExtras.backgroundColor = 'grey';
     }
 
     const recordBtn = (
@@ -151,42 +157,42 @@ class ExerciseInner extends Component {
         />
       );
     } else {
-      listView = <View style={{flex: 1}}><Text>No Exercises for Today</Text></View>;
+      listView = <View style={{ flex: 1 }}><Text>No Exercises for Today</Text></View>;
     }
 
     return (
       <View style={styles.container}>
-        <View style={{flexDirection: 'row'}}>
-          <View style={{flex: 1, flexDirection: 'row'}}>
+        <View style={{ flexDirection: 'row' }}>
+          <View style={{ flex: 1, flexDirection: 'row' }}>
             <TextInput
-              keyboardType='numeric'
-              placeholder='weight'
-              style={{flex: 1, height: 40, borderColor: 'gray', borderWidth: 1}}
+              keyboardType="numeric"
+              placeholder="weight"
+              style={{ flex: 1, height: 40, borderColor: 'gray', borderWidth: 1 }}
               onChangeText={this._onChangeTextWeightValue}
               value={this.state.weightValue}
             />
-            <Text style={{alignSelf: 'center'}}>lbs</Text>
+            <Text style={{ alignSelf: 'center' }}>lbs</Text>
           </View>
           <TextInput
-            keyboardType='numeric'
-            placeholder='repetitions'
-            style={{flex: 1, height: 40, borderColor: 'gray', borderWidth: 1}}
+            keyboardType="numeric"
+            placeholder="repetitions"
+            style={{ flex: 1, height: 40, borderColor: 'gray', borderWidth: 1 }}
             onChangeText={this._onChangeTextReps}
             value={this.state.reps}
           />
         </View>
-        <View style={{flexDirection: 'row'}}>
-          <View style={{flex: 1}}>
-            { recordBtn }
+        <View style={{ flexDirection: 'row' }}>
+          <View style={{ flex: 1 }}>
+            {recordBtn}
           </View>
-          <View style={{flex: 1}}>
+          <View style={{ flex: 1 }}>
             <Icon.Button name="timer" onPress={this.onTimerClick}>
               Timer
             </Icon.Button>
           </View>
         </View>
-        { listView }
-        <Image source={IMAGES[this.props.exercise.image]} style={{width: 80, height: 80}} />
+        {listView}
+        <Image source={IMAGES[this.props.exercise.image]} style={{ width: 80, height: 80 }} />
       </View>
     );
   }
@@ -194,15 +200,18 @@ class ExerciseInner extends Component {
 
 export default class Exercise extends Component {
   static extraActions = ExerciseInner.extraActions;
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state = {item: realm.objects('ActivitySet').filtered('exercise == $0 && workoutDate == $1', this.props.exercise, getToday())};
+    this.state = {
+      item: realm.objects('ActivitySet').filtered(
+        'exercise == $0 && workoutDate == $1', this.props.exercise, getToday()),
+    };
   }
   render() {
-    return <ExerciseInner {...this.props} item={this.state.item} />
+    return <ExerciseInner {...this.props} item={this.state.item} />;
   }
   onChange = () => {
-    this.setState({item: this.state.item});
+    this.setState({ item: this.state.item });
   };
   componentDidMount() {
     realm.addListener('change', this.onChange);

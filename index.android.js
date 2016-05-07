@@ -1,5 +1,3 @@
-'use strict';
-
 import './app';
 
 import PushNotification from 'react-native-push-notification';
