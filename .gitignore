@@ -42,4 +42,6 @@ buck-out/
 android/app/libs
 android/keystores/debug.keystore
 
+*.jks
+
 *.ipynb_checkpoints/
