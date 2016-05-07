@@ -25,16 +25,16 @@ export default class Exercises extends Component {
     {
       title: 'Add', show: 'always', iconName: 'add',
       onSelected: (navigator) => {
-        Alert.alert("Not implemented", "Adding new exercises is not implemented");
-      }
-    }
+        Alert.alert('Not implemented', 'Adding new exercises is not implemented');
+      },
+    },
   ];
   static title = 'Exercises';
   static iconName = 'view-carousel';
 
-  constructor(props){
+  constructor(props) {
     super(props);
-    this._ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+    this._ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
     this.state = {
       selectedMuscleGroup: FILTER_ALL,
       selectedMuscle: FILTER_ALL,
@@ -48,34 +48,35 @@ export default class Exercises extends Component {
     if (exercise.image) {
       image = (
         <Image source={IMAGES[exercise.image]}
-               style={{width: 40, height: 40, marginBottom: -15, marginTop: -15,}} />
+          style={{ width: 40, height: 40, marginBottom: -15, marginTop: -15 }}
+      />
       );
     } else {
       image = (
-        <View style={{width: 40, height: 40, marginBottom: -15, marginTop: -15,}} />
+        <View style={{ width: 40, height: 40, marginBottom: -15, marginTop: -15 }} />
       );
     }
 
     return (
       <Listitem
-        onPress={ () => this.props.navigator.push(route) }
+        onPress={() => this.props.navigator.push(route)}
       >
-        <View style={{flexDirection: 'row'}}>
-          { image }
+        <View style={{ flexDirection: 'row' }}>
+          {image}
           <Text style={ListitemStyles.liText}>{exercise.name}</Text>
         </View>
       </Listitem>
     );
   };
 
-  _selectMuscleGroup = (selectedMuscleGroup) =>{
+  _selectMuscleGroup = (selectedMuscleGroup) => {
     this.setState({
       selectedMuscleGroup: selectedMuscleGroup,
       selectedMuscle: FILTER_ALL,
     });
   };
   _selectMuscle = (selectedMuscle) => {
-    this.setState({selectedMuscle: selectedMuscle});
+    this.setState({ selectedMuscle: selectedMuscle });
   };
   _renderMuscleGroups = () => {
     return realm.objects('MuscleGroup').sorted('name').map(
@@ -85,7 +86,7 @@ export default class Exercises extends Component {
   };
   _renderMuscles = () => {
     let muscles = realm.objects('Muscle');
-    if(this.state.selectedMuscleGroup !== FILTER_ALL) {
+    if (this.state.selectedMuscleGroup !== FILTER_ALL) {
       muscles = muscles.filtered('muscleGroup.name = $0', this.state.selectedMuscleGroup);
     }
 
@@ -98,33 +99,32 @@ export default class Exercises extends Component {
     const muscleGroupItems = this._renderMuscleGroups();
     const muscleItems = this._renderMuscles();
     return (
-      <View style={{flex: 1}}>
+      <View style={{ flex: 1 }}>
         <Picker
           selectedValue={this.state.selectedMuscleGroup}
           onValueChange={this._selectMuscleGroup}
-          >
+    >
           {[(<Picker.Item label={'All'} value={FILTER_ALL} key={FILTER_ALL} color={'red'} />), ...muscleGroupItems]}
         </Picker>
         <Picker
           selectedValue={this.state.selectedMuscle}
           onValueChange={this._selectMuscle}
-          mode='dropdown'
-          //enabled={this.state.selectedMuscleGroup !== FILTER_ALL}
-          >
+          mode="dropdown"
+    >
           {[(<Picker.Item label={'All'} value={FILTER_ALL} key={FILTER_ALL} color={'red'} />), ...muscleItems]}
       </Picker>
     </View>
     );
   };
 
-  render(){
+  render() {
     let exercisesFiltered = realm.objects('Exercise');
-    if(this.state.selectedMuscle !== FILTER_ALL) {
+    if (this.state.selectedMuscle !== FILTER_ALL) {
       exercisesFiltered = exercisesFiltered.filtered(
         'musclesMajor.name = $0 || musclesSecondary.name = $0',
         this.state.selectedMuscle,
       );
-    }else if(this.state.selectedMuscleGroup !== FILTER_ALL) {
+    } else if (this.state.selectedMuscleGroup !== FILTER_ALL) {
       exercisesFiltered = exercisesFiltered.filtered('muscleGroups.name = $0', this.state.selectedMuscleGroup);
     }
 
@@ -135,7 +135,8 @@ export default class Exercises extends Component {
         enableEmptySections
         renderHeader={this._renderHeader}
         dataSource={this._ds.cloneWithRows(exercisesFiltered)}
-        renderRow={this._renderRow} />
+        renderRow={this._renderRow}
+    />
     );
   }
 }

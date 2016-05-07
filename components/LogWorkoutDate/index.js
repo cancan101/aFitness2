@@ -20,7 +20,7 @@ import { MainRouter } from '../../routers';
 export default class LogWorkoutDate extends Component {
   constructor(props) {
     super(props);
-    this._ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+    this._ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
     this._item = realm.objects('ActivitySet').filtered('workoutDate == $0', this.props.logEntry.workoutDate);
   }
 
@@ -30,7 +30,7 @@ export default class LogWorkoutDate extends Component {
 
     return (
       <Listitem
-        onPress={ () => this.props.navigator.push(route) }
+        onPress={() => this.props.navigator.push(route)}
       >
         <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
           <Text style={liText}>{exercise.name}</Text>
@@ -40,7 +40,7 @@ export default class LogWorkoutDate extends Component {
     );
   };
 
-  render(){
+  render() {
     const logs = sortBy(map(
       groupBy(this._item, 'exercise.id'),
       (v, exerciseId) => ({
@@ -53,7 +53,8 @@ export default class LogWorkoutDate extends Component {
       <ListView
         enableEmptySections
         dataSource={this._ds.cloneWithRows(logs)}
-        renderRow={this._renderRow} />
+        renderRow={this._renderRow}
+    />
     );
   }
 }

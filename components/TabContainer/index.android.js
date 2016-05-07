@@ -13,7 +13,7 @@ import Logs from '../Logs';
 
 import { TOOLBAR_BACKGROUND_COLOR } from '../../colors';
 
-const TABS = [Exercises, Workouts, Logs, ];
+const TABS = [Exercises, Workouts, Logs,];
 const INITIAL_PAGE = 0;
 
 const styles = StyleSheet.create({
@@ -40,7 +40,7 @@ export default class TabContainer extends Component {
           initialPage={INITIAL_PAGE}
           tabBarBackgroundColor={TOOLBAR_BACKGROUND_COLOR}
         >
-          {TABS.map(T => <T tabLabel={T.title} key={T.title} navigator={this.props.navigator} /> )}
+          {TABS.map(T => <T tabLabel={T.title} key={T.title} navigator={this.props.navigator} />)}
         </ScrollableTabView>
       </View>
     );

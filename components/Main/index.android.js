@@ -16,10 +16,10 @@ import styles from './styles';
 
 export default class Main extends React.Component {
   _onHardwareBackPress = () => {
-    if(this.refs.navigator.getCurrentRoutes().length > 1) {
+    if (this.refs.navigator.getCurrentRoutes().length > 1) {
       this.refs.navigator.pop();
       return true;
-    }else{
+    } else {
       return false;
     }
   };
@@ -33,26 +33,26 @@ export default class Main extends React.Component {
     return (
       <View style={styles.container}>
         <StatusBar
-          backgroundColor={ TOOLBAR_BACKGROUND_COLOR }
+          backgroundColor={TOOLBAR_BACKGROUND_COLOR}
         />
         <Toolbar
           navigator={navigator}
           route={route}
         />
         <View style={{ paddingTop: 56, flex:1 }}>
-          { scene }
+          {scene}
         </View>
       </View>
     );
   };
   setRoute = (route) => {
-    this.setState({route});
+    this.setState({ route });
   };
   render() {
     return (
       <ExNavigator
         ref="navigator"
-        initialRoute={ MainRouter.getHomeRoute(this.setRoute) }
+        initialRoute={MainRouter.getHomeRoute(this.setRoute)}
         style={styles.container}
         augmentScene={this.augmentScene}
         showNavigationBar={false}

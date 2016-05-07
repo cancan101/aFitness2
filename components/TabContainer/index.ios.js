@@ -10,14 +10,14 @@ import Workouts from '../Workouts';
 import Logs from '../Logs';
 
 
-const TABS = [Exercises, Workouts, Logs, ];
+const TABS = [Exercises, Workouts, Logs,];
 const INITIAL_PAGE = 0;
 
 
 export default class TabContainer extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state = {selectedTab: INITIAL_PAGE};
+    this.state = { selectedTab: INITIAL_PAGE };
   }
 
   componentDidMount() {
@@ -25,7 +25,7 @@ export default class TabContainer extends Component {
   }
 
   _setTab = (selectedTab) => {
-    this.setState({selectedTab});
+    this.setState({ selectedTab });
     this.props.setTab(TABS[selectedTab].title, TABS[selectedTab].extraActions || []);
   };
   render() {
@@ -38,7 +38,8 @@ export default class TabContainer extends Component {
               title={T.title}
               key={T.title}
               selected={this.state.selectedTab === i}
-              onPress={() => this._setTab(i)}>
+              onPress={() => this._setTab(i)}
+    >
               <T navigator={this.props.navigator} />
             </Icon.TabBarItemIOS>
           ))

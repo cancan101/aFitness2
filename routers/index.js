@@ -14,23 +14,24 @@ import TabContainer from '../components/TabContainer';
 import { getDateString, isToday } from '../utils';
 
 export const MainRouter = {
-  getExerciseRoute(exercise, setItem={}) {
+  getExerciseRoute(exercise, setItem = {}) {
     return {
       extraActions: Exercise.extraActions,
       getTitle() {
         return exercise.name;
       },
       renderScene(navigator) {
-        return <Exercise
+        return (<Exercise
           ref={c => this._exercise = c}
           navigator={navigator} exercise={exercise}
-          weightValue={setItem.weightValue} reps={setItem.reps} />;
+          weightValue={setItem.weightValue} reps={setItem.reps}
+        />);
       },
     };
   },
   getLogWorkoutDateRoute(logEntry) {
     return {
-      getTitle(){
+      getTitle() {
         return getDateString(logEntry.workoutDate);
       },
       renderScene(navigator) {
@@ -39,11 +40,11 @@ export const MainRouter = {
     };
   },
   getLogExerciseDateRoute(logEntry, exercise) {
-    if(isToday(logEntry.workoutDate)) {
+    if (isToday(logEntry.workoutDate)) {
       return MainRouter.getExerciseRoute(exercise);
     }
     return {
-      getTitle(){
+      getTitle() {
         if (Platform.OS === 'ios') {
           return exercise.name;
         } else {
@@ -57,7 +58,7 @@ export const MainRouter = {
   },
   getLogExerciseRoute(exercise) {
     return {
-      getTitle(){
+      getTitle() {
         return exercise.name;
       },
       renderScene(navigator) {
@@ -76,23 +77,24 @@ export const MainRouter = {
         return this.title || 'Main';
       },
       renderScene(navigator) {
-        return <TabContainer navigator={navigator} setTab={(title, extraActions) => this._setTab(title, extraActions)} />
+        return <TabContainer navigator={navigator} setTab={(title, extraActions) => this._setTab(title, extraActions)} />;
       },
       renderRightButton(navigator) {
-        if(this.extraActions && this.extraActions[0]) {
+        if (this.extraActions && this.extraActions[0]) {
           const onPress = () => this.extraActions[0].onSelected(navigator);
           return (
             <TouchableOpacity
               pressRetentionOffset={ExNavigator.Styles.barButtonPressRetentionOffset}
               onPress={onPress}
-              style={ExNavigator.Styles.barRightButton}>
+              style={ExNavigator.Styles.barRightButton}
+          >
               <Text style={ExNavigator.Styles.barRightButtonText}>
-                { this.extraActions[0].title }
+                {this.extraActions[0].title}
               </Text>
             </TouchableOpacity>
           );
         }
-      }
+      },
     };
   },
 };
