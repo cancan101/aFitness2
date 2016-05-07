@@ -7,7 +7,7 @@ import React, {
 export default class Workouts extends Component {
   static extraActions = [{title: 'Add', show: 'always', iconName: 'add', onSelected: () => {}}];
   static title = 'Workouts';
-  static systemIcon = 'most-viewed';
+  static iconName = 'playlist-play';
 
   render(){
     return (
