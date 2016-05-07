@@ -26,7 +26,7 @@ export default class Exercises extends Component {
     {
       title: 'Add', show: 'always', iconName: 'add',
       onSelected: (navigator) => {
-        Alert.alert("Not implemented", "Adding new exercises is not implmented");
+        Alert.alert("Not implemented", "Adding new exercises is not implemented");
       }
     }
   ];
