@@ -15,7 +15,6 @@ import { MainRouter } from '../../routers';
 
 import IMAGES from '../../constants/Images';
 import realm from '../../realm';
-import { loadData } from './utils';
 
 
 const FILTER_ALL = 'all';
