@@ -43,8 +43,9 @@ class ExerciseInner extends Component {
     }];
 
   static propTypes = {
-    weightValue: React.propTypes.number,
-    reps: React.propTypes.number,
+    weightValue: React.PropTypes.number,
+    reps: React.PropTypes.number,
+    exercise: React.PropTypes.object.isRequired,
   };
 
   constructor(props) {
@@ -58,11 +59,6 @@ class ExerciseInner extends Component {
   onSetItemPress(setItem) {
     this.setState({ reps: String(setItem.reps), weightValue: String(setItem.weightValue) });
   }
-  _deleteSetItem(setItem) {
-    realm.write(() => {
-      realm.delete(setItem);
-    });
-  }
   _renderRow = (setItem, sectionID, rowID) => {
     const setNum = this.props.item.length - rowID;
     // TODO: Make this a function:
@@ -70,7 +66,7 @@ class ExerciseInner extends Component {
     const refs = {};
     return (
       <Listitem
-        ref={c => refs.item = c}
+        ref={c => { refs.item = c; }}
         onPress={() => this.onSetItemPress(setItem)}
         onLongPress={() => {
           UIManager.showPopupMenu(
@@ -85,7 +81,7 @@ class ExerciseInner extends Component {
           );
         }}
         text={text}
-    />
+      />
     );
   };
   _canRecord() {
@@ -99,14 +95,15 @@ class ExerciseInner extends Component {
   };
   _recordBtnOnPress = () => {
     const recordDate = new Date();
-    const workoutDate = new Date(Date.UTC(recordDate.getFullYear(), recordDate.getMonth(), recordDate.getDate()));
+    const workoutDate = new Date(
+      Date.UTC(recordDate.getFullYear(), recordDate.getMonth(), recordDate.getDate()));
 
     realm.write(() => {
       realm.create('ActivitySet', {
         recordDate,
         workoutDate,
         exercise: this.props.exercise,
-        reps: parseInt(this.state.reps),
+        reps: parseInt(this.state.reps, 10),
         weightValue: parseFloat(this.state.weightValue),
         weightUnits: 'lbs',
       });
@@ -115,7 +112,7 @@ class ExerciseInner extends Component {
   sendNotification = () => {
     PushNotification.localNotification({
       id: '0',
-      message: 'Select to return to ' + this.props.exercise.name,
+      message: `Select to return to ${this.props.exercise.name}`,
       title: 'Rest After Exercise Complete',
       ticker: 'Rest Complete',
       smallIcon: 'drawable/ic_sync',
@@ -126,7 +123,11 @@ class ExerciseInner extends Component {
       this.sendNotification();
     }, 1000);
   };
-
+  _deleteSetItem(setItem) {
+    realm.write(() => {
+      realm.delete(setItem);
+    });
+  }
   componentWillUnmount() {
     if (this.timer) {
       clearTimeout(this.timer);
@@ -200,6 +201,9 @@ class ExerciseInner extends Component {
 
 export default class Exercise extends Component {
   static extraActions = ExerciseInner.extraActions;
+
+  static propTypes = ExerciseInner.propTypes;
+
   constructor(props) {
     super(props);
     this.state = {
