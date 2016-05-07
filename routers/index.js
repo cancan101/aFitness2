@@ -21,11 +21,13 @@ export const MainRouter = {
         return exercise.name;
       },
       renderScene(navigator) {
-        return (<Exercise
-          ref={c => this._exercise = c}
-          navigator={navigator} exercise={exercise}
-          weightValue={setItem.weightValue} reps={setItem.reps}
-        />);
+        return (
+          <Exercise
+            ref={c => this._exercise = c}
+            navigator={navigator} exercise={exercise}
+            weightValue={setItem.weightValue} reps={setItem.reps}
+          />
+        );
       },
     };
   },
@@ -47,9 +49,8 @@ export const MainRouter = {
       getTitle() {
         if (Platform.OS === 'ios') {
           return exercise.name;
-        } else {
-          return `${getDateString(logEntry.workoutDate)} - ${exercise.name}`;
         }
+        return `${getDateString(logEntry.workoutDate)} - ${exercise.name}`;
       },
       renderScene(navigator) {
         return <LogExerciseDate navigator={navigator} logEntry={logEntry} exercise={exercise} />;
@@ -77,7 +78,12 @@ export const MainRouter = {
         return this.title || 'Main';
       },
       renderScene(navigator) {
-        return <TabContainer navigator={navigator} setTab={(title, extraActions) => this._setTab(title, extraActions)} />;
+        return (
+          <TabContainer
+            navigator={navigator}
+            setTab={(title, extraActions) => this._setTab(title, extraActions)}
+          />
+        );
       },
       renderRightButton(navigator) {
         if (this.extraActions && this.extraActions[0]) {
@@ -87,13 +93,14 @@ export const MainRouter = {
               pressRetentionOffset={ExNavigator.Styles.barButtonPressRetentionOffset}
               onPress={onPress}
               style={ExNavigator.Styles.barRightButton}
-          >
+            >
               <Text style={ExNavigator.Styles.barRightButtonText}>
                 {this.extraActions[0].title}
               </Text>
             </TouchableOpacity>
           );
         }
+        return null;
       },
     };
   },

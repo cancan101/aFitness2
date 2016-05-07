@@ -42,6 +42,11 @@ class ExerciseInner extends Component {
       },
     }];
 
+  static propTypes = {
+    weightValue: React.propTypes.number,
+    reps: React.propTypes.number,
+  };
+
   constructor(props) {
     super(props);
     this._ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
@@ -72,7 +77,7 @@ class ExerciseInner extends Component {
             findNodeHandle(refs.item),
             ['Delete'],
             () => {}, // error
-            (action, selectedIndex) => {
+            action => {
               if (action === ACTION_ITEM_SELECTED) {
                 this._deleteSetItem(setItem);
               }
@@ -130,8 +135,8 @@ class ExerciseInner extends Component {
   render() {
     const recordBtnExtras = {};
     if (!this._canRecord()) {
-      recordBtnExtras['disabled'] = true;
-      recordBtnExtras['backgroundColor'] = 'grey';
+      recordBtnExtras.disabled = true;
+      recordBtnExtras.backgroundColor = 'grey';
     }
 
     const recordBtn = (
@@ -197,7 +202,10 @@ export default class Exercise extends Component {
   static extraActions = ExerciseInner.extraActions;
   constructor(props) {
     super(props);
-    this.state = { item: realm.objects('ActivitySet').filtered('exercise == $0 && workoutDate == $1', this.props.exercise, getToday()) };
+    this.state = {
+      item: realm.objects('ActivitySet').filtered(
+        'exercise == $0 && workoutDate == $1', this.props.exercise, getToday()),
+    };
   }
   render() {
     return <ExerciseInner {...this.props} item={this.state.item} />;

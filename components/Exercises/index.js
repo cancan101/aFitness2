@@ -47,13 +47,16 @@ export default class Exercises extends Component {
     let image;
     if (exercise.image) {
       image = (
-        <Image source={IMAGES[exercise.image]}
+        <Image
+          source={IMAGES[exercise.image]}
           style={{ width: 40, height: 40, marginBottom: -15, marginTop: -15 }}
-      />
+        />
       );
     } else {
       image = (
-        <View style={{ width: 40, height: 40, marginBottom: -15, marginTop: -15 }} />
+        <View
+          style={{ width: 40, height: 40, marginBottom: -15, marginTop: -15 }}
+        />
       );
     }
 
@@ -103,15 +106,15 @@ export default class Exercises extends Component {
         <Picker
           selectedValue={this.state.selectedMuscleGroup}
           onValueChange={this._selectMuscleGroup}
-    >
-          {[(<Picker.Item label={'All'} value={FILTER_ALL} key={FILTER_ALL} color={'red'} />), ...muscleGroupItems]}
+        >
+          {[<Picker.Item label={'All'} value={FILTER_ALL} key={FILTER_ALL} color={'red'} />, ...muscleGroupItems]}
         </Picker>
         <Picker
           selectedValue={this.state.selectedMuscle}
           onValueChange={this._selectMuscle}
           mode="dropdown"
-    >
-          {[(<Picker.Item label={'All'} value={FILTER_ALL} key={FILTER_ALL} color={'red'} />), ...muscleItems]}
+        >
+          {[<Picker.Item label={'All'} value={FILTER_ALL} key={FILTER_ALL} color={'red'} />, ...muscleItems]}
       </Picker>
     </View>
     );
@@ -136,7 +139,7 @@ export default class Exercises extends Component {
         renderHeader={this._renderHeader}
         dataSource={this._ds.cloneWithRows(exercisesFiltered)}
         renderRow={this._renderRow}
-    />
+      />
     );
   }
 }
