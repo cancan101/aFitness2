@@ -100,8 +100,8 @@ class ExerciseInner extends Component {
        recordDate,
        workoutDate,
        exercise: this.props.exercise,
-       reps: this.state.reps,
-       weightValue: this.state.weightValue,
+       reps: parseInt(this.state.reps),
+       weightValue: parseFloat(this.state.weightValue),
        weightUnits: 'lbs',
      });
     });
