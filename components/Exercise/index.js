@@ -123,7 +123,7 @@ class ExerciseInner extends Component {
     });
     this.setState({ sendAt });
     this.timer = setInterval(() => {
-      if (this.timer && this.state.sendAt && this.state.sendAt <= new Date().getTime()) {
+      if (this.timer && (!this.state.sendAt || (this.state.sendAt && this.state.sendAt <= new Date().getTime()))) {
         clearInterval(this.timer);
         this.timer = null;
       }
