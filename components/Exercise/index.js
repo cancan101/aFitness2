@@ -29,6 +29,8 @@ const styles = StyleSheet.create({
 
 const ACTION_ITEM_SELECTED = 'itemSelected';
 
+const SET_REST_TIME = 5;
+
 
 class ExerciseInner extends Component {
   static extraActions = [
@@ -110,7 +112,7 @@ class ExerciseInner extends Component {
     });
   };
   sendNotification = () => {
-    const sendAt = new Date().getTime() + 5000;
+    const sendAt = new Date().getTime() + SET_REST_TIME * 1000;
     PushNotification.localNotificationSchedule({
       id: '0',
       message: `Select to return to ${this.props.exercise.name}`,
