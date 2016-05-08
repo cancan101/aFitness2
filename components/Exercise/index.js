@@ -110,17 +110,31 @@ class ExerciseInner extends Component {
     });
   };
   sendNotification = () => {
+    const sendAt = new Date().getTime() + 5000;
     PushNotification.localNotificationSchedule({
       id: '0',
       message: `Select to return to ${this.props.exercise.name}`,
       title: 'Rest After Exercise Complete',
       ticker: 'Rest Complete',
       smallIcon: 'drawable/ic_sync',
-      sendAt: (new Date().getTime() + 5000).toString(),
+      sendAt: sendAt.toString(),
     });
+    this.setState({ sendAt });
+    this.timer = setInterval(() => {
+      if (this.timer && this.state.sendAt && this.state.sendAt <= new Date().getTime()) {
+        clearInterval(this.timer);
+        this.timer = null;
+      }
+      this.forceUpdate();
+    }, 100);
   };
   onTimerClick = () => {
-    this.sendNotification();
+    if (this.state.sendAt && this.state.sendAt >= new Date().getTime()) {
+      PushNotification.cancelAllLocalNotifications();
+      this.state.sendAt = null;
+    } else {
+      this.sendNotification();
+    }
   };
   _deleteSetItem(setItem) {
     realm.write(() => {
@@ -129,7 +143,8 @@ class ExerciseInner extends Component {
   }
   componentWillUnmount() {
     if (this.timer) {
-      // clearTimeout(this.timer);
+      clearInterval(this.timer);
+      this.timer = null;
     }
   }
   render() {
@@ -160,6 +175,13 @@ class ExerciseInner extends Component {
       listView = <View style={{ flex: 1 }}><Text>No Exercises for Today</Text></View>;
     }
 
+    let timerText;
+    if (this.state.sendAt && this.state.sendAt >= new Date().getTime()) {
+      timerText = `${Math.ceil((this.state.sendAt - new Date().getTime()) / 1000)}`;
+    } else {
+      timerText = 'Timer';
+    }
+
     return (
       <View style={styles.container}>
         <View style={{ flexDirection: 'row' }}>
@@ -187,7 +209,7 @@ class ExerciseInner extends Component {
           </View>
           <View style={{ flex: 1 }}>
             <Icon.Button name="timer" onPress={this.onTimerClick}>
-              Timer
+              {timerText}
             </Icon.Button>
           </View>
         </View>
