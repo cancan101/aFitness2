@@ -13,7 +13,7 @@
     "react-native": "^0.24.1",
     "react-native-dialogs": "0.0.15",
     "react-native-listitem": "github:cancan101/react-native-listitem",
-    "react-native-push-notification": "github:cancan101/react-native-push-notification#patch-2",
+    "react-native-push-notification": "github:cancan101/react-native-push-notification#scheduled",
     "react-native-scrollable-tab-view": "^0.4.2",
     "react-native-vector-icons": "^1.3.4",
     "realm": "^0.12.0-rc"

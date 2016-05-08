@@ -16,7 +16,7 @@ const PURGE_DATA = false;
 class App extends Component {
   _maybeLoadData = () => {
     AsyncStorage.getItem(DB_VERSION_KEY).then(k => {
-      if (!k || parseInt(k) < CURRENT_DB_VERSION) {
+      if (!k || parseInt(k, 10) < CURRENT_DB_VERSION) {
         loadData();
         this.forceUpdate();
         AsyncStorage.setItem(DB_VERSION_KEY, String(CURRENT_DB_VERSION));
