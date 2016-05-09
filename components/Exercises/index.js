@@ -24,13 +24,18 @@ export default class Exercises extends Component {
   static extraActions = [
     {
       title: 'Add', show: 'always', iconName: 'add',
-      onSelected: (navigator) => {
+      onSelected: () => {
         Alert.alert('Not implemented', 'Adding new exercises is not implemented');
       },
     },
   ];
   static title = 'Exercises';
   static iconName = 'view-carousel';
+
+
+  static propTypes = {
+    navigator: React.PropTypes.object.isRequired,
+  };
 
   constructor(props) {
     super(props);
@@ -74,19 +79,16 @@ export default class Exercises extends Component {
 
   _selectMuscleGroup = (selectedMuscleGroup) => {
     this.setState({
-      selectedMuscleGroup: selectedMuscleGroup,
+      selectedMuscleGroup,
       selectedMuscle: FILTER_ALL,
     });
   };
   _selectMuscle = (selectedMuscle) => {
-    this.setState({ selectedMuscle: selectedMuscle });
+    this.setState({ selectedMuscle });
   };
-  _renderMuscleGroups = () => {
-    return realm.objects('MuscleGroup').sorted('name').map(
-      (k) =>
-        <Picker.Item label={k.name} value={k.name} key={k.name} color={'black'} />
-    );
-  };
+  _renderMuscleGroups = () => realm.objects('MuscleGroup').sorted('name').map(
+    k => <Picker.Item label={k.name} value={k.name} key={k.name} color={'black'} />
+  );
   _renderMuscles = () => {
     let muscles = realm.objects('Muscle');
     if (this.state.selectedMuscleGroup !== FILTER_ALL) {
@@ -107,16 +109,22 @@ export default class Exercises extends Component {
           selectedValue={this.state.selectedMuscleGroup}
           onValueChange={this._selectMuscleGroup}
         >
-          {[<Picker.Item label={'All'} value={FILTER_ALL} key={FILTER_ALL} color={'red'} />, ...muscleGroupItems]}
+          {[
+            <Picker.Item label={'All'} value={FILTER_ALL} key={FILTER_ALL} color={'red'} />,
+            ...muscleGroupItems,
+          ]}
         </Picker>
         <Picker
           selectedValue={this.state.selectedMuscle}
           onValueChange={this._selectMuscle}
           mode="dropdown"
         >
-          {[<Picker.Item label={'All'} value={FILTER_ALL} key={FILTER_ALL} color={'red'} />, ...muscleItems]}
-      </Picker>
-    </View>
+          {[
+            <Picker.Item label={'All'} value={FILTER_ALL} key={FILTER_ALL} color={'red'} />,
+            ...muscleItems,
+          ]}
+        </Picker>
+      </View>
     );
   };
 
@@ -128,7 +136,8 @@ export default class Exercises extends Component {
         this.state.selectedMuscle,
       );
     } else if (this.state.selectedMuscleGroup !== FILTER_ALL) {
-      exercisesFiltered = exercisesFiltered.filtered('muscleGroups.name = $0', this.state.selectedMuscleGroup);
+      exercisesFiltered = exercisesFiltered.filtered(
+        'muscleGroups.name = $0', this.state.selectedMuscleGroup);
     }
 
     exercisesFiltered = exercisesFiltered.sorted('name');

@@ -1,4 +1,5 @@
 import React, {
+  AsyncStorage,
   Component,
   Image,
   StyleSheet,
@@ -17,6 +18,8 @@ import realm from '../../realm';
 import IMAGES from '../../constants/Images';
 import { getToday } from '../../utils';
 import { MainRouter } from '../../routers';
+import prompt from '../utils/prompt';
+
 
 import PushNotification from 'react-native-push-notification';
 
@@ -29,7 +32,7 @@ const styles = StyleSheet.create({
 
 const ACTION_ITEM_SELECTED = 'itemSelected';
 
-const SET_REST_TIME = 5;
+const SET_REST_TIME_DEFAULT = 5;
 
 
 class ExerciseInner extends Component {
@@ -57,6 +60,12 @@ class ExerciseInner extends Component {
       weightValue: String(this.props.weightValue || ''),
       reps: String(this.props.reps || ''),
     };
+  }
+  componentDidMount() {
+    AsyncStorage.getItem('SET_REST_TIME').then(
+      v => {
+        this.setState({ setRestTime: parseInt(v, 10) || SET_REST_TIME_DEFAULT });
+      });
   }
   onSetItemPress(setItem) {
     this.setState({ reps: String(setItem.reps), weightValue: String(setItem.weightValue) });
@@ -112,7 +121,7 @@ class ExerciseInner extends Component {
     });
   };
   sendNotification = () => {
-    const sendAt = new Date().getTime() + SET_REST_TIME * 1000;
+    const sendAt = new Date().getTime() + this.state.setRestTime * 1000;
     PushNotification.localNotificationSchedule({
       id: '0',
       message: `Select to return to ${this.props.exercise.name}`,
@@ -123,7 +132,8 @@ class ExerciseInner extends Component {
     });
     this.setState({ sendAt });
     this.timer = setInterval(() => {
-      if (this.timer && (!this.state.sendAt || (this.state.sendAt && this.state.sendAt <= new Date().getTime()))) {
+      if (this.timer &&
+        (!this.state.sendAt || (this.state.sendAt && this.state.sendAt <= new Date().getTime()))) {
         clearInterval(this.timer);
         this.timer = null;
       }
@@ -137,6 +147,27 @@ class ExerciseInner extends Component {
     } else {
       this.sendNotification();
     }
+  };
+  onTimeLongPress = () => {
+    prompt(
+      'Set Rest Time',
+      'Enter set rest time in seconds',
+      [
+        { style: 'cancel', text: 'Cancel' },
+        {
+          style: 'default', text: 'Okay',
+          onPress: (value) => {
+            if (value) {
+              const setRestTime = parseInt(value, 10);
+              this.setState({ setRestTime });
+              AsyncStorage.setItem('SET_REST_TIME', String(setRestTime));
+            }
+          },
+        },
+      ],
+      'plain-text',
+      String(this.state.setRestTime),
+    );
   };
   _deleteSetItem(setItem) {
     realm.write(() => {
@@ -181,7 +212,11 @@ class ExerciseInner extends Component {
     if (this.state.sendAt && this.state.sendAt >= new Date().getTime()) {
       timerText = `${Math.ceil((this.state.sendAt - new Date().getTime()) / 1000)}`;
     } else {
-      timerText = 'Timer';
+      if (this.state.setRestTime) {
+        timerText = String(this.state.setRestTime);
+      } else {
+        timerText = 'Timer';
+      }
     }
 
     return (
@@ -210,7 +245,7 @@ class ExerciseInner extends Component {
             {recordBtn}
           </View>
           <View style={{ flex: 1 }}>
-            <Icon.Button name="timer" onPress={this.onTimerClick}>
+            <Icon.Button name="timer" onPress={this.onTimerClick} onLongPress={this.onTimeLongPress}>
               {timerText}
             </Icon.Button>
           </View>
@@ -234,12 +269,12 @@ export default class Exercise extends Component {
         'exercise == $0 && workoutDate == $1', this.props.exercise, getToday()),
     };
   }
-  render() {
-    return <ExerciseInner {...this.props} item={this.state.item} />;
-  }
   onChange = () => {
     this.setState({ item: this.state.item });
   };
+  render() {
+    return <ExerciseInner {...this.props} item={this.state.item} />;
+  }
   componentDidMount() {
     realm.addListener('change', this.onChange);
   }
