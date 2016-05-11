@@ -1,5 +1,4 @@
 import React from 'react-native';
-import ExNavigator from '@exponent/react-native-navigator';
 
 const {
   StyleSheet,

@@ -61,7 +61,7 @@ export default class Logs extends Component {
     this._ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
     this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
   }
-  
+
   _renderRow = (logEntry) => {
     const route = MainRouter.getLogWorkoutDateRoute(logEntry);
     const { workoutDate, setCount, exerciseCount } = logEntry;
@@ -82,7 +82,7 @@ export default class Logs extends Component {
   render() {
     const logs = sortBy(map(
       groupBy(realm.objects('ActivitySet'), 'workoutDate'),
-      (v, workoutDate) => ({
+      v => ({
         workoutDate: v[0].workoutDate,
         setCount: v.length,
         exerciseCount: uniqBy(v, 'exercise.id').length,
@@ -93,7 +93,7 @@ export default class Logs extends Component {
         enableEmptySections
         dataSource={this._ds.cloneWithRows(logs)}
         renderRow={this._renderRow}
-    />
+      />
     );
   }
 }

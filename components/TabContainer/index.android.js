@@ -1,7 +1,6 @@
 import React, {
   Component,
   StyleSheet,
-  Text,
   View,
 } from 'react-native';
 
@@ -13,7 +12,7 @@ import Logs from '../Logs';
 
 import { TOOLBAR_BACKGROUND_COLOR } from '../../colors';
 
-const TABS = [Exercises, Workouts, Logs,];
+const TABS = [Exercises, Workouts, Logs];
 const INITIAL_PAGE = 0;
 
 const styles = StyleSheet.create({
@@ -24,13 +23,18 @@ const styles = StyleSheet.create({
 
 
 export default class TabContainer extends Component {
-  onChangeTab = (v) => {
-    this.props.setTab(v.ref.props.tabLabel, v.ref.type.extraActions || []);
+  static propTypes = {
+    setTab: React.PropTypes.func.isRequired,
+    navigator: React.PropTypes.object.isRequired,
   };
 
   componentDidMount() {
     this.props.setTab(TABS[INITIAL_PAGE].title, TABS[INITIAL_PAGE].extraActions || []);
   }
+
+  onChangeTab = v => {
+    this.props.setTab(v.ref.props.tabLabel, v.ref.type.extraActions || []);
+  };
 
   render() {
     return (

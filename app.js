@@ -14,16 +14,6 @@ const CURRENT_DB_VERSION = 1;
 const PURGE_DATA = false;
 
 class App extends Component {
-  _maybeLoadData = () => {
-    AsyncStorage.getItem(DB_VERSION_KEY).then(k => {
-      if (!k || parseInt(k, 10) < CURRENT_DB_VERSION) {
-        loadData();
-        this.forceUpdate();
-        AsyncStorage.setItem(DB_VERSION_KEY, String(CURRENT_DB_VERSION));
-      }
-    });
-  };
-
   componentDidMount = () => {
     if (PURGE_DATA) {
       AsyncStorage.removeItem('loadedVersion').then(() => {
@@ -36,7 +26,15 @@ class App extends Component {
       this._maybeLoadData();
     }
   };
-
+  _maybeLoadData = () => {
+    AsyncStorage.getItem(DB_VERSION_KEY).then(k => {
+      if (!k || parseInt(k, 10) < CURRENT_DB_VERSION) {
+        loadData();
+        this.forceUpdate();
+        AsyncStorage.setItem(DB_VERSION_KEY, String(CURRENT_DB_VERSION));
+      }
+    });
+  };
   render() {
     return <Main />;
   }
