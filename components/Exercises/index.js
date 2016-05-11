@@ -112,6 +112,7 @@ export default class Exercises extends Component {
         <Picker
           selectedValue={this.state.selectedMuscleGroup}
           onValueChange={this._selectMuscleGroup}
+          mode="dropdown"
         >
           {[
             <Picker.Item label={'All'} value={FILTER_ALL} key={FILTER_ALL} color={'red'} />,
