@@ -23,7 +23,7 @@ export const MainRouter = {
       renderScene(navigator) {
         return (
           <Exercise
-            ref={c => this._exercise = c}
+            ref={c => { this._exercise = c; }}
             navigator={navigator} exercise={exercise}
             weightValue={setItem.weightValue} reps={setItem.reps}
           />

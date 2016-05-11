@@ -21,6 +21,7 @@ import { getDateString } from '../../utils';
 export default class LogExercise extends Component {
   static propTypes = {
     exercise: React.PropTypes.object.isRequired,
+    navigator: React.PropTypes.object.isRequired,
   };
 
   constructor(props) {
@@ -59,7 +60,7 @@ export default class LogExercise extends Component {
         enableEmptySections
         dataSource={this._ds.cloneWithRows(logs)}
         renderRow={this._renderRow}
-    />
+      />
     );
   }
 }

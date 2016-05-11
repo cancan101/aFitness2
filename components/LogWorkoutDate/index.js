@@ -18,10 +18,17 @@ import { MainRouter } from '../../routers';
 
 
 export default class LogWorkoutDate extends Component {
+  static propTypes = {
+    logEntry: React.PropTypes.object.isRequired,
+    navigator: React.PropTypes.object.isRequired,
+  };
+
   constructor(props) {
     super(props);
     this._ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
-    this._item = realm.objects('ActivitySet').filtered('workoutDate == $0', this.props.logEntry.workoutDate);
+    this._item = realm.objects('ActivitySet').filtered(
+      'workoutDate == $0',
+      this.props.logEntry.workoutDate);
   }
 
   _renderRow = (logEntryExercise) => {
@@ -43,7 +50,7 @@ export default class LogWorkoutDate extends Component {
   render() {
     const logs = sortBy(map(
       groupBy(this._item, 'exercise.id'),
-      (v, exerciseId) => ({
+      v => ({
         exercise: v[0].exercise,
         setCount: v.length,
         lastSet: maxBy(v, 'recordDate').recordDate,
@@ -54,7 +61,7 @@ export default class LogWorkoutDate extends Component {
         enableEmptySections
         dataSource={this._ds.cloneWithRows(logs)}
         renderRow={this._renderRow}
-    />
+      />
     );
   }
 }

@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "lint": "eslint components/ realm/ routers/ *.js"
+    "lint": "eslint components/ realm/ routers/ *.js",
+    "test": "npm run lint"
   },
   "dependencies": {
     "@exponent/react-native-navigator": "github:cancan101/ex-navigator#augment_scene",

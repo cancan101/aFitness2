@@ -15,39 +15,36 @@ import styles from './styles';
 
 
 export default class Main extends React.Component {
-  _onHardwareBackPress = () => {
-    if (this.refs.navigator.getCurrentRoutes().length > 1) {
-      this.refs.navigator.pop();
-      return true;
-    } else {
-      return false;
-    }
-  };
   componentDidMount() {
     BackAndroid.addEventListener('hardwareBackPress', this._onHardwareBackPress);
   }
   componentWillUnmount() {
     BackAndroid.removeEventListener('hardwareBackPress', this._onHardwareBackPress);
   }
-  augmentScene = (scene, route, navigator) => {
-    return (
-      <View style={styles.container}>
-        <StatusBar
-          backgroundColor={TOOLBAR_BACKGROUND_COLOR}
-        />
-        <Toolbar
-          navigator={navigator}
-          route={route}
-          ref={c => { this.toolbar = c; }}
-        />
-        <View style={{ paddingTop: 56, flex: 1 }}>
-          {scene}
-        </View>
-      </View>
-    );
-  };
   setRoute = () => {
     this.toolbar.forceUpdate();
+  };
+  augmentScene = (scene, route, navigator) => (
+    <View style={styles.container}>
+      <StatusBar
+        backgroundColor={TOOLBAR_BACKGROUND_COLOR}
+      />
+      <Toolbar
+        navigator={navigator}
+        route={route}
+        ref={c => { this.toolbar = c; }}
+      />
+      <View style={{ paddingTop: 56, flex: 1 }}>
+        {scene}
+      </View>
+    </View>
+  );
+  _onHardwareBackPress = () => {
+    if (this.refs.navigator.getCurrentRoutes().length > 1) {
+      this.refs.navigator.pop();
+      return true;
+    }
+    return false;
   };
   render() {
     return (
