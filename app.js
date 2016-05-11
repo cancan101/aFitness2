@@ -1,7 +1,10 @@
 import React, {
+  Component,
+} from 'react';
+
+import {
   AppRegistry,
   AsyncStorage,
-  Component,
 } from 'react-native';
 
 import Main from './components/Main';

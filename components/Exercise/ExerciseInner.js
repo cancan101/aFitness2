@@ -1,6 +1,8 @@
 import React, {
-  AsyncStorage,
   Component,
+} from 'react';
+import {
+  AsyncStorage,
   Image,
   StyleSheet,
   Text,

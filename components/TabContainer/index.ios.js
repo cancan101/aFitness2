@@ -1,5 +1,7 @@
 import React, {
   Component,
+} from 'react';
+import {
   TabBarIOS,
 } from 'react-native';
 
