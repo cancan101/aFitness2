@@ -7,6 +7,7 @@ import React, {
   View,
 } from 'react-native';
 
+import PureRenderMixin from 'react-addons-pure-render-mixin';
 import Listitem from 'react-native-listitem';
 import ListitemStyles from 'react-native-listitem/styles';
 import { ListView } from 'realm/react-native';
@@ -44,6 +45,7 @@ export default class Exercises extends Component {
       selectedMuscleGroup: FILTER_ALL,
       selectedMuscle: FILTER_ALL,
     };
+    this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
   }
 
   _renderRow = (exercise) => {

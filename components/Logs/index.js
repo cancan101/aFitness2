@@ -5,6 +5,7 @@ import React, {
   View,
 } from 'react-native';
 
+import PureRenderMixin from 'react-addons-pure-render-mixin';
 import Listitem from 'react-native-listitem';
 import { liText } from 'react-native-listitem/styles';
 
@@ -51,11 +52,16 @@ export default class Logs extends Component {
   static title = 'Logs';
   static iconName = 'history';
 
+  static propTypes = {
+    navigator: React.PropTypes.object.isRequired,
+  };
+
   constructor(props) {
     super(props);
     this._ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
+    this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
   }
-
+  
   _renderRow = (logEntry) => {
     const route = MainRouter.getLogWorkoutDateRoute(logEntry);
     const { workoutDate, setCount, exerciseCount } = logEntry;

@@ -38,15 +38,16 @@ export default class Main extends React.Component {
         <Toolbar
           navigator={navigator}
           route={route}
+          ref={c => { this.toolbar = c; }}
         />
-        <View style={{ paddingTop: 56, flex:1 }}>
+        <View style={{ paddingTop: 56, flex: 1 }}>
           {scene}
         </View>
       </View>
     );
   };
-  setRoute = (route) => {
-    this.setState({ route });
+  setRoute = () => {
+    this.toolbar.forceUpdate();
   };
   render() {
     return (

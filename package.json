@@ -10,6 +10,7 @@
     "@exponent/react-native-navigator": "github:cancan101/ex-navigator#augment_scene",
     "lodash": "^4.11.2",
     "react": "^0.14.8",
+    "react-addons-pure-render-mixin": "^15.0.2",
     "react-native": "^0.24.1",
     "react-native-dialogs": "0.0.15",
     "react-native-listitem": "github:cancan101/react-native-listitem",
