@@ -63,9 +63,8 @@ class ExerciseInner extends Component {
   }
   componentDidMount() {
     AsyncStorage.getItem('SET_REST_TIME').then(
-      v => {
-        this.setState({ setRestTime: parseInt(v, 10) || SET_REST_TIME_DEFAULT });
-      });
+      v => this.setState({ setRestTime: parseInt(v, 10) || SET_REST_TIME_DEFAULT })
+    );
   }
   onSetItemPress(setItem) {
     this.setState({ reps: String(setItem.reps), weightValue: String(setItem.weightValue) });
