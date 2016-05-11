@@ -18,8 +18,10 @@ import realm from '../../realm';
 import { getDateString } from '../../utils';
 
 
-
 export default class LogExercise extends Component {
+  static propTypes = {
+    exercise: React.PropTypes.object.isRequired,
+  };
 
   constructor(props) {
     super(props);
@@ -45,8 +47,9 @@ export default class LogExercise extends Component {
 
   render() {
     const logs = sortBy(map(
-      groupBy(realm.objects('ActivitySet').filtered('exercise == $0', this.props.exercise), 'workoutDate'),
-      (v, workoutDate) => ({
+      groupBy(realm.objects('ActivitySet').filtered(
+        'exercise == $0', this.props.exercise), 'workoutDate'),
+      v => ({
         workoutDate: v[0].workoutDate,
         setCount: v.length,
       })
