@@ -1,6 +1,6 @@
 import React, {
   Component,
-} from 'react-native';
+} from 'react';
 
 import Listitem from 'react-native-listitem';
 import { ListView } from 'realm/react-native';

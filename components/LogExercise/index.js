@@ -1,5 +1,7 @@
 import React, {
   Component,
+} from 'react';
+import {
   ListView,
   Text,
   View,
@@ -7,10 +9,8 @@ import React, {
 
 import Listitem from 'react-native-listitem';
 import { liText } from 'react-native-listitem/styles';
-
 import groupBy from 'lodash/groupBy';
 import sortBy from 'lodash/sortBy';
-
 import map from 'lodash/map';
 
 import { MainRouter } from '../../routers';

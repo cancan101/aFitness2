@@ -1,6 +1,8 @@
 import React, {
-  Alert,
   Component,
+} from 'react';
+import {
+  Alert,
   Image,
   Picker,
   Text,

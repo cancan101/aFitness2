@@ -1,6 +1,6 @@
 import React, {
   Component,
-} from 'react-native';
+} from 'react';
 
 import realm from '../../realm';
 import ExerciseInner from './ExerciseInner';

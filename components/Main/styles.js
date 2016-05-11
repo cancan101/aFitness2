@@ -1,8 +1,4 @@
-import React from 'react-native';
-
-const {
-  StyleSheet,
-} = React;
+import { StyleSheet } from 'react-native';
 
 const styles = {
   container: {

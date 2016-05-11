@@ -1,8 +1,7 @@
-import React from 'react-native';
+import React, { Component } from 'react';
 
-const {
-  StyleSheet,
-} = React;
+import { StyleSheet } from 'react-native';
+
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
@@ -21,7 +20,7 @@ const styles = StyleSheet.create({
 });
 
 
-export default class Toolbar extends React.Component {
+export default class Toolbar extends Component {
   static propTypes = {
     openDrawer: React.PropTypes.func,
     route: React.PropTypes.object.isRequired,
