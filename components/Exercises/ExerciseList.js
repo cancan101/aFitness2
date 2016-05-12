@@ -7,7 +7,6 @@ import {
   View,
 } from 'react-native';
 
-import PureRenderMixin from 'react-addons-pure-render-mixin';
 import Listitem from 'react-native-listitem';
 import ListitemStyles from 'react-native-listitem/styles';
 import { ListView } from 'realm/react-native';
@@ -24,11 +23,6 @@ export default class ExerciseList extends Component {
     // ListView.propTypes.renderHeader, awaiting: https://github.com/realm/realm-js/issues/377
     dataSource: ListView.propTypes.dataSource,
   };
-
-  constructor(props) {
-    super(props);
-    this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
-  }
 
   _renderRow = (exercise) => {
     const route = MainRouter.getExerciseRoute(exercise);
