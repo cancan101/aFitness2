@@ -17,6 +17,33 @@ import ExerciseList from './ExerciseList';
 const FILTER_ALL = 'all';
 
 
+function getExercisesFiltered(selectedMuscle, selectedMuscleGroup) {
+  let exercisesFiltered = realm.objects('Exercise');
+  if (selectedMuscle !== FILTER_ALL) {
+    exercisesFiltered = exercisesFiltered.filtered(
+      'musclesMajor.name = $0 || musclesSecondary.name = $0',
+      selectedMuscle,
+    );
+  } else if (selectedMuscleGroup !== FILTER_ALL) {
+    exercisesFiltered = exercisesFiltered.filtered(
+      'muscleGroups.name = $0', selectedMuscleGroup);
+  }
+
+  exercisesFiltered = exercisesFiltered.sorted('name');
+  return exercisesFiltered;
+}
+
+
+function getMusclesFiltered(selectedMuscleGroup) {
+  let muscles = realm.objects('Muscle');
+  if (selectedMuscleGroup !== FILTER_ALL) {
+    muscles = muscles.filtered('muscleGroup.name = $0', selectedMuscleGroup);
+  }
+
+  return muscles.sorted('name');
+}
+
+
 export default class Exercises extends Component {
   static extraActions = [
     {
@@ -55,14 +82,9 @@ export default class Exercises extends Component {
     k => <Picker.Item label={k.name} value={k.name} key={k.name} color={'black'} />
   );
   _renderMuscles = () => {
-    let muscles = realm.objects('Muscle');
-    if (this.state.selectedMuscleGroup !== FILTER_ALL) {
-      muscles = muscles.filtered('muscleGroup.name = $0', this.state.selectedMuscleGroup);
-    }
-
-    return muscles.sorted('name').map(
-      (k) =>
-        <Picker.Item label={k.name} value={k.name} key={k.name} color={'black'} />
+    const muscles = getMusclesFiltered(this.state.selectedMuscleGroup);
+    return muscles.map(
+      k => <Picker.Item label={k.name} value={k.name} key={k.name} color={'black'} />
     );
   };
   _renderHeader = () => {
@@ -95,18 +117,8 @@ export default class Exercises extends Component {
   };
 
   render() {
-    let exercisesFiltered = realm.objects('Exercise');
-    if (this.state.selectedMuscle !== FILTER_ALL) {
-      exercisesFiltered = exercisesFiltered.filtered(
-        'musclesMajor.name = $0 || musclesSecondary.name = $0',
-        this.state.selectedMuscle,
-      );
-    } else if (this.state.selectedMuscleGroup !== FILTER_ALL) {
-      exercisesFiltered = exercisesFiltered.filtered(
-        'muscleGroups.name = $0', this.state.selectedMuscleGroup);
-    }
-
-    exercisesFiltered = exercisesFiltered.sorted('name');
+    const { selectedMuscle, selectedMuscleGroup } = this.state;
+    const exercisesFiltered = getExercisesFiltered(selectedMuscle, selectedMuscleGroup);
 
     return (
       <ExerciseList
