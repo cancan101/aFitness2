@@ -77,26 +77,6 @@ export default class ExerciseInner extends Component {
   onSetItemPress(setItem) {
     this.setState({ reps: String(setItem.reps), weightValue: String(setItem.weightValue) });
   }
-  sendNotification = () => {
-    const sendAt = new Date().getTime() + this.state.setRestTime * 1000;
-    PushNotification.localNotificationSchedule({
-      id: '0',
-      message: `Select to return to ${this.props.exercise.name}`,
-      title: 'Rest After Exercise Complete',
-      ticker: 'Rest Complete',
-      smallIcon: 'drawable/ic_sync',
-      sendAt: sendAt.toString(),
-    });
-    this.setState({ sendAt });
-    this.timer = setInterval(() => {
-      if (this.timer &&
-        (!this.state.sendAt || (this.state.sendAt && this.state.sendAt <= new Date().getTime()))) {
-        clearInterval(this.timer);
-        this.timer = null;
-      }
-      this.forceUpdate();
-    }, 100);
-  };
   onTimerClick = () => {
     if (this.state.sendAt && this.state.sendAt >= new Date().getTime()) {
       PushNotification.cancelAllLocalNotifications();
@@ -126,7 +106,26 @@ export default class ExerciseInner extends Component {
       String(this.state.setRestTime),
     );
   };
-
+  sendNotification = () => {
+    const sendAt = new Date().getTime() + this.state.setRestTime * 1000;
+    PushNotification.localNotificationSchedule({
+      id: '0',
+      message: `Select to return to ${this.props.exercise.name}`,
+      title: 'Rest After Exercise Complete',
+      ticker: 'Rest Complete',
+      smallIcon: 'drawable/ic_sync',
+      sendAt: sendAt.toString(),
+    });
+    this.setState({ sendAt });
+    this.timer = setInterval(() => {
+      if (this.timer &&
+        (!this.state.sendAt || (this.state.sendAt && this.state.sendAt <= new Date().getTime()))) {
+        clearInterval(this.timer);
+        this.timer = null;
+      }
+      this.setState({ currentTime: new Date().getTime() });
+    }, 100);
+  };
   _onChangeTextWeightValue = (value) => {
     this.setState({ weightValue: value });
   };
