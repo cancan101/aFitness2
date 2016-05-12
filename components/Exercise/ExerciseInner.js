@@ -15,6 +15,7 @@ import {
 import Listitem from 'react-native-listitem';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { ListView } from 'realm/react-native';
+import uuid from 'node-uuid';
 
 import realm from '../../realm';
 import IMAGES from '../../constants/Images';
@@ -136,6 +137,7 @@ export default class ExerciseInner extends Component {
 
     realm.write(() => {
       realm.create('ActivitySet', {
+        id: uuid.v4(),
         recordDate,
         workoutDate,
         exercise: this.props.exercise,

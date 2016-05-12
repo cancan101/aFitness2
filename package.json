@@ -10,6 +10,7 @@
   "dependencies": {
     "@exponent/react-native-navigator": "github:cancan101/ex-navigator#augment_scene",
     "lodash": "^4.12.0",
+    "node-uuid": "^1.4.7",
     "react": "^0.14.8",
     "react-addons-pure-render-mixin": "^15.0.2",
     "react-native": "^0.25.1",
