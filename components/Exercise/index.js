@@ -2,18 +2,17 @@ import React, {
   Component,
 } from 'react';
 
+import omit from 'lodash/omit';
+
 import realm from '../../realm';
 import ExerciseInner from './ExerciseInner';
 import { getToday } from '../../utils';
 
 
-const { item, ...parentProps } = ExerciseInner.propTypes;
-
-
 export default class Exercise extends Component {
   static extraActions = ExerciseInner.extraActions;
 
-  static propTypes = parentProps;
+  static propTypes = omit(ExerciseInner.propTypes, ['item']);
 
   constructor(props) {
     super(props);

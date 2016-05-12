@@ -22,8 +22,8 @@ export default class Main extends React.Component {
   componentWillUnmount() {
     BackAndroid.removeEventListener('hardwareBackPress', this._onHardwareBackPress);
   }
-  setRoute = () => {
-    this.toolbar.forceUpdate();
+  setRoute = (route) => {
+    this.setState({ route });
   };
   augmentScene = (scene, route, navigator) => (
     <View style={styles.container}>
@@ -33,7 +33,6 @@ export default class Main extends React.Component {
       <Toolbar
         navigator={navigator}
         route={route}
-        ref={c => { this.toolbar = c; }}
       />
       <View style={{ paddingTop: 56, flex: 1 }}>
         {scene}

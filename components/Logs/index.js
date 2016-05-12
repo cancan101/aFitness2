@@ -2,6 +2,7 @@ import React, {
   Component,
 } from 'react';
 import {
+  Alert,
   ListView,
   Text,
   View,
@@ -41,7 +42,7 @@ export default class Logs extends Component {
                 if (url) {
                   loadActivitiesFromUrl(url)
                     .then(() => navigator.forceUpdate())
-                    .catch(() => alert(`Unable to load: ${url}.`));
+                    .catch(() => Alert.alert('Error loading', `Unable to load: ${url}.`));
                 }
               },
             },
