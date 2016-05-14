@@ -11,12 +11,12 @@ import {
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 import Listitem from 'react-native-listitem';
 import { liText } from 'react-native-listitem/styles';
-
-
 import groupBy from 'lodash/groupBy';
 import sortBy from 'lodash/sortBy';
 import uniqBy from 'lodash/uniqBy';
 import map from 'lodash/map';
+import omit from 'lodash/omit';
+import StaticContainer from 'react-static-container';
 
 import { MainRouter } from '../../routers';
 import realm from '../../realm';
@@ -24,13 +24,14 @@ import { getDateString } from '../../utils';
 import prompt from '../utils/prompt';
 import { loadActivitiesFromUrl } from './utils';
 
-export default class Logs extends Component {
+
+class LogsInner extends Component {
   static extraActions = [
     {
       title: 'Add',
       show: 'always',
       iconName: 'add',
-      onSelected: (navigator) => {
+      onSelected: () => {
         prompt(
           'Load Activities',
           'Enter URL to activities JSON',
@@ -41,7 +42,6 @@ export default class Logs extends Component {
               onPress: (url) => {
                 if (url) {
                   loadActivitiesFromUrl(url)
-                    .then(() => navigator.forceUpdate())
                     .catch(() => Alert.alert('Error loading', `Unable to load: ${url}.`));
                 }
               },
@@ -83,8 +83,9 @@ export default class Logs extends Component {
   };
 
   render() {
+    console.log('render - InnerLogs');
     const logs = sortBy(map(
-      groupBy(realm.objects('ActivitySet'), 'workoutDate'),
+      groupBy(this.props.item, 'workoutDate'),
       v => ({
         workoutDate: v[0].workoutDate,
         setCount: v.length,
@@ -97,6 +98,40 @@ export default class Logs extends Component {
         dataSource={this._ds.cloneWithRows(logs)}
         renderRow={this._renderRow}
       />
+    );
+  }
+}
+
+export default class Logs extends Component {
+  static extraActions = LogsInner.extraActions;
+  static title = LogsInner.title;
+  static iconName = LogsInner.iconName;
+  static receiveIsVisible = true;
+  static propTypes = omit(LogsInner.propTypes, ['item']);
+
+  constructor(props) {
+    super(props);
+    this._item = realm.objects('ActivitySet');
+    this.state = {
+      length: this._item.length,
+    };
+    this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
+  }
+  componentDidMount() {
+    realm.addListener('change', this.onChange);
+  }
+  componentWillUnmount() {
+    realm.removeListener('change', this.onChange);
+  }
+  onChange = () => {
+    this.setState({ length: this._item.length });
+  };
+  render() {
+    const { isVisible, ...props } = this.props;
+    return (
+      <StaticContainer shouldUpdate={isVisible}>
+        <LogsInner {...props} item={this._item} length={this.state.length} />
+      </StaticContainer>
     );
   }
 }

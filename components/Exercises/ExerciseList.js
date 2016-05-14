@@ -19,6 +19,8 @@ export default class ExerciseList extends Component {
     <ExerciseListItem exercise={exercise} navigator={this.props.navigator} />);
 
   render() {
+    console.log('render - ExerciseList');
+
     return (
       <ListView
         enableEmptySections
