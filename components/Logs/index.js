@@ -16,6 +16,7 @@ import sortBy from 'lodash/sortBy';
 import uniqBy from 'lodash/uniqBy';
 import map from 'lodash/map';
 import omit from 'lodash/omit';
+import StaticContainer from 'react-static-container';
 
 import { MainRouter } from '../../routers';
 import realm from '../../realm';
@@ -61,6 +62,7 @@ class LogsInner extends Component {
   constructor(props) {
     super(props);
     this._ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
+    this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
   }
 
   _renderRow = (logEntry) => {
@@ -81,6 +83,7 @@ class LogsInner extends Component {
   };
 
   render() {
+    console.log('render - InnerLogs');
     const logs = sortBy(map(
       groupBy(this.props.item, 'workoutDate'),
       v => ({
@@ -103,14 +106,14 @@ export default class Logs extends Component {
   static extraActions = LogsInner.extraActions;
   static title = LogsInner.title;
   static iconName = LogsInner.iconName;
-
+  static receiveIsVisible = true;
   static propTypes = omit(LogsInner.propTypes, ['item']);
 
   constructor(props) {
     super(props);
+    this._item = realm.objects('ActivitySet');
     this.state = {
-      item: realm.objects('ActivitySet'),
-      count: 0,
+      length: this._item.length,
     };
     this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
   }
@@ -121,9 +124,14 @@ export default class Logs extends Component {
     realm.removeListener('change', this.onChange);
   }
   onChange = () => {
-    this.setState({ item: this.state.item, count: this.state.count + 1 });
+    this.setState({ length: this._item.length });
   };
   render() {
-    return <LogsInner {...this.props} item={this.state.item} />;
+    const { isVisible, ...props } = this.props;
+    return (
+      <StaticContainer shouldUpdate={isVisible}>
+        <LogsInner {...props} item={this._item} length={this.state.length} />
+      </StaticContainer>
+    );
   }
 }

@@ -11,7 +11,6 @@ import ScrollableTabView from 'react-native-scrollable-tab-view';
 import Exercises from '../Exercises';
 import Workouts from '../Workouts';
 import Logs from '../Logs';
-
 import { TOOLBAR_BACKGROUND_COLOR } from '../../colors';
 
 const TABS = [Exercises, Workouts, Logs];
@@ -30,12 +29,32 @@ export default class TabContainer extends Component {
     navigator: React.PropTypes.object.isRequired,
   };
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedTab: INITIAL_PAGE,
+    };
+  }
+
   componentDidMount() {
     this.props.setTab(TABS[INITIAL_PAGE].title, TABS[INITIAL_PAGE].extraActions || []);
   }
 
   onChangeTab = v => {
+    this.setState({ selectedTab: v.i });
     this.props.setTab(v.ref.props.tabLabel, v.ref.type.extraActions || []);
+  };
+
+  _renderTab = (T, i) => {
+    const extras = T.receiveIsVisible ? { isVisible: i === this.state.selectedTab } : {};
+    return (
+      <T
+        tabLabel={T.title}
+        key={T.title}
+        navigator={this.props.navigator}
+        {...extras}
+      />
+    );
   };
 
   render() {
@@ -46,7 +65,7 @@ export default class TabContainer extends Component {
           initialPage={INITIAL_PAGE}
           tabBarBackgroundColor={TOOLBAR_BACKGROUND_COLOR}
         >
-          {TABS.map(T => <T tabLabel={T.title} key={T.title} navigator={this.props.navigator} />)}
+          {TABS.map(this._renderTab)}
         </ScrollableTabView>
       </View>
     );

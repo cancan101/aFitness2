@@ -19,6 +19,7 @@
     "react-native-push-notification": "github:cancan101/react-native-push-notification#scheduled",
     "react-native-scrollable-tab-view": "^0.4.2",
     "react-native-vector-icons": "^2.0.1",
+    "react-static-container": "^1.0.1",
     "realm": "^0.12.0"
   },
   "devDependencies": {
