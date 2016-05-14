@@ -15,7 +15,7 @@ import {
 import Listitem from 'react-native-listitem';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { ListView } from 'realm/react-native';
-import uuid from 'node-uuid';
+import uuid from 'uuid';
 
 import realm from '../../realm';
 import IMAGES from '../../constants/Images';
