@@ -1,9 +1,6 @@
 import realm from '../../realm';
 
 
-const FILTER_ALL = 'all';
-
-
 function getExercisesFiltered(selectedMuscle, selectedMuscleGroup) {
   let exercisesFiltered = realm.objects('Exercise');
   if (selectedMuscle !== null) {
@@ -30,4 +27,4 @@ function getMusclesFiltered(selectedMuscleGroup) {
   return muscles.sorted('name');
 }
 
-export { getExercisesFiltered, getMusclesFiltered, FILTER_ALL };
+export { getExercisesFiltered, getMusclesFiltered };

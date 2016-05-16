@@ -31,7 +31,12 @@ export default class Muscles extends Component {
     <Listitem text={muscle.name} onPress={() => this.gotoExercises(muscle)} />);
 
   _renderHeader = () => (
-    <Listitem text="All Exercises" onPress={() => this.gotoExercises(null)} backgroundColor="#EEEE" />);
+    <Listitem
+      text="All Exercises"
+      onPress={() => this.gotoExercises(null)}
+      backgroundColor="#EEEE"
+    />
+  );
 
   render() {
     return (

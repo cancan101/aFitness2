@@ -9,7 +9,7 @@ import ExerciseList from './ExerciseList';
 import { getExercisesFiltered } from './filters';
 
 
-export default class ExercisesMuscleGroup extends Component {
+export default class Exercises extends Component {
   static propTypes = {
     ...omit(ExerciseList.propTypes, 'dataSource'),
     muscle: React.PropTypes.object,
