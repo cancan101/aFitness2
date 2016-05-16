@@ -29,7 +29,12 @@ export default class MuscleGroups extends Component {
     <Listitem text={muscleGroup.name} onPress={() => this.gotoExecisesMuscleGroup(muscleGroup)} />);
 
   _renderHeader = () => (
-    <Listitem text="All Muscles" onPress={() => this.gotoExecisesMuscleGroup(null)} backgroundColor="#EEEE" />);
+    <Listitem
+      text="All Muscles"
+      onPress={() => this.gotoExecisesMuscleGroup(null)}
+      backgroundColor="#EEEE"
+    />
+  );
 
   render() {
     return (

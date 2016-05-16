@@ -88,7 +88,7 @@ export const MainRouter = {
       renderScene(navigator) {
         return <Exercises navigator={navigator} muscleGroup={muscleGroup} muscle={muscle} />;
       },
-    }
+    };
   },
   getHomeRoute(setRoute) {
     return {
