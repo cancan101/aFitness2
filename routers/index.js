@@ -8,6 +8,8 @@ import {
 import ExNavigator from '@exponent/react-native-navigator';
 
 import Exercise from '../components/Exercise';
+import Muscles from '../components/Exercises/Muscles';
+import Exercises from '../components/Exercises/Exercises';
 import LogWorkoutDate from '../components/LogWorkoutDate';
 import LogExerciseDate from '../components/LogExerciseDate';
 import LogExercise from '../components/LogExercise';
@@ -67,6 +69,26 @@ export const MainRouter = {
         return <LogExercise navigator={navigator} exercise={exercise} />;
       },
     };
+  },
+  getMusclesRoute(muscleGroup) {
+    return {
+      getTitle() {
+        return (muscleGroup && muscleGroup.name) || 'All Muscles';
+      },
+      renderScene(navigator) {
+        return <Muscles navigator={navigator} muscleGroup={muscleGroup} />;
+      },
+    };
+  },
+  getExercisesRoute(muscleGroup, muscle) {
+    return {
+      getTitle() {
+        return (muscle && muscle.name) || (muscleGroup && muscleGroup.name) || 'All Exercises';
+      },
+      renderScene(navigator) {
+        return <Exercises navigator={navigator} muscleGroup={muscleGroup} muscle={muscle} />;
+      },
+    }
   },
   getHomeRoute(setRoute) {
     return {

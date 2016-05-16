@@ -10,7 +10,7 @@ import ExerciseListItem from './ExerciseListItem';
 export default class ExerciseList extends Component {
   static propTypes = {
     navigator: React.PropTypes.object.isRequired,
-    renderHeader: React.PropTypes.func.isRequired,
+    renderHeader: React.PropTypes.func,
     // ListView.propTypes.renderHeader, awaiting: https://github.com/realm/realm-js/issues/377
     dataSource: ListView.propTypes.dataSource,
   };
