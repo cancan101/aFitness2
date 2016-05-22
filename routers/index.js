@@ -108,9 +108,20 @@ export const MainRouter = {
           />
         );
       },
+    };
+  },
+
+  getHomeRouteForTab(T) {
+    return {
+      getSceneClass() {
+        return T;
+      },
+      getTitle() {
+        return T.title;
+      },
       renderRightButton(navigator) {
-        if (this.extraActions && this.extraActions[0]) {
-          const onPress = () => this.extraActions[0].onSelected(navigator);
+        if (T.extraActions && T.extraActions[0]) {
+          const onPress = () => T.extraActions[0].onSelected(navigator);
           return (
             <TouchableOpacity
               pressRetentionOffset={ExNavigator.Styles.barButtonPressRetentionOffset}
@@ -118,7 +129,7 @@ export const MainRouter = {
               style={ExNavigator.Styles.barRightButton}
             >
               <Text style={ExNavigator.Styles.barRightButtonText}>
-                {this.extraActions[0].title}
+                {T.extraActions[0].title}
               </Text>
             </TouchableOpacity>
           );

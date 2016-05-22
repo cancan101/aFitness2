@@ -3,8 +3,6 @@ import React, {
 } from 'react';
 import {
   TabBarIOS,
-  TouchableOpacity,
-  Text,
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -14,6 +12,7 @@ import Exercises from '../Exercises';
 import Workouts from '../Workouts';
 import Logs from '../Logs';
 import styles from './styles';
+import { MainRouter } from '../../routers';
 
 
 const TABS = [Exercises, Workouts, Logs];
@@ -38,31 +37,7 @@ export default class TabContainer extends Component {
     >
       <ExNavigator
         ref="navigator"
-        initialRoute={{
-          getSceneClass() {
-            return T;
-          },
-          getTitle() {
-            return T.title;
-          },
-          renderRightButton(navigator) {
-            if (T.extraActions && T.extraActions[0]) {
-              const onPress = () => T.extraActions[0].onSelected(navigator);
-              return (
-                <TouchableOpacity
-                  pressRetentionOffset={ExNavigator.Styles.barButtonPressRetentionOffset}
-                  onPress={onPress}
-                  style={ExNavigator.Styles.barRightButton}
-                >
-                  <Text style={ExNavigator.Styles.barRightButtonText}>
-                    {T.extraActions[0].title}
-                  </Text>
-                </TouchableOpacity>
-              );
-            }
-            return null;
-          },
-        }}
+        initialRoute={MainRouter.getHomeRouteForTab(T)}
         style={styles.container}
         showNavigationBar
         sceneStyle={styles.scene}
