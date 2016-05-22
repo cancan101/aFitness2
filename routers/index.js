@@ -14,6 +14,7 @@ import LogWorkoutDate from '../components/LogWorkoutDate';
 import LogExerciseDate from '../components/LogExerciseDate';
 import LogExercise from '../components/LogExercise';
 import TabContainer from '../components/TabContainer';
+import WorkoutExercises from '../components/WorkoutExercises';
 import { getDateString, isToday } from '../utils';
 
 export const MainRouter = {
@@ -77,6 +78,38 @@ export const MainRouter = {
       },
       renderScene(navigator) {
         return <Muscles navigator={navigator} muscleGroup={muscleGroup} />;
+      },
+    };
+  },
+  getWorkoutExercises(workout) {
+    return {
+      getSceneClass() {
+        return WorkoutExercises;
+      },
+      getTitle() {
+        return workout.name;
+      },
+      renderScene(navigator) {
+        const T = this.getSceneClass();
+        return <T navigator={navigator} workout={workout} />;
+      },
+      renderRightButton(navigator) {
+        const T = this.getSceneClass();
+        if (T.extraActions && T.extraActions[0]) {
+          const onPress = () => T.extraActions[0].onSelected(navigator);
+          return (
+            <TouchableOpacity
+              pressRetentionOffset={ExNavigator.Styles.barButtonPressRetentionOffset}
+              onPress={onPress}
+              style={ExNavigator.Styles.barRightButton}
+            >
+              <Text style={ExNavigator.Styles.barRightButtonText}>
+                {T.extraActions[0].title}
+              </Text>
+            </TouchableOpacity>
+          );
+        }
+        return null;
       },
     };
   },

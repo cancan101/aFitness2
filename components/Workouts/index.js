@@ -8,9 +8,14 @@ import Listitem from 'react-native-listitem';
 
 import prompt from '../utils/prompt';
 import realm from '../../realm';
+import { MainRouter } from '../../routers';
 
 
 export default class Workouts extends Component {
+  static propTypes = {
+    navigator: React.PropTypes.object.isRequired,
+  };
+
   static extraActions = [
     {
       title: 'Add',
@@ -51,7 +56,11 @@ export default class Workouts extends Component {
   }
 
   _renderRow = workout => (
-    <Listitem text={workout.name} />);
+    <Listitem
+      text={workout.name}
+      onPress={() => this.props.navigator.push(MainRouter.getWorkoutExercises(workout))}
+    />
+  );
 
   render() {
     const data = realm.objects('Workout').sorted('name');

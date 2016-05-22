@@ -2,7 +2,7 @@ import Realm from 'realm';
 
 
 const realm = new Realm({
-  schemaVersion: 30,
+  schemaVersion: 31,
   schema: [
     {
       name: 'MuscleGroup',
@@ -51,6 +51,7 @@ const realm = new Realm({
       properties: {
         id: Realm.Types.STRING,
         name: Realm.Types.STRING,
+        exercises: { type: 'list', objectType: 'Exercise' },
       },
     },
   ],
