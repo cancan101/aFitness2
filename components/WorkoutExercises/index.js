@@ -2,11 +2,14 @@ import React, {
   Component,
 } from 'react';
 
-import { ListView } from 'realm/react-native';
+import {
+  ListView,
+} from 'realm/react-native';
 
 import { MainRouter } from '../../routers';
 import realm from '../../realm';
 import ExerciseListItem from '../Exercises/ExerciseListItem';
+import { showPopupMenu } from '../utils/PopupMenu';
 
 
 function addExerciseToWorkout(exercise, workout) {
@@ -48,19 +51,31 @@ export default class WorkoutExercises extends Component {
     const route = MainRouter.getExerciseRoute(exercise);
     navigator.push(route);
   };
-
-  _renderRow = exercise => (
-    <ExerciseListItem
-      exercise={exercise}
-      navigator={this.props.navigator}
-      exerciseSelected={this.exerciseSelected}
-    />
-  );
+  _deleteWorkoutExercise = exercise => {
+    const index = this.props.workout.exercises.findIndex(e => e.id === exercise.id);
+    realm.write(() => {
+      this.props.workout.exercises.splice(index, 1);
+    });
+    this.forceUpdate();
+  };
+  _renderRow = exercise => {
+    return (
+      <ExerciseListItem
+        exercise={exercise}
+        navigator={this.props.navigator}
+        exerciseSelected={this.exerciseSelected}
+        onLongPress={
+          () => showPopupMenu(this.refs.list, ['Delete'], [() => this._deleteWorkoutExercise(exercise)])
+        }
+      />
+    );
+  };
 
   render() {
     const data = this.props.workout.exercises;
     return (
       <ListView
+        ref="list"
         enableEmptySections
         automaticallyAdjustContentInsets={false}
         dataSource={this._ds.cloneWithRows(data)}

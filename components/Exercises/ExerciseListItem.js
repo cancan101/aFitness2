@@ -12,7 +12,7 @@ import IMAGES from '../../constants/Images';
 import styles from './styles';
 
 
-function ExerciseListItem({ exercise, navigator, exerciseSelected }) {
+function ExerciseListItem({ exercise, navigator, exerciseSelected, onLongPress }) {
   let image;
   if (exercise.image) {
     image = (
@@ -32,6 +32,7 @@ function ExerciseListItem({ exercise, navigator, exerciseSelected }) {
   return (
     <Listitem
       onPress={() => exerciseSelected(exercise, navigator)}
+      onLongPress={onLongPress}
     >
       <View style={{ flexDirection: 'row' }}>
         {image}
@@ -45,6 +46,7 @@ ExerciseListItem.propTypes = {
   exercise: React.PropTypes.object.isRequired,
   navigator: React.PropTypes.object.isRequired,
   exerciseSelected: React.PropTypes.func.isRequired,
+  onLongPress: React.PropTypes.func,
 };
 
 
