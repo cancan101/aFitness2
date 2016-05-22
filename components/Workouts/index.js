@@ -57,6 +57,7 @@ export default class Workouts extends Component {
     const data = realm.objects('Workout').sorted('name');
     return (
       <ListView
+        enableEmptySections
         dataSource={this._ds.cloneWithRows(data)}
         renderRow={this._renderRow}
       />
