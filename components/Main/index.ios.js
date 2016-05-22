@@ -5,6 +5,7 @@ import React, {
 import ExNavigator from '@exponent/react-native-navigator';
 
 import { MainRouter } from '../../routers';
+import TabContainer from '../TabContainer';
 
 import styles from './styles';
 
@@ -15,13 +16,7 @@ export default class Main extends Component {
   };
   render() {
     return (
-      <ExNavigator
-        ref="navigator"
-        initialRoute={MainRouter.getHomeRoute(this.setRoute)}
-        style={styles.container}
-        showNavigationBar
-        sceneStyle={{ paddingTop: 64 }}
-      />
+      <TabContainer />
     );
   }
 }

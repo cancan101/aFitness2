@@ -39,6 +39,7 @@ export default class MuscleGroups extends Component {
   render() {
     return (
       <ListView
+        automaticallyAdjustContentInsets={false}
         enableEmptySections
         dataSource={this._dataSource}
         renderRow={this._renderRow}
