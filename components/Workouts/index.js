@@ -58,6 +58,7 @@ export default class Workouts extends Component {
     return (
       <ListView
         enableEmptySections
+        automaticallyAdjustContentInsets={false}
         dataSource={this._ds.cloneWithRows(data)}
         renderRow={this._renderRow}
       />

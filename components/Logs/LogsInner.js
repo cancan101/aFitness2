@@ -93,6 +93,7 @@ export default class LogsInner extends Component {
     return (
       <ListView
         enableEmptySections
+        automaticallyAdjustContentInsets={false}
         dataSource={this._ds.cloneWithRows(logs)}
         renderRow={this._renderRow}
       />
