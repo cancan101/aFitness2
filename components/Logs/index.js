@@ -3,7 +3,6 @@ import React, {
 } from 'react';
 
 import PureRenderMixin from 'react-addons-pure-render-mixin';
-import omit from 'lodash/omit';
 import StaticContainer from 'react-static-container';
 
 import realm from '../../realm';
@@ -15,7 +14,10 @@ export default class Logs extends Component {
   static title = LogsInner.title;
   static iconName = LogsInner.iconName;
   static receiveIsVisible = true;
-  static propTypes = omit(LogsInner.propTypes, ['item']);
+
+  static propTypes = {
+    isVisible: React.PropTypes.bool.isRequired,
+  };
 
   constructor(props) {
     super(props);

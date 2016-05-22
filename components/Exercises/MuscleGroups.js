@@ -12,6 +12,7 @@ import { MainRouter } from '../../routers';
 export default class MuscleGroups extends Component {
   static propTypes = {
     navigator: React.PropTypes.object.isRequired,
+    exerciseSelected: React.PropTypes.func.isRequired,
   };
 
   constructor(props) {
@@ -21,7 +22,7 @@ export default class MuscleGroups extends Component {
   }
 
   gotoExecisesMuscleGroup = muscleGroup => {
-    const route = MainRouter.getMusclesRoute(muscleGroup);
+    const route = MainRouter.getMusclesRoute(muscleGroup, this.props.exerciseSelected);
     this.props.navigator.push(route);
   };
 

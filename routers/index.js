@@ -14,6 +14,8 @@ import LogWorkoutDate from '../components/LogWorkoutDate';
 import LogExerciseDate from '../components/LogExerciseDate';
 import LogExercise from '../components/LogExercise';
 import TabContainer from '../components/TabContainer';
+import WorkoutExercises from '../components/WorkoutExercises';
+import ExerciseChooser from '../components/ExerciseChooser';
 import { getDateString, isToday } from '../utils';
 
 export const MainRouter = {
@@ -60,6 +62,20 @@ export const MainRouter = {
       },
     };
   },
+  getExerciseChooserRouter(route, exerciseSelected) {
+    return {
+      getSceneClass() {
+        return ExerciseChooser;
+      },
+      getTitle() {
+        return this.getSceneClass().title;
+      },
+      renderScene(navigator) {
+        const T = this.getSceneClass();
+        return <T navigator={navigator} route={route} exerciseSelected={exerciseSelected} />;
+      },
+    };
+  },
   getLogExerciseRoute(exercise) {
     return {
       getTitle() {
@@ -70,23 +86,75 @@ export const MainRouter = {
       },
     };
   },
-  getMusclesRoute(muscleGroup) {
+  getMusclesRoute(muscleGroup, exerciseSelected) {
     return {
       getTitle() {
         return (muscleGroup && muscleGroup.name) || 'All Muscles';
       },
       renderScene(navigator) {
-        return <Muscles navigator={navigator} muscleGroup={muscleGroup} />;
+        return (
+          <Muscles
+            navigator={navigator}
+            muscleGroup={muscleGroup}
+            exerciseSelected={exerciseSelected}
+          />
+        );
       },
     };
   },
-  getExercisesRoute(muscleGroup, muscle) {
+  getWorkoutExercises(workout) {
+    const route = {
+      getExtraActions() {
+        return this.getSceneClass().extraActions;
+      },
+      getWorkout() {
+        return workout;
+      },
+      getSceneClass() {
+        return WorkoutExercises;
+      },
+      getTitle() {
+        return workout.name;
+      },
+      renderScene(navigator) {
+        const T = this.getSceneClass();
+        return <T navigator={navigator} workout={workout} />;
+      },
+      renderRightButton(navigator) {
+        const T = this.getSceneClass();
+        if (T.extraActions && T.extraActions[0]) {
+          const onPress = () => T.extraActions[0].onSelected(navigator, route);
+          return (
+            <TouchableOpacity
+              pressRetentionOffset={ExNavigator.Styles.barButtonPressRetentionOffset}
+              onPress={onPress}
+              style={ExNavigator.Styles.barRightButton}
+            >
+              <Text style={ExNavigator.Styles.barRightButtonText}>
+                {T.extraActions[0].title}
+              </Text>
+            </TouchableOpacity>
+          );
+        }
+        return null;
+      },
+    };
+    return route;
+  },
+  getExercisesRoute(muscleGroup, muscle, exerciseSelected) {
     return {
       getTitle() {
         return (muscle && muscle.name) || (muscleGroup && muscleGroup.name) || 'All Exercises';
       },
       renderScene(navigator) {
-        return <Exercises navigator={navigator} muscleGroup={muscleGroup} muscle={muscle} />;
+        return (
+          <Exercises
+            navigator={navigator}
+            muscleGroup={muscleGroup}
+            muscle={muscle}
+            exerciseSelected={exerciseSelected}
+          />
+        );
       },
     };
   },
