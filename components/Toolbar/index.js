@@ -46,6 +46,12 @@ export default class Toolbar extends Component {
       }
     }
 
+    const extraActions = (
+      (route.getExtraActions && route.getExtraActions())
+      || route.extraActions
+      || []
+    );
+
     return (
       <Icon.ToolbarAndroid
         navIconName={navIconName}
@@ -53,8 +59,8 @@ export default class Toolbar extends Component {
         title={route.getTitle()}
         titleColor={TOOLBAR_TITLE_COLOR}
         style={styles.toolbar}
-        actions={route.extraActions || []}
-        onActionSelected={i => route.extraActions[i].onSelected(navigator, route)}
+        actions={extraActions}
+        onActionSelected={i => extraActions[i].onSelected(navigator, route)}
       />
     );
   }

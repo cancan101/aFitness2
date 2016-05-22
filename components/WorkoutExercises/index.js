@@ -5,6 +5,15 @@ import React, {
 import { ListView } from 'realm/react-native';
 import Listitem from 'react-native-listitem';
 
+import { MainRouter } from '../../routers';
+import realm from '../../realm';
+
+
+function addExerciseToWorkout(exercise, workout) {
+  realm.write(() => {
+    workout.exercises.push(exercise);
+  });
+}
 
 export default class WorkoutExercises extends Component {
   static propTypes = {
@@ -17,7 +26,10 @@ export default class WorkoutExercises extends Component {
       title: 'Add',
       show: 'always',
       iconName: 'add',
-      onSelected: navigator => {
+      onSelected: (navigator, route) => {
+        const routeNew = MainRouter.getExerciseChooserRouter(
+          route, exercise => addExerciseToWorkout(exercise, route.getWorkout()));
+        navigator.push(routeNew);
       },
     },
   ];

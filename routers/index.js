@@ -15,6 +15,7 @@ import LogExerciseDate from '../components/LogExerciseDate';
 import LogExercise from '../components/LogExercise';
 import TabContainer from '../components/TabContainer';
 import WorkoutExercises from '../components/WorkoutExercises';
+import ExerciseChooser from '../components/ExerciseChooser';
 import { getDateString, isToday } from '../utils';
 
 export const MainRouter = {
@@ -61,6 +62,20 @@ export const MainRouter = {
       },
     };
   },
+  getExerciseChooserRouter(route, exerciseSelected) {
+    return {
+      getSceneClass() {
+        return ExerciseChooser;
+      },
+      getTitle() {
+        return this.getSceneClass().title;
+      },
+      renderScene(navigator) {
+        const T = this.getSceneClass();
+        return <T navigator={navigator} route={route} exerciseSelected={exerciseSelected} />;
+      },
+    };
+  },
   getLogExerciseRoute(exercise) {
     return {
       getTitle() {
@@ -88,7 +103,13 @@ export const MainRouter = {
     };
   },
   getWorkoutExercises(workout) {
-    return {
+    const route = {
+      getExtraActions() {
+        return this.getSceneClass().extraActions;
+      },
+      getWorkout() {
+        return workout;
+      },
       getSceneClass() {
         return WorkoutExercises;
       },
@@ -102,7 +123,7 @@ export const MainRouter = {
       renderRightButton(navigator) {
         const T = this.getSceneClass();
         if (T.extraActions && T.extraActions[0]) {
-          const onPress = () => T.extraActions[0].onSelected(navigator);
+          const onPress = () => T.extraActions[0].onSelected(navigator, route);
           return (
             <TouchableOpacity
               pressRetentionOffset={ExNavigator.Styles.barButtonPressRetentionOffset}
@@ -118,6 +139,7 @@ export const MainRouter = {
         return null;
       },
     };
+    return route;
   },
   getExercisesRoute(muscleGroup, muscle, exerciseSelected) {
     return {
