@@ -13,10 +13,16 @@ export default class ExerciseList extends Component {
     renderHeader: React.PropTypes.func,
     // ListView.propTypes.renderHeader, awaiting: https://github.com/realm/realm-js/issues/377
     dataSource: ListView.propTypes.dataSource,
+    exerciseSelected: React.PropTypes.func.isRequired,
   };
 
   _renderRow = exercise => (
-    <ExerciseListItem exercise={exercise} navigator={this.props.navigator} />);
+    <ExerciseListItem
+      exercise={exercise}
+      navigator={this.props.navigator}
+      exerciseSelected={this.props.exerciseSelected}
+    />
+  );
 
   render() {
     console.log('render - ExerciseList');

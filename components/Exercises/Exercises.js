@@ -3,7 +3,6 @@ import React, {
 } from 'react';
 
 import { ListView } from 'realm/react-native';
-import omit from 'lodash/omit';
 
 import ExerciseList from './ExerciseList';
 import { getExercisesFiltered } from './filters';
@@ -11,7 +10,6 @@ import { getExercisesFiltered } from './filters';
 
 export default class Exercises extends Component {
   static propTypes = {
-    ...omit(ExerciseList.propTypes, 'dataSource'),
     muscle: React.PropTypes.object,
     muscleGroup: React.PropTypes.object,
   };

@@ -2,14 +2,16 @@ import React, {
   Component,
 } from 'react';
 
-import uuid from 'uuid';
 import { ListView } from 'realm/react-native';
 import Listitem from 'react-native-listitem';
 
-import prompt from '../utils/prompt';
-
 
 export default class WorkoutExercises extends Component {
+  static propTypes = {
+    navigator: React.PropTypes.object.isRequired,
+    workout: React.PropTypes.object.isRequired,
+  };
+
   static extraActions = [
     {
       title: 'Add',

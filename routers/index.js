@@ -71,13 +71,19 @@ export const MainRouter = {
       },
     };
   },
-  getMusclesRoute(muscleGroup) {
+  getMusclesRoute(muscleGroup, exerciseSelected) {
     return {
       getTitle() {
         return (muscleGroup && muscleGroup.name) || 'All Muscles';
       },
       renderScene(navigator) {
-        return <Muscles navigator={navigator} muscleGroup={muscleGroup} />;
+        return (
+          <Muscles
+            navigator={navigator}
+            muscleGroup={muscleGroup}
+            exerciseSelected={exerciseSelected}
+          />
+        );
       },
     };
   },
@@ -113,13 +119,20 @@ export const MainRouter = {
       },
     };
   },
-  getExercisesRoute(muscleGroup, muscle) {
+  getExercisesRoute(muscleGroup, muscle, exerciseSelected) {
     return {
       getTitle() {
         return (muscle && muscle.name) || (muscleGroup && muscleGroup.name) || 'All Exercises';
       },
       renderScene(navigator) {
-        return <Exercises navigator={navigator} muscleGroup={muscleGroup} muscle={muscle} />;
+        return (
+          <Exercises
+            navigator={navigator}
+            muscleGroup={muscleGroup}
+            muscle={muscle}
+            exerciseSelected={exerciseSelected}
+          />
+        );
       },
     };
   },

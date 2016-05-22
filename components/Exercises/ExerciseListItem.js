@@ -13,9 +13,7 @@ import IMAGES from '../../constants/Images';
 import styles from './styles';
 
 
-function ExerciseListItem({ exercise, navigator }) {
-  const route = MainRouter.getExerciseRoute(exercise);
-
+function ExerciseListItem({ exercise, navigator, exerciseSelected }) {
   let image;
   if (exercise.image) {
     image = (
@@ -34,7 +32,7 @@ function ExerciseListItem({ exercise, navigator }) {
 
   return (
     <Listitem
-      onPress={() => navigator.push(route)}
+      onPress={() => exerciseSelected(exercise, navigator)}
     >
       <View style={{ flexDirection: 'row' }}>
         {image}
@@ -47,6 +45,7 @@ function ExerciseListItem({ exercise, navigator }) {
 ExerciseListItem.propTypes = {
   exercise: React.PropTypes.object.isRequired,
   navigator: React.PropTypes.object.isRequired,
+  exerciseSelected: React.PropTypes.func.isRequired,
 };
 
 
