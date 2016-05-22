@@ -3,13 +3,16 @@ import React, {
 } from 'react';
 
 import { ListView } from 'realm/react-native';
-import Listitem from 'react-native-listitem';
 
 import { MainRouter } from '../../routers';
 import realm from '../../realm';
+import ExerciseListItem from '../Exercises/ExerciseListItem';
 
 
 function addExerciseToWorkout(exercise, workout) {
+  if (workout.exercises.findIndex(e => e.id === exercise.id) !== -1) {
+    return;
+  }
   realm.write(() => {
     workout.exercises.push(exercise);
   });
@@ -41,8 +44,17 @@ export default class WorkoutExercises extends Component {
     this._ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
   }
 
+  exerciseSelected = (exercise, navigator) => {
+    const route = MainRouter.getExerciseRoute(exercise);
+    navigator.push(route);
+  };
+
   _renderRow = exercise => (
-    <Listitem text={exercise.name} />
+    <ExerciseListItem
+      exercise={exercise}
+      navigator={this.props.navigator}
+      exerciseSelected={this.exerciseSelected}
+    />
   );
 
   render() {
