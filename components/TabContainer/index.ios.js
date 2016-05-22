@@ -13,6 +13,7 @@ import ExNavigator from '@exponent/react-native-navigator';
 import Exercises from '../Exercises';
 import Workouts from '../Workouts';
 import Logs from '../Logs';
+import styles from './styles';
 
 
 const TABS = [Exercises, Workouts, Logs];
@@ -20,23 +21,12 @@ const INITIAL_PAGE = 0;
 
 
 export default class TabContainer extends Component {
-  static propTypes = {
-    // setTab: React.PropTypes.func.isRequired,
-    // navigator: React.PropTypes.object.isRequired,
-  };
-
   constructor(props) {
     super(props);
     this.state = { selectedTab: INITIAL_PAGE };
   }
-
-  componentDidMount() {
-    // this.props.setTab(TABS[INITIAL_PAGE].title, TABS[INITIAL_PAGE].extraActions || []);
-  }
-
   _setTab = (selectedTab) => {
     this.setState({ selectedTab });
-  //   this.props.setTab(TABS[selectedTab].title, TABS[selectedTab].extraActions || []);
   };
   _renderTab = (T, i) => (
     <Icon.TabBarItemIOS
@@ -73,9 +63,9 @@ export default class TabContainer extends Component {
             return null;
           },
         }}
-        style={{flex: 1}}
+        style={styles.container}
         showNavigationBar
-        sceneStyle={{ paddingTop: 64 }}
+        sceneStyle={styles.scene}
       />
     </Icon.TabBarItemIOS>
   );
