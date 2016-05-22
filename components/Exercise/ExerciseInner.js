@@ -4,11 +4,8 @@ import React, {
 import {
   AsyncStorage,
   Image,
-  StyleSheet,
   Text,
   TextInput,
-  UIManager,
-  findNodeHandle,
   View,
 } from 'react-native';
 
@@ -16,23 +13,15 @@ import Listitem from 'react-native-listitem';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { ListView } from 'realm/react-native';
 import uuid from 'uuid';
+import PushNotification from 'react-native-push-notification';
 
 import realm from '../../realm';
 import IMAGES from '../../constants/Images';
 import { MainRouter } from '../../routers';
 import prompt from '../utils/prompt';
+import styles from './styles';
+import { showPopupMenu } from '../utils/PopupMenu';
 
-
-import PushNotification from 'react-native-push-notification';
-
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
-
-const ACTION_ITEM_SELECTED = 'itemSelected';
 
 const SET_REST_TIME_DEFAULT = 5;
 
@@ -162,18 +151,9 @@ export default class ExerciseInner extends Component {
       <Listitem
         ref={c => { refs.item = c; }}
         onPress={() => this.onSetItemPress(setItem)}
-        onLongPress={() => {
-          UIManager.showPopupMenu(
-            findNodeHandle(refs.item),
-            ['Delete'],
-            () => {}, // error
-            action => {
-              if (action === ACTION_ITEM_SELECTED) {
-                this._deleteSetItem(setItem);
-              }
-            }, // success
-          );
-        }}
+        onLongPress={
+          () => showPopupMenu(refs.item, ['Delete'], [() => this._deleteSetItem(setItem)])
+        }
         text={text}
       />
     );
