@@ -2,8 +2,6 @@ import React, {
   Component,
 } from 'react';
 
-import omit from 'lodash/omit';
-
 import realm from '../../realm';
 import ExerciseInner from './ExerciseInner';
 import { getToday } from '../../utils';
@@ -12,7 +10,9 @@ import { getToday } from '../../utils';
 export default class Exercise extends Component {
   static extraActions = ExerciseInner.extraActions;
 
-  static propTypes = omit(ExerciseInner.propTypes, ['item']);
+  static propTypes = {
+    exercise: React.PropTypes.object.isRequired,
+  };
 
   constructor(props) {
     super(props);
