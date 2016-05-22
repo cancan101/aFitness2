@@ -59,13 +59,15 @@ export default class WorkoutExercises extends Component {
     this.forceUpdate();
   };
   _renderRow = exercise => {
+    const refs = {};
     return (
       <ExerciseListItem
+        ref={c => { refs.item = c; }}
         exercise={exercise}
         navigator={this.props.navigator}
         exerciseSelected={this.exerciseSelected}
         onLongPress={
-          () => showPopupMenu(this.refs.list, ['Delete'], [() => this._deleteWorkoutExercise(exercise)])
+          () => showPopupMenu(refs.item, ['Delete'], [() => this._deleteWorkoutExercise(exercise)])
         }
       />
     );
@@ -75,7 +77,6 @@ export default class WorkoutExercises extends Component {
     const data = this.props.workout.exercises;
     return (
       <ListView
-        ref="list"
         enableEmptySections
         automaticallyAdjustContentInsets={false}
         dataSource={this._ds.cloneWithRows(data)}
