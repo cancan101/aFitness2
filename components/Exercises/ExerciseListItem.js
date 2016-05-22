@@ -8,7 +8,6 @@ import {
 import Listitem from 'react-native-listitem';
 import ListitemStyles from 'react-native-listitem/styles';
 
-import { MainRouter } from '../../routers';
 import IMAGES from '../../constants/Images';
 import styles from './styles';
 
