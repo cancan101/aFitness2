@@ -9,6 +9,7 @@ import Listitem from 'react-native-listitem';
 import prompt from '../utils/prompt';
 import realm from '../../realm';
 import { MainRouter } from '../../routers';
+import { showPopupMenu } from '../utils/PopupMenu';
 
 
 export default class Workouts extends Component {
@@ -55,12 +56,51 @@ export default class Workouts extends Component {
     this._ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
   }
 
-  _renderRow = workout => (
-    <Listitem
-      text={workout.name}
-      onPress={() => this.props.navigator.push(MainRouter.getWorkoutExercises(workout))}
-    />
-  );
+  _deleteWorkout = workout => {
+    realm.write(() => {
+      realm.delete(workout);
+    });
+    this.forceUpdate();
+  };
+  _renameWorkout = workout => {
+    prompt(
+      'Rename Workout',
+      'Workout name:',
+      [
+        { style: 'cancel', text: 'Cancel' },
+        {
+          style: 'default', text: 'Save',
+          onPress: (value) => {
+            if (value) {
+              realm.write(() => {
+                workout.name = value;
+              });
+              this.forceUpdate();
+            }
+          },
+        },
+      ],
+      'plain-text',
+      workout.name,
+    );
+  };
+  _renderRow = workout => {
+    const refs = {};
+    return (
+      <Listitem
+        ref={c => { refs.item = c; }}
+        text={workout.name}
+        onPress={() => this.props.navigator.push(MainRouter.getWorkoutExercises(workout))}
+        onLongPress={
+          () => showPopupMenu(
+            refs.item,
+            ['Delete', 'Rename'],
+            [() => this._deleteWorkout(workout), () => this._renameWorkout(workout)]
+          )
+        }
+      />
+    );
+  }
 
   render() {
     const data = realm.objects('Workout').sorted('name');
