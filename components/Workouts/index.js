@@ -100,7 +100,7 @@ export default class Workouts extends Component {
         }
       />
     );
-  }
+  };
 
   render() {
     const data = realm.objects('Workout').sorted('name');
