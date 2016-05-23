@@ -6,6 +6,7 @@ import {
   Image,
   Text,
   TextInput,
+  TouchableHighlight,
   View,
 } from 'react-native';
 
@@ -43,6 +44,7 @@ export default class ExerciseInner extends Component {
     reps: React.PropTypes.number,
     exercise: React.PropTypes.object.isRequired,
     item: React.PropTypes.object.isRequired,
+    navigator: React.PropTypes.object.isRequired,
   };
 
   constructor(props) {
@@ -163,6 +165,10 @@ export default class ExerciseInner extends Component {
       realm.delete(setItem);
     });
   }
+  _onPressImage = () => {
+    const newRoute = MainRouter.getExerciseViewerRoute(this.props.exercise);
+    this.props.navigator.push(newRoute);
+  };
   render() {
     const recordBtnExtras = {};
     if (!this._canRecord()) {
@@ -191,12 +197,14 @@ export default class ExerciseInner extends Component {
       listView = <View style={{ flex: 1 }}><Text>No Exercises for Today</Text></View>;
     }
 
+    const { sendAt, setRestTime } = this.state;
+
     let timerText;
-    if (this.state.sendAt && this.state.sendAt >= new Date().getTime()) {
-      timerText = `${Math.ceil((this.state.sendAt - new Date().getTime()) / 1000)}`;
+    if (sendAt && sendAt >= new Date().getTime()) {
+      timerText = `${Math.ceil((sendAt - new Date().getTime()) / 1000)}`;
     } else {
-      if (this.state.setRestTime) {
-        timerText = String(this.state.setRestTime);
+      if (setRestTime) {
+        timerText = String(setRestTime);
       } else {
         timerText = 'Timer';
       }
@@ -238,7 +246,12 @@ export default class ExerciseInner extends Component {
           </View>
         </View>
         {listView}
-        <Image source={IMAGES[this.props.exercise.image]} style={{ width: 80, height: 80 }} />
+        <TouchableHighlight onPress={this._onPressImage}>
+          <Image
+            source={IMAGES[this.props.exercise.image]}
+            style={{ width: 80, height: 80 }}
+          />
+        </TouchableHighlight>
       </View>
     );
   }
