@@ -46,7 +46,7 @@ export default class TabContainer extends Component {
   };
 
   _renderTab = (T, i) => {
-    const extras = T.receiveIsVisible ? { isVisible: i === this.state.selectedTab } : {};
+    const extras = T.receiveIsVisible ? { isVisible: i === this.state.selectedTab && this.state.isVisible } : {};
     return (
       <T
         tabLabel={T.title}
@@ -56,7 +56,12 @@ export default class TabContainer extends Component {
       />
     );
   };
-
+  onWillBlur() {
+    this.setState({ isVisible: false });
+  }
+  onDidFocus() {
+    this.setState({ isVisible: true });
+  }
   render() {
     return (
       <View style={styles.container}>

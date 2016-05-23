@@ -176,10 +176,21 @@ export const MainRouter = {
       renderScene(navigator) {
         return (
           <TabContainer
+            ref={c => { this._tab_container = c; }}
             navigator={navigator}
             setTab={(title, extraActions) => this._setTab(title, extraActions)}
           />
         );
+      },
+      onDidFocus() {
+        if (this._tab_container) {
+          this._tab_container.onDidFocus();
+        }
+      },
+      onWillBlur() {
+        if (this._tab_container) {
+          this._tab_container.onWillBlur();
+        }
       },
     };
   },

@@ -27,7 +27,7 @@ export default class LogsInner extends Component {
     {
       title: 'Add',
       show: 'always',
-      iconName: 'add',
+      iconName: 'cloud-download',
       onSelected: () => {
         prompt(
           'Load Activities',
