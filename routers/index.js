@@ -16,6 +16,8 @@ import LogExercise from '../components/LogExercise';
 import TabContainer from '../components/TabContainer';
 import WorkoutExercises from '../components/WorkoutExercises';
 import ExerciseChooser from '../components/ExerciseChooser';
+import ExerciseViewer from '../components/ExerciseViewer';
+
 import { getDateString, isToday } from '../utils';
 
 
@@ -82,6 +84,19 @@ export const MainRouter = {
       },
       renderScene(navigator) {
         return <LogExerciseDate navigator={navigator} logEntry={logEntry} exercise={exercise} />;
+      },
+    };
+  },
+  getExerciseViewerRoute(exercise) {
+    return {
+      getTitle() {
+        return exercise.name;
+      },
+      renderScene(navigator) {
+        return <ExerciseViewer navigator={navigator} exercise={exercise} />;
+      },
+      getBackButtonTitle() {
+        return 'Back';
       },
     };
   },
