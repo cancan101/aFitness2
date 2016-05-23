@@ -18,6 +18,29 @@ import WorkoutExercises from '../components/WorkoutExercises';
 import ExerciseChooser from '../components/ExerciseChooser';
 import { getDateString, isToday } from '../utils';
 
+
+class Route {
+  renderRightButton(navigator) {
+    const T = this.getSceneClass();
+    if (T.extraActions && T.extraActions[0]) {
+      const onPress = () => T.extraActions[0].onSelected(navigator, this);
+      return (
+        <TouchableOpacity
+          pressRetentionOffset={ExNavigator.Styles.barButtonPressRetentionOffset}
+          onPress={onPress}
+          style={ExNavigator.Styles.barRightButton}
+        >
+          <Text style={ExNavigator.Styles.barRightButtonText}>
+            {T.extraActions[0].title}
+          </Text>
+        </TouchableOpacity>
+      );
+    }
+    return null;
+  }
+}
+
+
 export const MainRouter = {
   getExerciseRoute(exercise, setItem = {}) {
     return {
@@ -103,42 +126,24 @@ export const MainRouter = {
     };
   },
   getWorkoutExercises(workout) {
-    const route = {
+    const route = new class extends Route {
       getExtraActions() {
         return this.getSceneClass().extraActions;
-      },
+      }
       getWorkout() {
         return workout;
-      },
+      }
       getSceneClass() {
         return WorkoutExercises;
-      },
+      }
       getTitle() {
         return workout.name;
-      },
+      }
       renderScene(navigator) {
         const T = this.getSceneClass();
         return <T navigator={navigator} workout={workout} />;
-      },
-      renderRightButton(navigator) {
-        const T = this.getSceneClass();
-        if (T.extraActions && T.extraActions[0]) {
-          const onPress = () => T.extraActions[0].onSelected(navigator, route);
-          return (
-            <TouchableOpacity
-              pressRetentionOffset={ExNavigator.Styles.barButtonPressRetentionOffset}
-              onPress={onPress}
-              style={ExNavigator.Styles.barRightButton}
-            >
-              <Text style={ExNavigator.Styles.barRightButtonText}>
-                {T.extraActions[0].title}
-              </Text>
-            </TouchableOpacity>
-          );
-        }
-        return null;
-      },
-    };
+      }
+    }();
     return route;
   },
   getExercisesRoute(muscleGroup, muscle, exerciseSelected) {
@@ -180,30 +185,14 @@ export const MainRouter = {
   },
 
   getHomeRouteForTab(T) {
-    return {
+    const route = new class extends Route {
       getSceneClass() {
         return T;
-      },
+      }
       getTitle() {
         return T.title;
-      },
-      renderRightButton(navigator) {
-        if (T.extraActions && T.extraActions[0]) {
-          const onPress = () => T.extraActions[0].onSelected(navigator);
-          return (
-            <TouchableOpacity
-              pressRetentionOffset={ExNavigator.Styles.barButtonPressRetentionOffset}
-              onPress={onPress}
-              style={ExNavigator.Styles.barRightButton}
-            >
-              <Text style={ExNavigator.Styles.barRightButtonText}>
-                {T.extraActions[0].title}
-              </Text>
-            </TouchableOpacity>
-          );
-        }
-        return null;
-      },
-    };
+      }
+    }();
+    return route;
   },
 };
