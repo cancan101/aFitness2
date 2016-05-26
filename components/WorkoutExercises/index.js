@@ -67,7 +67,7 @@ export default class WorkoutExercises extends Component {
         navigator={this.props.navigator}
         exerciseSelected={this.exerciseSelected}
         onLongPress={
-          () => showPopupMenu(refs.item, ['Delete'], [() => this._deleteWorkoutExercise(exercise)])
+          () => showPopupMenu(refs.item, ['Remove'], [() => this._deleteWorkoutExercise(exercise)])
         }
       />
     );

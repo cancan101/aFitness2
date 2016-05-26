@@ -52,13 +52,18 @@ export default class Toolbar extends Component {
       || []
     );
 
+    let extraStyles = null;
+    if (!route.handlesElevation) {
+      extraStyles = {elevation: 4};
+    }
+
     return (
       <Icon.ToolbarAndroid
         navIconName={navIconName}
         onIconClicked={this.handleIconClicked}
         title={route.getTitle()}
         titleColor={TOOLBAR_TITLE_COLOR}
-        style={styles.toolbar}
+        style={[styles.toolbar, extraStyles]}
         actions={extraActions}
         onActionSelected={i => extraActions[i].onSelected(navigator, route)}
       />
