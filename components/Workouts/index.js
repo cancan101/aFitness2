@@ -31,11 +31,12 @@ export default class Workouts extends Component {
             {
               style: 'default', text: 'Save',
               onPress: (value) => {
-                if (value) {
+                const name = value.trim();
+                if (name) {
                   realm.write(() => {
                     realm.create('Workout', {
                       id: uuid.v4(),
-                      name: value,
+                      name,
                     });
                   });
                   navigator.forceUpdate();
@@ -71,9 +72,10 @@ export default class Workouts extends Component {
         {
           style: 'default', text: 'Save',
           onPress: (value) => {
-            if (value) {
+            const name = value.trim();
+            if (name) {
               realm.write(() => {
-                workout.name = value;
+                workout.name = name;
               });
               this.forceUpdate();
             }

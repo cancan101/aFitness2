@@ -7,8 +7,10 @@ import {
   Text,
   TextInput,
   TouchableHighlight,
+  TouchableWithoutFeedback,
   View,
 } from 'react-native';
+import dismissKeyboard from 'dismissKeyboard';
 
 import Listitem from 'react-native-listitem';
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -125,6 +127,12 @@ export default class ExerciseInner extends Component {
     const recordDate = new Date();
     const workoutDate = new Date(
       Date.UTC(recordDate.getFullYear(), recordDate.getMonth(), recordDate.getDate()));
+    const reps = parseInt(this.state.reps, 10);
+    const weightValue = parseFloat(this.state.weightValue);
+
+    if (isNaN(reps) || isNaN(weightValue)){
+      return;
+    }
 
     realm.write(() => {
       realm.create('ActivitySet', {
@@ -132,8 +140,8 @@ export default class ExerciseInner extends Component {
         recordDate,
         workoutDate,
         exercise: this.props.exercise,
-        reps: parseInt(this.state.reps, 10),
-        weightValue: parseFloat(this.state.weightValue),
+        reps,
+        weightValue,
         weightUnits: 'lbs',
       });
     });
@@ -177,7 +185,7 @@ export default class ExerciseInner extends Component {
     }
 
     const recordBtn = (
-      <Icon.Button name="queue" onPress={this._recordBtnOnPress} {...recordBtnExtras} >
+      <Icon.Button name="queue" onPress={this._recordBtnOnPress} size={25} {...recordBtnExtras} >
         Record
       </Icon.Button>
     );
@@ -211,48 +219,56 @@ export default class ExerciseInner extends Component {
     }
 
     return (
-      <View style={styles.container}>
-        <View style={{ flexDirection: 'row' }}>
-          <View style={{ flex: 1, flexDirection: 'row' }}>
+      <TouchableWithoutFeedback onPress={()=> dismissKeyboard()}>
+        <View style={styles.container}>
+          <View style={{ flexDirection: 'row' }}>
+            <View style={{ flex: 1, flexDirection: 'row' }}>
+              <TextInput
+                keyboardType="numeric"
+                placeholder="weight"
+                style={{ flex: 1, height: 60, borderColor: 'gray', borderWidth: 1 }}
+                onChangeText={this._onChangeTextWeightValue}
+                value={this.state.weightValue}
+                autoFocus
+              />
+              <Text style={{ alignSelf: 'center' }}>lbs</Text>
+            </View>
             <TextInput
               keyboardType="numeric"
-              placeholder="weight"
-              style={{ flex: 1, height: 40, borderColor: 'gray', borderWidth: 1 }}
-              onChangeText={this._onChangeTextWeightValue}
-              value={this.state.weightValue}
+              placeholder="repetitions"
+              style={{ flex: 1, height: 60, borderColor: 'gray', borderWidth: 1 }}
+              onChangeText={this._onChangeTextReps}
+              value={this.state.reps}
             />
-            <Text style={{ alignSelf: 'center' }}>lbs</Text>
           </View>
-          <TextInput
-            keyboardType="numeric"
-            placeholder="repetitions"
-            style={{ flex: 1, height: 40, borderColor: 'gray', borderWidth: 1 }}
-            onChangeText={this._onChangeTextReps}
-            value={this.state.reps}
-          />
-        </View>
-        <View style={{ flexDirection: 'row' }}>
-          <View style={{ flex: 1 }}>
-            {recordBtn}
+          <View style={{ flexDirection: 'row' }}>
+            <View style={{ flex: 1 }}>
+              {recordBtn}
+            </View>
+            <View style={{ flex: 1 }}>
+              <Icon.Button
+                name="timer"
+                onPress={this.onTimerClick}
+                onLongPress={this.onTimeLongPress}
+                size={25}
+              >
+                {timerText}
+              </Icon.Button>
+            </View>
           </View>
-          <View style={{ flex: 1 }}>
-            <Icon.Button
-              name="timer"
-              onPress={this.onTimerClick}
-              onLongPress={this.onTimeLongPress}
+          {listView}
+          <View style={{ alignItems: 'center' }}>
+            <TouchableHighlight
+              onPress={this._onPressImage}
             >
-              {timerText}
-            </Icon.Button>
+              <Image
+                source={IMAGES[this.props.exercise.image]}
+                style={{ width: 80, height: 80 }}
+              />
+            </TouchableHighlight>
           </View>
         </View>
-        {listView}
-        <TouchableHighlight onPress={this._onPressImage}>
-          <Image
-            source={IMAGES[this.props.exercise.image]}
-            style={{ width: 80, height: 80 }}
-          />
-        </TouchableHighlight>
-      </View>
+      </TouchableWithoutFeedback>
     );
   }
 }
