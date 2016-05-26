@@ -262,7 +262,7 @@ export default class ExerciseInner extends Component {
               onPress={this._onPressImage}
             >
               <Image
-                source={IMAGES[this.props.exercise.image]}
+                source={IMAGES[this.props.exercise.thumbnail]}
                 style={{ width: 80, height: 80 }}
               />
             </TouchableHighlight>

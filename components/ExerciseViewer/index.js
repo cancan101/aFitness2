@@ -14,7 +14,7 @@ export default class ExerciseViewer extends Component {
   render() {
     return (
       <Image
-        source={IMAGES[this.props.exercise.image]}
+        source={IMAGES[this.props.exercise.image || this.props.exercise.thumbnail]}
         style={{
           flex: 1,
           width: null,
