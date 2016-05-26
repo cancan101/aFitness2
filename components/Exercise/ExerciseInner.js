@@ -183,7 +183,7 @@ export default class ExerciseInner extends Component {
     }
 
     const recordBtn = (
-      <Icon.Button name="queue" onPress={this._recordBtnOnPress} {...recordBtnExtras} >
+      <Icon.Button name="queue" onPress={this._recordBtnOnPress} size={25} {...recordBtnExtras} >
         Record
       </Icon.Button>
     );
@@ -223,16 +223,17 @@ export default class ExerciseInner extends Component {
             <TextInput
               keyboardType="numeric"
               placeholder="weight"
-              style={{ flex: 1, height: 40, borderColor: 'gray', borderWidth: 1 }}
+              style={{ flex: 1, height: 60, borderColor: 'gray', borderWidth: 1 }}
               onChangeText={this._onChangeTextWeightValue}
               value={this.state.weightValue}
+              autoFocus
             />
             <Text style={{ alignSelf: 'center' }}>lbs</Text>
           </View>
           <TextInput
             keyboardType="numeric"
             placeholder="repetitions"
-            style={{ flex: 1, height: 40, borderColor: 'gray', borderWidth: 1 }}
+            style={{ flex: 1, height: 60, borderColor: 'gray', borderWidth: 1 }}
             onChangeText={this._onChangeTextReps}
             value={this.state.reps}
           />
@@ -246,6 +247,7 @@ export default class ExerciseInner extends Component {
               name="timer"
               onPress={this.onTimerClick}
               onLongPress={this.onTimeLongPress}
+              size={25}
             >
               {timerText}
             </Icon.Button>
