@@ -6,7 +6,7 @@ import {
   View,
 } from 'react-native';
 
-import ScrollableTabView from 'react-native-scrollable-tab-view';
+import ScrollableTabView, { DefaultTabBar } from 'react-native-scrollable-tab-view';
 
 import Exercises from '../Exercises';
 import Workouts from '../Workouts';
@@ -69,6 +69,7 @@ export default class TabContainer extends Component {
           onChangeTab={this.onChangeTab}
           initialPage={INITIAL_PAGE}
           tabBarBackgroundColor={TOOLBAR_BACKGROUND_COLOR}
+          renderTabBar={() => <DefaultTabBar style={{elevation: 4}}/>}
         >
           {TABS.map(this._renderTab)}
         </ScrollableTabView>

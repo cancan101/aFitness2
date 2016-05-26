@@ -180,6 +180,7 @@ export const MainRouter = {
   },
   getHomeRoute(setRoute) {
     return {
+      handlesElevation: true,
       _setTab(title, extraActions) {
         this.title = title;
         this.extraActions = extraActions;
