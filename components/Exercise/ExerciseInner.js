@@ -125,6 +125,12 @@ export default class ExerciseInner extends Component {
     const recordDate = new Date();
     const workoutDate = new Date(
       Date.UTC(recordDate.getFullYear(), recordDate.getMonth(), recordDate.getDate()));
+    const reps = parseInt(this.state.reps, 10);
+    const weightValue = parseFloat(this.state.weightValue);
+
+    if (isNaN(reps) || isNaN(weightValue)){
+      return;
+    }
 
     realm.write(() => {
       realm.create('ActivitySet', {
@@ -132,8 +138,8 @@ export default class ExerciseInner extends Component {
         recordDate,
         workoutDate,
         exercise: this.props.exercise,
-        reps: parseInt(this.state.reps, 10),
-        weightValue: parseFloat(this.state.weightValue),
+        reps,
+        weightValue,
         weightUnits: 'lbs',
       });
     });
