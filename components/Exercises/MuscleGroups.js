@@ -17,8 +17,7 @@ export default class MuscleGroups extends Component {
 
   constructor(props) {
     super(props);
-    const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
-    this._dataSource = ds.cloneWithRows(realm.objects('MuscleGroup').sorted('name'));
+    this._ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
   }
 
   gotoExecisesMuscleGroup = muscleGroup => {
@@ -38,11 +37,12 @@ export default class MuscleGroups extends Component {
   );
 
   render() {
+    const dataSource = this._ds.cloneWithRows(realm.objects('MuscleGroup').sorted('name'));
     return (
       <ListView
         automaticallyAdjustContentInsets={false}
         enableEmptySections
-        dataSource={this._dataSource}
+        dataSource={dataSource}
         renderRow={this._renderRow}
         renderHeader={this._renderHeader}
       />

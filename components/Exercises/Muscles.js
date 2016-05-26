@@ -18,9 +18,7 @@ export default class Muscles extends Component {
 
   constructor(props) {
     super(props);
-    const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
-    const muscles = getMusclesFiltered(this.props.muscleGroup);
-    this._dataSource = ds.cloneWithRows(muscles);
+    this._ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
   }
 
   gotoExercises = muscle => {
@@ -41,10 +39,13 @@ export default class Muscles extends Component {
   );
 
   render() {
+    const muscles = getMusclesFiltered(this.props.muscleGroup);
+    const dataSource = this._ds.cloneWithRows(muscles);
+
     return (
       <ListView
         enableEmptySections
-        dataSource={this._dataSource}
+        dataSource={dataSource}
         renderRow={this._renderRow}
         renderHeader={this._renderHeader}
       />

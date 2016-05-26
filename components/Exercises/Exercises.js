@@ -16,19 +16,17 @@ export default class Exercises extends Component {
 
   constructor(props) {
     super(props);
-    const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
-
-    const { muscle, muscleGroup } = this.props;
-    const exercisesFiltered = getExercisesFiltered(muscle, muscleGroup);
-
-    this._dataSource = ds.cloneWithRows(exercisesFiltered);
+    this._ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
   }
 
   render() {
+    const { muscle, muscleGroup } = this.props;
+    const exercisesFiltered = getExercisesFiltered(muscle, muscleGroup);   
+    const dataSource = this._ds.cloneWithRows(exercisesFiltered);
     return (
       <ExerciseList
         {...this.props}
-        dataSource={this._dataSource}
+        dataSource={dataSource}
       />
     );
   }
