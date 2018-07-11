@@ -21,16 +21,16 @@ export default class ExerciseListItem extends React.Component {
   };
   render() {
     const { exercise, navigator, exerciseSelected, onLongPress } = this.props;
-    let image;
-    if (exercise.image) {
-      image = (
+    let thumbnail;
+    if (exercise.thumbnail) {
+      thumbnail = (
         <Image
-          source={IMAGES[exercise.image]}
+          source={IMAGES[exercise.thumbnail]}
           style={styles.listItemImage}
         />
       );
     } else {
-      image = (
+      thumbnail = (
         <View
           style={styles.listItemImage}
         />
@@ -43,7 +43,7 @@ export default class ExerciseListItem extends React.Component {
         onLongPress={onLongPress}
       >
         <View style={{ flexDirection: 'row' }}>
-          {image}
+          {thumbnail}
           <Text style={ListitemStyles.liText}>{exercise.name}</Text>
         </View>
       </Listitem>
